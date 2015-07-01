@@ -1,0 +1,324 @@
+body
+	font-family "OpenSansRegular"
+	background-color: #f4f4f4;
+	
+.grey
+	color: #b8b8b8;
+
+.light-blue
+	background-color: #22b5cd;
+
+.text-uppercase
+	text-transform uppercase
+
+.badge 
+	font-size 11px
+	vertical-align middle
+	
+.navbar-collapse
+	padding 0px
+	
+.white-container
+	background white
+	padding 45px 0px
+
+.container.main
+	padding-bottom 112px
+
+.navbar	
+	background #2e2e2e
+	border-radius none
+		
+	.navbar-nav > li
+		font-size: 11px;
+		font-weight: 400
+		color white
+		
+		> a, a:visited 
+			color white
+			position relative
+			padding-left 30px
+			
+			> .badge
+				margin-left 10px
+				padding: 6px 10px;
+				display: inline-block;
+				vertical-align: top;
+				
+		> a:hover
+			color #22b5cd
+		
+		> a:after
+			content " | "
+			position: absolute;
+			top: 14px;
+			right: -7px;
+			color: #4f4f4f;
+			
+	.navbar-nav > li:last-child > a:after
+		display none
+			
+	.navbar-nav > li.active a 
+		background initial
+		color #22b5cd
+		
+.navbar-right
+	font-size 13px
+
+.navbar-right .favicon img, .navbar-right .compare img, .navbar-right .login img
+	margin-right 10px
+
+.navbar-right .favicon a
+	background url("../images/icon-heart.png")
+	background-position left center
+	background-repeat no-repeat
+
+.navbar-right .compare a
+	background url("../images/icon-compare.png")
+	background-position left center
+	background-repeat no-repeat
+	
+
+.navbar-right .login a:before
+	display block
+	position absolute
+	content " "
+	border 1px solid #22b5cd
+	padding 5px
+	line-height 30px
+	width: 100px;
+	margin-left: -19px;
+	height: 29px;
+	margin-top: -3px;
+
+.header
+	margin-bottom 30px
+	
+	> .center-vert-text
+		line-height 78px
+		color #b8b8b8
+		
+		> img
+			margin-right 10px
+		
+	> .phone
+		color: #2e2e2e;
+		font-size: 18px;
+		font-family "OpenSansBold"
+		height 78px
+		padding-top 20px
+		
+		> span
+			color: #22b5cd;
+			font-size 13px
+			font-family "OpenSansRegular"
+			border-bottom 1px dashed #22b5cd
+			
+	> .cart-header-block
+		padding-top 20px
+
+		> img 
+			margin-right 20px
+			
+		> .cart-header
+			color: #2e2e2e;
+			font-size: 16px;
+			font-family "OpenSansBold"
+			
+		> .badge
+			position absolute
+			left 40px
+			top 20px
+			
+		> .summ
+			color: #959595;
+			
+			> span
+				color: #555;
+
+.row.menu-and-search
+	height 60px
+	position relative
+
+	.menu-main 
+		padding-right 0px
+		// background #22b5cd
+		
+		> a
+			color white
+			text-align center
+			height 100%
+			line-height 60px
+			background url("../images/sandwich-button.png") #22b5cd;
+			background-repeat no-repeat
+			background-position 10px center
+			display block
+			text-decoration none
+			padding-left 40px
+			text-align left
+			
+		> a:hover
+			background url("../images/sandwich-button.png") black no-repeat 10px center;
+			
+	> .collapse, .collapse.in, .collapsing
+		position: absolute;
+		background: white; 
+		width: 300px
+		z-index 100
+		top 60px
+		
+		> ul
+			margin 0px 
+			padding 0px
+			width 300px
+			list-style-type none
+			
+			li .submenu 
+				display none
+				position absolute
+				top 0px 
+				left 315px
+				width 100%
+				background white
+				padding 7px 0px 7px 0px
+				
+				ul 
+					list-style-type none
+
+			li a
+				background url("../images/arrow-to-bottom.png") black no-repeat 280px center;
+				color white
+				padding 5px 
+				text-decoration none
+				display block
+				padding 7px 20px 7px 20px
+		
+			li a:hover
+				background url("../images/arrow-to-bottom.png") #22b5cd no-repeat 280px center;;
+				
+			li a:hover + .submenu,  li a + .submenu:hover
+				display block
+
+	> .search-field
+		border 3px solid #22b5cd;
+		height 100%
+		padding 0px
+		
+		input
+			display block
+			height 54px
+			outline none
+			border none
+			padding 0px 10px
+			line-height 54px
+			width 100%
+			
+.row.novinki
+	
+	h2	
+		color: #2e2e2e;
+		font-size: 26px;
+		line-height: 24px;
+	
+	.one-product:hover
+		border 3px solid #00b8d2
+	
+	.one-product .additional_block
+		display none
+		
+		>.icons img
+			padding 5px 
+			border 1px solid #00b8d2
+			
+	.one-product:hover .additional_block
+		display block
+
+	.one-product
+		position relative
+		border 3px solid #f4f4f4
+					
+		.image
+			height 300px
+			line-height 300px
+			background white
+			text-align center
+			
+			> .feature-label
+				position absolute
+				top 10px
+				right 10px
+				width 50px
+				height 50px
+				border-radius 50%
+				font-size: 14px;
+				text-align center
+				line-height 50px
+				color white
+				
+			> .feature-label.hit
+				background-color: #f54d19;
+				
+			> .feature-label.new
+				background-color: #93cd22;
+			
+		.description 
+			padding 23px 0px 50px 0px
+			text-align center
+			background-color: #f8f8f8;
+			
+			a 
+				display block
+				margin 0px auto
+				text-align center
+				
+			> .price 
+				color: #2e2e2e;
+				font-size: 18px;
+				font-family "OpenSansBold"
+				margin-bottom 20px
+				
+			> .wasprice
+				color: #e4003a;
+				font-size: 12px;
+				text-decoration: line-through;
+				vertical-align top
+
+.container-fluid.brands
+	padding 30px 45px
+	
+	.row
+		border 1px solid #d2d2d2
+		
+		.brand-list
+			padding 58px 108px
+			text-align center
+			
+			h3 
+				display inline-block
+				margin -10px auto 0px auto
+
+			img 
+				margin 0px 80px 80px 0px
+						
+.container-fluid.footer
+	background-color: #2e2e2e;
+	color white
+	padding 50px 0px 0px 0px
+
+.row.you-seen > .col-lg-4:nth-of-type(3n)
+	margin-right 0px
+	
+.row.you-seen > .col-lg-4
+	border 1px solid #d2d2d2;
+	padding 30px 45px
+	margin-right 20px
+	width 376px
+		
+	> img
+		margin-right 50px
+	
+	> a
+		color: #22b5cd;
+		font-size: 13px;
+		display inline-block
+		vertical-align middle

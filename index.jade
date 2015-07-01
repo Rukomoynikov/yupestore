@@ -1,0 +1,215 @@
+doctype html
+html
+  head
+    title YupeStore
+    link(rel='stylesheet', href='assets/fonts/osans/osans.css')
+    link(rel='stylesheet', href='assets/css/bootstrap.min.css')
+    link(rel='stylesheet', href='assets/css/main.css')
+    script(type='text/javascript', src='assets/js/jquery.min.js')
+    script(type='text/javascript', src='assets/js/bootstrap.min.js')
+    script(type='text/javascript', src='assets/js/app.js')
+  body
+  include layouts/header-menu.jade
+  .container.main
+    // логотип, корзина, номер телефона и пр.
+    .row.header
+      .col-lg-6.col-md-6.center-vert-text
+        img(src='assets/images/logo.png')
+        span Магазин бытовой техники
+      .col-md-3.phone 8 (800) 000-00-00
+        br
+        span Заказать звонок
+      .col-md-3.cart-header-block
+        img(src='assets/images/icon-cart.png', align='left')
+        span.badge.light-blue 42
+        //- span.caret
+        span.cart-header Моя корзина
+        br
+        span.summ Сумма: 
+          span.cartsumm 27 710 руб.
+    // Меню каталога, форма поиска
+    .row.menu-and-search
+      .col-lg-2.menu-main 
+        a(data-toggle="collapse" href="#mainmenu") Каталог товаров
+      .col-lg-10.search-field 
+        input(placeholder='Sony Xperia V (LT25i Black)', type='text')
+      .col-md-12.collapse(id='mainmenu', style='')
+        ul
+          li 
+            a(href='') Мелкая техника для кухни
+            .submenu
+              ul 
+                li Вытяжки
+                  ul 
+                    li Встраиваемые 
+                    li Купольные
+                li Встраиваемые духовые шкафы
+          li 
+            a(href='') Встраиваемая бытовая техника
+          li 
+            a(href='') Приготовление кофе
+          li 
+            a(href='') Акксесуары для бытовой техники
+          li 
+            a(href='') Кухонные принадлежности
+          li 
+            a(href='') Техника для дома
+          li 
+            a(href='') Климатическая техника
+          li 
+            a(href='') Кулеры, диспенсеры и 
+              br 
+              | фильтры для воды
+          li 
+            a(href='') Бытовая химия
+    .row
+      .col-md-12
+        .carousel.slide(data-ride="carousel", id='carousel-main-page')
+          ol.carousel-indicators
+            li(data-slide-to="0" class="active", data-target='#carousel-main-page') 
+            li(data-slide-to="1", data-target='#carousel-main-page') 
+          .carousel-inner(role='listbox')
+            .item.active
+              img(src='assets/images/banner.jpg')
+            .item
+              img(src='assets/images/banner.jpg')
+    .row.novinki
+      .col-md-12 
+        h3 Хиты
+      .col-md-3
+        .one-product
+          .image
+            .feature-label.hit ХИТ
+            img(src='assets/images/tovar1.png')
+          .description 
+            a(href='#') Смартфон Sony Xperia V (LT25i Black)
+            span.price 12 990 руб.
+            span.wasprice 15 990 руб.
+      .col-md-3
+        .one-product
+          .image
+            .feature-label.new NEW
+            img(src='assets/images/tovar2.png')
+          .description 
+            a(href='#') Смартфон Sony Xperia V (LT25i Black)
+            span.price 12 990 руб.
+            span.wasprice 15 990 руб.
+      .col-md-3
+        .one-product
+          .image
+            img(src='assets/images/tovar3.png')
+          .description 
+            a(href='#') Смартфон Sony Xperia V (LT25i Black)
+            span.price 12 990 руб.
+            span.wasprice 15 990 руб.
+      .col-md-3
+        .one-product
+          .image
+            img(src='assets/images/tovar4.png')
+          .description 
+            a(href='#') Смартфон Sony Xperia V (LT25i Black)
+            span.price 12 990 руб.
+            span.wasprice 15 990 руб.
+    .row.novinki
+      .col-md-12 
+        h3 Хиты
+      .col-md-3
+        .one-product
+          .image
+            img(src='assets/images/tovar1.png')
+          .description 
+            a(href='#') Смартфон Sony Xperia V (LT25i Black)
+            span.price 12 990 руб.
+            span.wasprice 15 990 руб.
+      .col-md-3
+        .one-product
+          .image
+            img(src='assets/images/tovar2.png')
+          .description 
+            a(href='#') Смартфон Sony Xperia V (LT25i Black)
+            span.price 12 990 руб.
+            span.wasprice 15 990 руб.
+      .col-md-3
+        .one-product
+          .image
+            img(src='assets/images/tovar3.png')
+          .description 
+            a(href='#') Смартфон Sony Xperia V (LT25i Black)
+            span.price 12 990 руб.
+            span.wasprice 15 990 руб.
+      .col-md-3
+        .one-product
+          .image
+            img(src='assets/images/tovar4.png')
+          .description 
+            a(href='#') Смартфон Sony Xperia V (LT25i Black)
+            span.price 12 990 руб.
+            span.wasprice 15 990 руб.
+          .additional_block
+            .rate 
+              span 4.5
+              span 7 отзывов
+              span Есть в наличии
+            .icons
+              img(src='assets/images/icon-heart.png')
+              img(src='assets/images/icon-compare.png')
+              span В корзину
+  .container-fluid.white-container
+    .container
+      .row
+        .col-lg-12
+          h3 Вы недавно смотрели
+      .row.you-seen
+        .col-lg-4
+          img(src='assets/images/youseen.jpg', align='left')
+          a(href='#') Samsung Galaxy A3
+          br
+          span.price 19 990 руб
+        .col-lg-4
+          img(src='assets/images/youseen.jpg', align='left')
+          a(href='#') Samsung Galaxy A3
+          br
+          span.price 19 990 руб
+        .col-lg-4
+          img(src='assets/images/youseen.jpg', align='left')
+          a(href='#') Samsung Galaxy A3
+          br
+          span.price 19 990 руб
+  .container-fluid.brands
+    .container
+      .row
+        .col-lg-12.brand-list
+          h3 Товары таких брендов
+          img(src='assets/images/apple-brand.png')
+          img(src='assets/images/philips-brand.png')
+          img(src='assets/images/braun-brand.png')
+          img(src='assets/images/lg-brand.png')
+          img(src='assets/images/samsung-brand.png')
+          img(src='assets/images/sharp-brand.png')
+          img(src='assets/images/panasonic-brand.png')
+          img(src='assets/images/toshiba-brand.png')
+  .container-fluid.footer
+    .container
+      .row
+        .col-md-2
+          p © YupeStore 2015
+            br
+            | Все права защищены.
+        .col-md-2
+          ul
+            li О компании
+            li Доставка
+            li Оплата
+            li Новости
+            li Бренды
+            li Контакты
+        .col-md-2
+          ul
+            li Телефония, МР3-плееры, GPS
+            li Домашнее видео
+            li Детские товары
+            li Активный отдых и туризм
+            li Музыкальные инструменты
+        .col-md-3
+          span.subtitle Контакты
+        .col-md-2

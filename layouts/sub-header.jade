@@ -1,0 +1,59 @@
+// логотип, корзина, номер телефона и пр.
+.row.header
+  .col-lg-7.col-md-6.center-vert-text
+    img(src='assets/images/logo.png')
+    span Магазин бытовой техники
+  .col-md-2.phone 8 (800) 000-00-00
+    br
+    span Заказать звонок
+  .col-md-3.cart-header-block
+    img(src='assets/images/icon-cart.png', align='left')
+    span.badge.light-blue 42
+    a(data-toggle="collapse" href="#small-cart")
+      span.caret
+    span.cart-header Моя корзина
+    br
+    span.summ Сумма: 
+      span.cartsumm 27 710 руб.
+    .cart-block.collapse#small-cart
+      .line
+        img(src='./assets/images/youseen.jpg', align='left')
+        a(href='') Samsung Galaxy A3
+      .line
+        img(src='./assets/images/youseen.jpg', align='left')
+        a(href='') Samsung Galaxy A3
+// Меню каталога, форма поиска
+.row.menu-and-search
+  .col-lg-2.col-md-3.col-xs-12.menu-main 
+    a(data-toggle="collapse" href="#mainmenu") Каталог товаров
+  .col-lg-10.col-md-9.col-xs-12.search-field 
+    input(placeholder='Sony Xperia V (LT25i Black)', type='text')
+  .col-md-12.collapse(id='mainmenu', style='')
+    ul
+      li 
+        a(href='') Мелкая техника для кухни
+        .submenu
+          ul 
+            li Вытяжки
+              ul 
+                li Встраиваемые 
+                li Купольные
+            li Встраиваемые духовые шкафы
+      li 
+        a(href='') Встраиваемая бытовая техника
+      li 
+        a(href='') Приготовление кофе
+      li 
+        a(href='') Акксесуары для бытовой техники
+      li 
+        a(href='') Кухонные принадлежности
+      li 
+        a(href='') Техника для дома
+      li 
+        a(href='') Климатическая техника
+      li 
+        a(href='') Кулеры, диспенсеры и 
+          br 
+          | фильтры для воды
+      li 
+        a(href='') Бытовая химия

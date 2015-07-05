@@ -1,12 +1,25 @@
 nav.navbar.navbar-default
 	.container
 		.navbar-header
-			button.navbar-toggle.collapsed(type='button', data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false")
+			div.formobile.visible-xs
+				a(href="#")
+					img(src='assets/images/icon-heart.png')
+					span.badge.light-blue 42
+					span.sr-only
+				a(href="#")
+					img(src='assets/images/icon-compare.png')
+					span.badge.light-blue 42
+					span.sr-only
+				a(href="#")
+					span.glyphicon.glyphicon-cart(aria-hidden="true", style='color: white')
+					span.badge.light-blue 42
+					span.sr-only
+			button.navbar-toggle.collapsed(type='button', data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false")
 				span.sr-only Toggle navigation
 				span.icon-bar
 				span.icon-bar
 				span.icon-bar
-		.collapse.navbar-collapse(id='bs-example-navbar-collapse-1')
+		.collapse.navbar-collapse(id='navbar-collapse')
 			ul.nav.navbar-nav.text-uppercase
 				li
 					a(href="#") О компании 

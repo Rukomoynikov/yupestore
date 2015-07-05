@@ -5,8 +5,16 @@ body
 .grey
 	color: #b8b8b8;
 
+.light-grey
+	color: #b0b0b0;
+
+// Используется в бейджах, активном пункте меню, фон для строки поиска
+light-blue-color = #22b5cd
+// Фон для шапки
+dark-black-color = #2e2e2e
+
 .light-blue
-	background-color: #22b5cd;
+	background-color: light-blue-color
 
 .text-uppercase
 	text-transform uppercase
@@ -23,21 +31,27 @@ body
 	padding 45px 0px
 
 .container.main
+	// padding-bottom 112px
+		
+.container.content
 	padding-bottom 112px
-
+	
 .navbar	
-	background #2e2e2e
+	background dark-black-color
 	border-radius none
+	height 49px
 		
 	.navbar-nav > li
 		font-size: 11px;
 		font-weight: 400
 		color white
+		line-height 49px
 		
 		> a, a:visited 
 			color white
 			position relative
 			padding-left 30px
+			vertical-align middle
 			
 			> .badge
 				margin-left 10px
@@ -46,7 +60,7 @@ body
 				vertical-align: top;
 				
 		> a:hover
-			color #22b5cd
+			color light-blue-color
 		
 		> a:after
 			content " | "
@@ -60,7 +74,7 @@ body
 			
 	.navbar-nav > li.active a 
 		background initial
-		color #22b5cd
+		color light-blue-color
 		
 .navbar-right
 	font-size 13px
@@ -83,7 +97,7 @@ body
 	display block
 	position absolute
 	content " "
-	border 1px solid #22b5cd
+	border 1px solid light-blue-color
 	padding 5px
 	line-height 30px
 	width: 100px;
@@ -92,8 +106,8 @@ body
 	margin-top: -3px;
 
 .header
-	margin-bottom 30px
-	
+	margin-bottom 40px
+		
 	> .center-vert-text
 		line-height 78px
 		color #b8b8b8
@@ -102,17 +116,17 @@ body
 			margin-right 10px
 		
 	> .phone
-		color: #2e2e2e;
+		color: dark-black-color
 		font-size: 18px;
 		font-family "OpenSansBold"
 		height 78px
 		padding-top 20px
 		
 		> span
-			color: #22b5cd;
+			color: light-blue-color;
 			font-size 13px
 			font-family "OpenSansRegular"
-			border-bottom 1px dashed #22b5cd
+			border-bottom 1px dashed light-blue-color
 			
 	> .cart-header-block
 		padding-top 20px
@@ -121,7 +135,7 @@ body
 			margin-right 20px
 			
 		> .cart-header
-			color: #2e2e2e;
+			color: dark-black-color
 			font-size: 16px;
 			font-family "OpenSansBold"
 			
@@ -135,6 +149,11 @@ body
 			
 			> span
 				color: #555;
+				
+		> .cart-block
+			position absolute
+			background white
+			z-index 2000
 
 .row.menu-and-search
 	height 60px
@@ -149,7 +168,7 @@ body
 			text-align center
 			height 100%
 			line-height 60px
-			background url("../images/sandwich-button.png") #22b5cd;
+			background url("../images/sandwich-button.png") light-blue-color;
 			background-repeat no-repeat
 			background-position 10px center
 			display block
@@ -163,7 +182,7 @@ body
 	> .collapse, .collapse.in, .collapsing
 		position: absolute;
 		background: white; 
-		width: 300px
+		max-width: 300px
 		z-index 100
 		top 60px
 		
@@ -177,65 +196,123 @@ body
 				display none
 				position absolute
 				top 0px 
-				left 315px
-				width 100%
+				left 300px
+				width 855px
 				background white
 				padding 7px 0px 7px 0px
+				height 100%
+				box-shadow 1px 1px 10px black
+				
 				
 				ul 
 					list-style-type none
 
 			li a
-				background url("../images/arrow-to-bottom.png") black no-repeat 280px center;
+				// background url("../images/arrow-to-bottom.png") black no-repeat 280px center;
+				background black
 				color white
 				padding 5px 
 				text-decoration none
 				display block
-				padding 7px 20px 7px 20px
+				// padding 7px 20px 7px 20px
 		
 			li a:hover
-				background url("../images/arrow-to-bottom.png") #22b5cd no-repeat 280px center;;
+				// background url("../images/arrow-to-bottom.png") #22b5cd no-repeat 280px center;;
 				
 			li a:hover + .submenu,  li a + .submenu:hover
 				display block
 
 	> .search-field
-		border 3px solid #22b5cd;
 		height 100%
-		padding 0px
+		padding-left 0px
 		
 		input
+			border 3px solid light-blue-color
 			display block
 			height 54px
 			outline none
-			border none
 			padding 0px 10px
 			line-height 54px
 			width 100%
-			
+			height 100%
+		
+// Основная таблица продуктов	
 .row.novinki
 	
 	h2	
-		color: #2e2e2e;
+		color: dark-black-color
 		font-size: 26px;
 		line-height: 24px;
-	
-	.one-product:hover
-		border 3px solid #00b8d2
 	
 	.one-product .additional_block
 		display none
 		
-		>.icons img
-			padding 5px 
-			border 1px solid #00b8d2
-			
-	.one-product:hover .additional_block
-		display block
+		> .rate
+			padding 0px 10px
+			line-height 27px
+			height 27px
 
+			> .num 
+				background url("../images/rateback.png")
+				line-height 27px
+				display block
+				width 44px
+				padding-left 8px 
+				float left
+				margin-right 5px
+				
+			> .est
+				float right
+			
+		> .icons
+			padding 0px 10px
+			margin-bottom 10px
+			
+			> * 
+				margin-right 5px
+
+		>.icons img
+			padding 10px 
+			border 1px solid #cbcbcb
+			vertical-align top
+			
+		> .icons > .tocart
+			background url("../images/tocart.png") light-blue-color no-repeat 20px center
+			height 40px 
+			line-height 40px
+			color white
+			padding 10px 20px 10px 50px
+			width 130px
+			margin-right 0px
+	
 	.one-product
 		position relative
 		border 3px solid #f4f4f4
+		
+		&:hover
+			border 3px solid #00b8d2
+		
+		&:hover .additional_block
+			display block
+		
+		> .feature-label
+			position absolute
+			top 10px
+			right 10px
+			width 50px
+			height 50px
+			border-radius 50%
+			font-size: 14px;
+			text-align center
+			line-height 50px
+			color white
+			z-index 1000
+			
+		> .feature-label.hit
+			background-color: #f54d19;
+			
+		> .feature-label.new
+			background-color: #93cd22;
 					
 		.image
 			height 300px
@@ -243,39 +320,26 @@ body
 			background white
 			text-align center
 			
-			> .feature-label
-				position absolute
-				top 10px
-				right 10px
-				width 50px
-				height 50px
-				border-radius 50%
-				font-size: 14px;
-				text-align center
-				line-height 50px
-				color white
-				
-			> .feature-label.hit
-				background-color: #f54d19;
-				
-			> .feature-label.new
-				background-color: #93cd22;
-			
+			img
+				display inline
+				vertical-align middle
+							
 		.description 
-			padding 23px 0px 50px 0px
+			padding 23px 20px 50px 20px
 			text-align center
 			background-color: #f8f8f8;
 			
 			a 
 				display block
-				margin 0px auto
+				margin 0px auto 20px auto
 				text-align center
+				text-decoration underline
+				color light-blue-color
 				
 			> .price 
-				color: #2e2e2e;
+				color: dark-black-color
 				font-size: 18px;
 				font-family "OpenSansBold"
-				margin-bottom 20px
 				
 			> .wasprice
 				color: #e4003a;
@@ -290,35 +354,81 @@ body
 		border 1px solid #d2d2d2
 		
 		.brand-list
-			padding 58px 108px
+			padding 58px 108px 0px 108px
 			text-align center
 			
 			h3 
-				display inline-block
-				margin -10px auto 0px auto
-
+				position absolute
+				left 0px 
+				top -34px
+				text-align center
+				width 100%
+				
+				span 
+					background #f4f4f4
+					padding 0px 20px
 			img 
 				margin 0px 80px 80px 0px
 						
 .container-fluid.footer
-	background-color: #2e2e2e;
+	background-color: dark-black-color
 	color white
 	padding 50px 0px 0px 0px
-
-.row.you-seen > .col-lg-4:nth-of-type(3n)
-	margin-right 0px
 	
-.row.you-seen > .col-lg-4
-	border 1px solid #d2d2d2;
-	padding 30px 45px
-	margin-right 20px
-	width 376px
+	.contacts img
+		margin-right 10px
 		
-	> img
-		margin-right 50px
 	
-	> a
-		color: #22b5cd;
-		font-size: 13px;
-		display inline-block
-		vertical-align middle
+	.subtitle
+		font-family "OpenSansBold"
+		display block
+		font-size: 18px;
+		margin-bottom 40px
+		
+	ul li
+		margin-bottom 15px
+		
+		a 
+			color white
+			
+.row.you-seen 
+	
+	> .col-lg-4:nth-of-type(3n)
+		margin-right 0px
+	
+	> .col-lg-4
+		border 1px solid #d2d2d2;
+		padding 30px 45px
+		margin-right 20px
+		max-width 376px
+		
+		> img
+			margin-right 50px
+		
+		> a
+			color: light-blue-color
+			font-size: 13px;
+			display inline-block
+			vertical-align middle
+		
+@media screen and (max-width: 480px)
+
+	.formobile
+		display inline-block !important
+		float left
+		
+		a
+			padding 12px !important
+			display inline-block
+			
+			img
+				margin-right 5px
+		
+	#navbar-collapse
+		position: relative
+		z-index 1000
+		background black
+		border none
+		
+	.row.you-seen > .col-lg-4
+		margin-bottom 20px

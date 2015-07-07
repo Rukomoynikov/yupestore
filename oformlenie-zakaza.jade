@@ -1,1 +1,84 @@
 extends index
+
+block slider
+
+block content
+	.container.content.order-confirmation
+		.row.breadcrumbs
+			.col-lg-12
+				a(href='#') Главная
+				a(href='#') Корзина
+		.row
+			.col-lg-12
+				h2.page-header Оформление заказа
+		.row.section
+			.col-lg-12.order-count.section-header
+				h2 Мой заказ: 2 товара 
+					a(href='#')  (вернуться в корзину)
+				div.table.33
+					div.table-row
+						div.table-cell.title Смартфон Sony Xperia V (LT25i Black)
+						div.table-cell 1 (плюс)
+						div.table-cell.price 13 885 руб.
+					div.table-row
+						div.table-cell.title Смартфон Samsung Galaxy Alpha (SM-G850F 32Gb)
+						div.table-cell 1 (плюс)
+						div.table-cell.price 13 885 руб.
+		.row.section
+			.col-lg-12.section-header
+				h2 Покупатель :
+			.col-lg-12
+				.table
+					.table-row
+						.table-cell Ваше имя: *
+						.table-cell
+							| Введите ваше Ф.И.О.
+							br
+							input(type='text', placeholder='Пример: Иванов Иван Иванович')
+						.table-cell.form-messages - При заполнении допущена ошибка Email не может быть без символа @
+					.table-row
+						.table-cell Ваш E-Mail: *
+						.table-cell
+							| Куда выслать информацию по заказу
+							br
+							input(type='text', placeholder='Пример: ivanov@mail.ru')
+						.table-cell.form-messages - При заполнении допущена ошибка Email не может быть без символа @
+					.table-row
+						.table-cell Ваш телефон: *
+						.table-cell
+							| Для согласования деталей заказа
+							br
+							input(type='text', placeholder='Пример: +7 (123) 456-78-90')
+						.table-cell.form-messages - При заполнении допущена ошибка Email не может быть без символа @
+		.row.section.dostavka
+			.col-lg-12.section-header
+				h2 Доставка 
+					select
+						option Москва
+			.col-lg-12
+				.one-line
+					input(type='radio', name='group1', id='dostavka_ver_1')
+					label(for='dostavka_ver_1') Доставка по Москве - 300 руб.
+						br
+						span Осуществляется на следующий день после подтверждения заказа.
+				.one-line
+					input(type='radio', name='group1', id='dostavka_ver_2')
+					label(for='dostavka_ver_2') Доставка по Москве - 300 руб.
+						br
+						span Осуществляется на следующий день после подтверждения заказа.
+		.row.section.oplata
+			.col-lg-12.section-header
+				h2 Способ оплаты 
+			.col-lg-12
+				.one-line
+					input(type='radio', name='group1', id='dostavka_ver_1')
+					label(for='dostavka_ver_1') Наличный расчёт при получении
+				.one-line
+					input(type='radio', name='group1', id='dostavka_ver_2')
+					label(for='dostavka_ver_2') Яндекс.Деньги
+			.col-lg-12.yellow-container
+				span Купон на скидку
+				input(type='text') 
+				button(type="submit" class="btn btn-default") Submit 
+		.row.
+	include layouts/footer

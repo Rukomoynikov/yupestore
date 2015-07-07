@@ -1,26 +1,26 @@
 nav.navbar.navbar-default
 	.container
 		.navbar-header
-			div.formobile.visible-xs
-				a(href="#")
-					img(src='assets/images/icon-heart.png')
-					span.badge.light-blue 42
-					span.sr-only
-				a(href="#")
-					img(src='assets/images/icon-compare.png')
-					span.badge.light-blue 42
-					span.sr-only
-				a(href="#")
-					span.glyphicon.glyphicon-cart(aria-hidden="true", style='color: white')
-					span.badge.light-blue 42
-					span.sr-only
+			//- div.formobile.visible-xs
+			//- 	a(href="#")
+			//- 		img(src='assets/images/icon-heart.png')
+			//- 		span.badge.light-blue 42
+			//- 		span.sr-only
+			//- 	a(href="#")
+			//- 		img(src='assets/images/icon-compare.png')
+			//- 		span.badge.light-blue 42
+			//- 		span.sr-only
+			//- 	//- a(href="#")
+			//- 	//- 	span.glyphicon.glyphicon-cart(aria-hidden="true", style='color: white')
+			//- 	//- 	span.badge.light-blue 42
+			//- 	//- 	span.sr-only
 			button.navbar-toggle.collapsed(type='button', data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false")
 				span.sr-only Toggle navigation
 				span.icon-bar
 				span.icon-bar
 				span.icon-bar
 		.collapse.navbar-collapse(id='navbar-collapse')
-			ul.nav.navbar-nav.text-uppercase
+			ul.nav.navbar-nav.left-menu
 				li
 					a(href="#") О компании 
 						span.sr-only
@@ -51,7 +51,10 @@ nav.navbar.navbar-default
 						span.sr-only
 						span.badge.light-blue 2
 				li.login
-					a(href="#", role='button') 
+					//- a(href="#", role='button') 
+					//- 	img(src='assets/images/icon-login.png')
+					//- 	| Вход
+					//- 	span.sr-only
+					a.button
 						img(src='assets/images/icon-login.png')
 						| Вход
-						span.sr-only

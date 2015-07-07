@@ -20,7 +20,7 @@ html
       .row.novinki
         .col-md-12: h3 Новинки
         mixin one-product(price, name)
-          .col-md-3.col-lg-3
+          .col-md-3.col-lg-3.col-sm-6.col-xs-6
             .one-product
               //- if new
               //-   .feature-label.new NEW
@@ -43,8 +43,8 @@ html
                   span.glyphicon.glyphicon-chevron-right(aria-hidden="true")
                   span.sr-only Next
               .description 
-                a(href='#') Смартфон Sony Xperia V (LT25i Black)
-                span.price 12 799 руб
+                a(href='#')= name
+                span.price= price
                 span.wasprice 15 990 руб.
               include layouts/additional_block
         +one-product('12 990', 'Смартфон Sony Xperia V (LT25i Black)')
@@ -74,5 +74,4 @@ html
           +you-seen-one
           +you-seen-one
     include layouts/brand-list
-    block foooter
-      include layouts/footer
+    include layouts/footer

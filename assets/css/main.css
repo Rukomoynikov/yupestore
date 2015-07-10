@@ -423,6 +423,50 @@ body {
   color: #fff;
   font-size: 18px;
 }
+.container.content.cart .product-list {
+  margin: 0px;
+}
+.container.content.cart .row.section.quick-order-form > div {
+  margin-bottom: 20px;
+}
+.container.content.cart .row.section.quick-order-form > div input {
+  border: 2px solid #d2d2d2;
+  height: 58px;
+  line-height: 58px;
+  font-size: 14px;
+  border-radius: 0px;
+}
+.container.content.cart .row.section.quick-order-form > div button {
+  color: #2e2e2e;
+  font-size: 18px;
+  border: 2px solid #22b5cd;
+  outline: none;
+  display: block;
+  text-align: center;
+  border-radius: 0px;
+  width: 100%;
+  height: 58px;
+  vertical-align: middle;
+}
+.container.content.cart .row.section.quick-order-form > div button:hover {
+  background: #22b5cd;
+  transition: all 0.33s;
+  color: #fff;
+}
+.container.content.cart .row.section.quick-order-form > div p.summ-itog {
+  color: #2e2e2e;
+  font-size: 18px;
+  text-align: right;
+}
+.container.content.cart .row.section.quick-order-form > div p.summ-itog span {
+  color: #22b5cd;
+}
+.container.content.cart .row.section.quick-order-form > div button.order-submit {
+  background-color: #22b5cd;
+  display: inline-block;
+  color: #fff;
+  width: 266px;
+}
 /* 
 ------ Оформление блоков которые присутствуют на всех страницах.
 ------ Блоки: "Навигационная панель", "Логотип и корзина", "Поиск и основное меню каталога", "Список брендов", 

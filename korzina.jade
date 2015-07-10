@@ -34,20 +34,22 @@ block content
 				span Купон на скидку:
 				input(type='text') 
 				button(type="submit" class="btn btn-default") Проверить купон
-		.row.section
+		.row.section.quick-order-form
 			.col-lg-12
 				h3 Быстрый заказ:
-				input(placeholder='Ваше имя')
-				input(placeholder='Ваш e-mail')
-				input(placeholder='Ваш телефон')
-				buttonОформить быстрый заказ')
-		.row.section.itog
 			.col-lg-12.col-with-border
-				p.summ-itog Товаров на сумму: 25 980 рублей
-				p.dostavka-itog Доставка: 300 рублей
+				.row
+					.col-lg-4
+						input.form-control(placeholder='Ваше имя')
+					.col-lg-4
+						input.form-control(placeholder='Ваш e-mail')
+					.col-lg-4
+						input.form-control(placeholder='Ваш телефон')
+					.col-lg-4.col-lg-offset-4
+						button.quick-order(type="button" class="btn btn-default navbar-btn" style='float: right')  Оформить быстрый заказ
 			.col-lg-12
-				p.all-itog Итого: 
-					span 26 280 
-					| рублей 
+				p.summ-itog Всего выбрано: 1 товар на сумму 
+					span 25 980 
+					| рублей
 				button.order-submit(type="button" class="btn btn-default navbar-btn" style='float: right')  Оформить заказ
 	include layouts/footer

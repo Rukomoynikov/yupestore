@@ -4,17 +4,14 @@ block slider
 
 block content
 	.container.content.order-confirmation
-		.row.breadcrumbs
-			.col-lg-12
-				a(href='#') Главная
-				a(href='#') Корзина
+		include layouts/breadcrumbs
 		.row
 			.col-lg-12
 				h2.page-header Спасибо за ваш заказ!
 				h3.page-sub-header Он будет обработан в ближайшее время.
-		.row.section
-			.col-lg-12.order-count.section-header-dark
-				h2 Номер вашего заказа: 23546
+		.row.section.vash-zakaz
+			.col-lg-12.order-count.section-header-dark Номер вашего заказа: 
+				span 23546
 			.col-lg-12
 				ul.list-unstyled
 					li Ожидаемая дата доставки: 
@@ -35,21 +32,35 @@ block content
 						span Доставка по Москве
 					li Способ оплаты: 
 						span Наличный расчет при получении
-		.row.section
+		.row
 			.col-lg-12
-				h3.page-sub-header Он будет обработан в ближайшее время.
-		.row.section
+				h3.page-header Данные вашего заказа
+		.row.section.product-list
 			.col-lg-12.section-header-dark
-				h2 Данные вашего заказа
-			.col-lg-12
 				.row
-					.col-lg-3
-					.col-lg-3 Мобильный телефон Sony Xperia V (LT25i Black)
-					.col-lg-3 12 990
-					.col-lg-3 2
-					.col-lg-3 25 980
-		.row.section
-			p Товаров на сумму: 25 980 рублей
-			p Доставка: 300 рублей
-			p Итого: 26 280 рублей 
+					.col-lg-2.col-md-2.col-sm-2.col-xs-12
+					.col-lg-4.col-md-4.col-sm-4.col-xs-12 Наименование
+					.col-lg-2.col-md-2.col-sm-2.col-xs-12 Цена (руб)
+					.col-lg-2.col-md-2.col-sm-2.col-xs-12 Количество
+					.col-lg-2.col-md-2.col-sm-2.col-xs-12 Сумма, руб.
+			.col-lg-12
+				mixin product-line
+					.row.product-line
+						.col-lg-2.col-md-2.col-sm-2.col-xs-12
+							img(src='./assets/images/oformlenie-zakaza-spasibo.jpg')
+						.col-lg-4.col-md-4.col-sm-4.col-xs-12
+							div Мобильный телефон 
+								a(href='#') Sony Xperia V (LT25i Black)
+						.col-lg-2.col-md-2.col-sm-2.col-xs-12 12 990
+						.col-lg-2.col-md-2.col-sm-2.col-xs-12 2
+						.col-lg-2.col-md-2.col-sm-2.col-xs-12 25 980
+				+product-line
+				+product-line
+			.col-lg-12.itogi
+				.row.section
+					p Товаров на сумму: 25 980 рублей
+					p Доставка: 300 рублей
+					p.all-itog Итого: 
+						span 26 280 
+						| рублей 
 	include layouts/footer

@@ -1,1 +1,53 @@
 extends index
+
+block slider
+
+block content
+	.container.content.cart
+		include layouts/breadcrumbs
+		.row
+			.col-lg-12
+				h2.page-header Корзина
+		.row.section.product-list
+			.col-lg-12.section-header-dark
+				.row
+					.col-lg-2.col-md-2.col-sm-2.col-xs-12
+					.col-lg-4.col-md-4.col-sm-4.col-xs-12 Наименование
+					.col-lg-2.col-md-2.col-sm-2.col-xs-12 Цена (руб)
+					.col-lg-2.col-md-2.col-sm-2.col-xs-12 Количество
+					.col-lg-2.col-md-2.col-sm-2.col-xs-12 Сумма, руб.
+			.col-lg-12
+				mixin product-line
+					.row.product-line
+						.col-lg-2.col-md-2.col-sm-2.col-xs-12
+							img(src='./assets/images/oformlenie-zakaza-spasibo.jpg')
+						.col-lg-4.col-md-4.col-sm-4.col-xs-12
+							div Мобильный телефон 
+								a(href='#') Sony Xperia V (LT25i Black)
+						.col-lg-2.col-md-2.col-sm-2.col-xs-12 12 990
+						.col-lg-2.col-md-2.col-sm-2.col-xs-12 2
+						.col-lg-2.col-md-2.col-sm-2.col-xs-12 25 980
+				+product-line
+				+product-line
+		.row.section.coupon
+			.col-lg-12.yellow-container
+				span Купон на скидку:
+				input(type='text') 
+				button(type="submit" class="btn btn-default") Проверить купон
+		.row.section
+			.col-lg-12
+				h3 Быстрый заказ:
+				input(placeholder='Ваше имя')
+				input(placeholder='Ваш e-mail')
+				input(placeholder='Ваш телефон')
+				buttonОформить быстрый заказ')
+		.row.section.itog
+			.col-lg-12.col-with-border
+				p.summ-itog Товаров на сумму: 25 980 рублей
+				p.dostavka-itog Доставка: 300 рублей
+			.col-lg-12
+				p.all-itog Итого: 
+					span 26 280 
+					| рублей 
+				button.order-submit(type="button" class="btn btn-default navbar-btn" style='float: right')  Оформить заказ
+	include layouts/footer

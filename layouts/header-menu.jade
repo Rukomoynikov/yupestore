@@ -1,5 +1,5 @@
 nav.navbar.navbar-default
-	.container
+	.container-fluid
 		.navbar-header
 			//- div.formobile.visible-xs
 			//- 	a(href="#")
@@ -50,11 +50,12 @@ nav.navbar.navbar-default
 						| Сравнение товаров
 						span.sr-only
 						span.badge.light-blue 2
-				li.login
-					//- a(href="#", role='button') 
-					//- 	img(src='assets/images/icon-login.png')
-					//- 	| Вход
-					//- 	span.sr-only
-					a.button
-						img(src='assets/images/icon-login.png')
-						| Вход
+				//- li.login
+				//- 	//- a(href="#", role='button') 
+				//- 	//- 	img(src='assets/images/icon-login.png')
+				//- 	//- 	| Вход
+				//- 	//- 	span.sr-only
+				//- 	a.button
+				//- 		img(src='assets/images/icon-login.png')
+				//- 		| Вход
+				button.login(type="button" class="btn btn-default navbar-btn" style='float: right') Войти

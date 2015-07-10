@@ -13,7 +13,7 @@
 
 
 
-@font-face {
+/*@font-face {
     font-family: 'OpenSansBoldItalic';
     src: url('opensans-bolditalic.eot');
     src: url('opensans-bolditalic.eot?#iefix') format('embedded-opentype'),
@@ -21,11 +21,11 @@
          url('opensans-bolditalic.ttf') format('truetype');
     font-weight: bold;
 }
+*/
 
 
 
-
-@font-face {
+/*@font-face {
     font-family: 'OpenSansExtraboldRegular';
     src: url('opensans-extrabold.eot');
     src: url('opensans-extrabold.eot?#iefix') format('embedded-opentype'),
@@ -35,11 +35,11 @@
     font-style: normal;
 
 }
+*/
 
 
 
-
-@font-face {
+/*@font-face {
     font-family: 'OpenSansExtraboldItalic';
     src: url('opensans-extrabolditalic.eot');
     src: url('opensans-extrabolditalic.eot?#iefix') format('embedded-opentype'),
@@ -58,7 +58,7 @@
          url('opensans-italic.woff') format('woff'),
          url('opensans-italic.ttf') format('truetype');
     font-weight: normal;
-}
+}*/
 
 
 
@@ -74,10 +74,7 @@
 
 }
 
-
-
-
-@font-face {
+/*@font-face {
     font-family: 'OpenSansLightItalic';
     src: url('opensans-lightitalic.eot');
     src: url('opensans-lightitalic.eot?#iefix') format('embedded-opentype'),
@@ -85,7 +82,7 @@
          url('opensans-lightitalic.ttf') format('truetype');
     font-weight: normal;
 }
-
+*/
 
 
 
@@ -103,7 +100,7 @@
 
 
 
-@font-face {
+/*@font-face {
     font-family: 'OpenSansSemiboldRegular';
     src: url('opensans-semibold.eot');
     src: url('opensans-semibold.eot?#iefix') format('embedded-opentype'),
@@ -136,4 +133,4 @@
     font-weight: normal;
     font-style: normal;
 
-}
+}*/

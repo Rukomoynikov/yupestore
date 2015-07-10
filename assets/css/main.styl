@@ -28,6 +28,8 @@ body
 .col-with-border
 	border-bottom 1px solid #f4f4f4
 
+.without-bottom-margin
+	margin 0px
 // Используется в бейджах, активном пункте меню, фон для строки поиска
 light-blue-color = #22b5cd
 // Фон для шапки
@@ -175,6 +177,7 @@ light-font = "OpenSansLightRegular"
 				text-align center
 				text-decoration underline
 				color light-blue-color
+				font-family light-font				 
 				
 			> .price 
 				color: dark-black-color
@@ -187,7 +190,8 @@ light-font = "OpenSansLightRegular"
 				font-size: 12px;
 				text-decoration: line-through;
 				vertical-align top
-			
+				font-family light-font
+
 .row.section 
 	background white
 	padding 15px

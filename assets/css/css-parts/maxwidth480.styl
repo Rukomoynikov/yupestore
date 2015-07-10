@@ -1,5 +1,22 @@
 // Основная разметка для мобильных телефонов и устройств с разрешением до 480 px. В рамках сетки Bootstrap - col-xs
 
+#navbar-collapse
+	position: relative
+	z-index 1000
+	background dark-black-color
+	border none
+	height 49px
+
+@media screen and (max-width: 768px)
+	/*! 
+		----- Начало разметки для страницы "ОФОРМЛЕНИЕ ЗАКАЗА - СПАСИБО"
+	*/
+		
+	.row.section.product-list
+		padding 0px
+
+
+		
 @media screen and (max-width: 480px)
 
 	.formobile
@@ -13,12 +30,6 @@
 			img
 				margin-right 5px
 		
-	#navbar-collapse
-		position: relative
-		z-index 1000
-		background black
-		border none
-
 	.row.header > .logo
 		text-align center
 		

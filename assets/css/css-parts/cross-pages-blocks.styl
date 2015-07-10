@@ -1,0 +1,380 @@
+/*! 
+------ Оформление блоков которые присутствуют на всех страницах.
+------ Блоки: "Навигационная панель", "Логотип и корзина", "Поиск и основное меню каталога", "Список брендов", 
+"Подвал", "Вы просмотрели товары", "Хлебные крошки"
+*/
+
+
+/*! 
+	Навигационная панель в шапке.
+*/
+
+.navbar	
+	background dark-black-color
+	border-radius 0px
+	height 49px
+	text-transform uppercase
+		
+	.navbar-nav > li
+		font-size: 11px;
+		font-weight: 400
+		color white
+		line-height 49px
+		
+		// > a:first-child:not(.navbar-right)
+		// 	padding-left 0px
+		
+		> a, a:visited 
+			color white
+			position relative
+			padding-left 30px
+			vertical-align middle
+			
+			> .badge
+				margin-left 10px
+				padding: 6px 10px;
+				display: inline-block;
+				vertical-align: top;
+				
+		> a:hover
+			color light-blue-color
+		
+		> a:after
+			content " | "
+			position: absolute;
+			top: 14px;
+			right: -7px;
+			color: #4f4f4f;
+			
+	.navbar-nav > li:last-child > a:after
+		display none
+			
+	.navbar-nav > li.active a 
+		background initial
+		color light-blue-color
+		
+/*! 
+	Завершение блока с оформлением для навигационной панели.
+*/
+
+/*!
+------ Блок вложенный в navbar, содержит элементы - вход, сравнение товаров, товары в избранном.
+*/
+
+.navbar-right
+	font-size 13px
+	text-transform initial
+	margin-right 0px
+	
+	a:after
+		content ""
+		display none
+
+	
+	.favicon a
+		background url("../images/icon-heart.png")
+		background-position left center
+		background-repeat no-repeat
+		
+	.compare a
+		background url("../images/icon-compare.png")
+		background-position left center
+		background-repeat no-repeat
+		
+	.login 
+				
+		a
+			width: 97px;
+			height: 35px;
+			border: 1px solid light-blue-color
+			display inline-block
+			vertical-align middle
+			padding 0px
+			line-height 32px
+			padding-left 20px !important
+			
+			&hover
+				background light-blue-color
+
+.navbar-right .favicon img, .navbar-right .compare img, .navbar-right .login img
+	margin-right 10px
+	
+// Завершение блока с оформлением для "панели управления"
+
+// Оформление для блока в шапке содержит логотип, слоган, телефон и корзину товаров.
+.header
+	margin-bottom 40px
+		
+	> .logo
+		line-height 78px
+		color #b8b8b8
+		
+		> img
+			margin-right 30px
+			
+	.phone-and-cart
+		text-align right
+		
+		> .phone
+			display inline-block
+			color: dark-black-color
+			font-size: 18px;
+			font-family bold-font
+			height 78px
+			text-align center
+			margin-right 40px
+			line-height 20px
+			padding-top 25px
+					
+			> a
+				color: light-blue-color;
+				font-size 13px
+				font-family normal-font
+				border-bottom 1px dashed light-blue-color
+				text-decoration none
+				cursor pointer
+				outline none
+				
+				&hover
+					border-bottom 1px solid light-blue-color
+				
+		> .cart-header-block
+			display inline-block
+			position relative
+			padding-top 19px
+			text-align left
+				
+			> img 
+				margin-right 20px
+				margin-top 6px
+				
+			> .cart-header
+				color: dark-black-color
+				font-size: 16px;
+				font-family bold-font
+				
+			> .badge
+				position absolute
+				left 30px
+				top 20px
+				
+			> .summ
+				color: #959595;
+				
+				> span
+					color: #555;
+					
+			> a > img
+				margin-left 10px
+					
+			> .cart-block
+				position absolute
+				background white
+				z-index 2000
+				padding 20px
+				box-shadow 1px 1px 4px light-grey-color
+				width 300px
+				right 0px
+				top 52px
+				
+				
+				> .line
+					display inline-block
+					border-bottom 1px solid grey
+					padding 10px 0px
+					
+					> img
+						margin-right 20px
+					
+				> .line:last-child
+					border none
+					
+/*! 
+	Завершение оформления для блока в шапке содержит логотип, слоган, телефон и корзину товаров 
+*/
+
+/*! 
+	Оформление для блока со строкой поиска и основным меню
+*/
+.row.menu-and-search
+	height 60px
+	position relative
+
+	.menu-main 
+		padding-right 0px
+		// background #22b5cd
+		
+		> a
+			color white
+			text-align center
+			height 100%
+			line-height 60px
+			background url("../images/sandwich-button.png") light-blue-color;
+			background-repeat no-repeat
+			background-position 10px center
+			display block
+			text-decoration none
+			padding-left 40px
+			text-align left
+			
+		> a:hover
+			background url("../images/sandwich-button.png") black no-repeat 10px center;
+			
+	> .collapse, .collapse.in, .collapsing
+		position: absolute;
+		background: white; 
+		max-width: 300px
+		z-index 100
+		top 60px
+		padding-left: 0px;
+		margin-left: 15px;
+		
+		> ul
+			margin 0px 
+			padding 0px
+			width 300px
+			list-style-type none
+			
+			li .submenu 
+				display none
+				position absolute
+				top 0px 
+				left 300px
+				width 838px
+				background white
+				padding 7px 0px 7px 0px
+				height 100%
+				box-shadow 1px 1px 10px black
+				font-family normal-font
+				
+				
+				> ul 
+					list-style-type none
+					
+					> li
+						font-family bold-font
+						margin-bottom 10px
+						
+						> ul
+							font-family normal-font
+							list-style-type none
+				
+			li a
+				background url("../images/arrow-to-bottom.png") black no-repeat 280px center;
+				background black
+				color white
+				padding 5px 
+				text-decoration none
+				display block
+				padding 7px 20px 7px 20px
+		
+			li a:hover
+				background url("../images/arrow-to-bottom.png") #22b5cd no-repeat 280px center;;
+				
+			li a:hover + .submenu,  li a + .submenu:hover
+				display block
+
+	> .search-field
+		height 100%
+		padding-left 0px
+		
+		input
+			border 3px solid light-blue-color
+			display block
+			height 54px
+			outline none
+			padding 0px 10px 0px 40px
+			line-height 54px
+			width 100%
+			height 100%
+			background url("../images/icon-search.png") no-repeat 10px center
+/*! 
+	Завершение оформления для блока со строкой поиска и основным меню
+*/
+
+/*! 
+	Список брендов партнёров
+*/
+.container-fluid.brands
+	padding 30px 45px
+	
+	.row
+		border 1px solid #d2d2d2
+		
+		.brand-list
+			padding 58px 108px 0px 108px
+			text-align center
+			
+			h3 
+				position absolute
+				left 0px 
+				top -34px
+				text-align center
+				width 100%
+				
+				span 
+					background #f4f4f4
+					padding 0px 20px
+			img 
+				margin 0px 80px 80px 0px
+/*! 
+	Список брендов партнёров
+*/
+
+/*! 
+	Подвал со списком основых пунктов меню и контактами
+*/						
+.container-fluid.footer
+	background-color: dark-black-color
+	color white
+	padding 50px 0px 0px 0px
+	
+	.contacts img
+		margin-right 10px
+		
+	
+	.subtitle
+		font-family bold-font
+		display block
+		font-size: 18px;
+		margin-bottom 40px
+		
+	ul li
+		margin-bottom 15px
+		
+		a 
+			color white
+			
+.row.you-seen 
+	
+	> .col-lg-4:nth-of-type(3n)
+		margin-right 0px
+	
+	> .col-lg-4
+		border 1px solid #d2d2d2;
+		padding 30px 45px
+		margin-right 20px
+		max-width 376px
+		
+		> img
+			margin-right 50px
+		
+		> a
+			color: light-blue-color
+			font-size: 13px;
+			display inline-block
+			vertical-align middle
+
+			
+.row.breadcrumbs
+	margin 10px 0px 10px 0px
+	
+	div
+		padding-left 0px
+	
+		a
+			color light-grey-color
+			padding-right 20px
+			
+			&hover
+				text-decoration underline

@@ -1,0 +1,15 @@
+.container-fluid.white-container
+  .container
+    .row
+      .col-lg-12
+        h3 Вы недавно смотрели
+    .row.you-seen
+      mixin you-seen-one
+        .col-lg-4.col-xs-12.col-sm-4
+          img(src='assets/images/youseen.jpg', align='left')
+          a(href='#') Samsung Galaxy A3
+          br
+          span.price 19 990 руб
+      +you-seen-one
+      +you-seen-one
+      +you-seen-one

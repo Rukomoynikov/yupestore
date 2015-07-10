@@ -6,6 +6,7 @@ html
     link(rel='stylesheet', href='assets/fonts/osans/osans.css')
     link(rel='stylesheet', href='assets/css/bootstrap.min.css')
     link(rel='stylesheet', href='assets/css/main.css')
+    link(rel='stylesheet', href='assets/images/sprite/sprite.css')
     script(type='text/javascript', src='assets/js/jquery.min.js')
     script(type='text/javascript', src='assets/js/bootstrap.min.js')
     script(type='text/javascript', src='assets/js/app.js')
@@ -25,7 +26,7 @@ html
               //- if new
               //-   .feature-label.new NEW
               //- else 
-              .feature-label.hit ХИТ
+              .feature-label.new NEW
               .image.carousel.slide(data-ride="carousel", id='carousel-main-page-tovar-1')
                 .carousel-inner(role='listbox')
                   .item.active
@@ -45,7 +46,7 @@ html
               .description 
                 a(href='#')= name
                 span.price= price
-                span.wasprice 15 990 руб.
+                span.wasprice 15 990 руб
               include layouts/additional_block
         +one-product('12 990', 'Смартфон Sony Xperia V (LT25i Black)')
         +one-product('12 990', 'Смартфон Samsung Galaxy Alpha (SM-G850F 32Gb)')
@@ -58,20 +59,6 @@ html
         +one-product('127 990', 'Смартфон Sony Xperia V (LT25i Black)')
         +one-product('127 990', 'Смартфон Sony Xperia V (LT25i Black)')
         +one-product('127 990', 'Смартфон Sony Xperia V (LT25i Black)')
-    .container-fluid.white-container
-      .container
-        .row
-          .col-lg-12
-            h3 Вы недавно смотрели
-        .row.you-seen
-          mixin you-seen-one
-            .col-lg-4.col-xs-12
-              img(src='assets/images/youseen.jpg', align='left')
-              a(href='#') Samsung Galaxy A3
-              br
-              span.price 19 990 руб
-          +you-seen-one
-          +you-seen-one
-          +you-seen-one
+    include layouts/you-seen
     include layouts/brand-list
     include layouts/footer

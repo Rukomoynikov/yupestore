@@ -1,0 +1,169 @@
+extends index
+
+block slider
+
+block content
+	.container.content
+		include layouts/breadcrumbs
+		.row.section.kartochka-tovara
+			.col-lg-6
+				#main-image
+					img(src='./assets/images/kartochka-tovara1.jpg')
+				.image-list
+					div
+						img(src='./assets/images/kartochka-tovara2.jpg')
+					div.active
+						img(src='./assets/images/kartochka-tovara3.jpg')
+					div
+						img(src='./assets/images/kartochka-tovara4.jpg')
+					div
+						img(src='./assets/images/kartochka-tovara5.jpg')
+					div
+						img(src='./assets/images/kartochka-tovara6.jpg')
+			.col-lg-6
+				.additional_block.clearfix
+					.rate 
+						span.num 4.5
+						span 7 отзывов
+					.icons
+						div
+							img(src='assets/images/icon-heart.png')
+						div
+							img(src='assets/images/icon-compare.png')
+				h2.page-header Sony Xperia Z3 (D6603)
+				p В очередной раз Sony Mobile выпустила отличный топовый аппарат самого высокого качества и класса исполнения. Флагман японцев может похвастать дорогим, броским и стильным дизайном и, конечно же, материалами изготовления премиального класса.
+				.row.variants
+					.col-lg-12 Варианты
+					.col-lg-6 Тип
+					.col-lg-6
+						select.form-control
+							option Normal
+							option Not normal
+					.col-lg-6 Ещё какой-то параметр
+					.col-lg-6
+						select.form-control
+							option Normal
+							option Not normal
+					.col-lg-12.line
+					.col-lg-12
+						.price Цена: 
+							span 34 400 руб.
+					.col-lg-12
+						p Кол-во
+						a.btn.button(href="#") Купить
+						p 2 * 34 400 = 68 800 руб.
+		.row.section.kartochka-tovara-features
+			.col-lg-4.col-md-4.col-sm-4.col-xs-12
+				img(src='./assets/images/icon-kartochka-tovara-dostavka.png', align='left')
+				div
+					span ДОСТАВКА
+					ul.list-unstyled
+						li Почта России
+						li Другие транспортные службы
+						li Курьером по Москве
+						li Самовывоз
+			.col-lg-4.col-md-4.col-sm-4.col-xs-12
+				img(src='./assets/images/icon-kartochka-tovara-garantii.png')
+				div
+					span ОПЛАТА
+					ul.list-unstyled
+						li Наличными при получении
+						li Безналичный перевод
+						li СберБанк
+						li WebMoney
+			.col-lg-4.col-md-4.col-sm-4.col-xs-12
+				img(src='./assets/images/icon-kartochka-tovara-oplata.png')
+				div
+					span Гарантии
+					ul.list-unstyled
+						li Здесь можно написать, какие-то гарантии и всё такое.
+		.row.section
+			.col-lg-12.page-header
+				h2 Вместе с этим товаром покупают
+				.one-block
+					img(src='./assets/images/pokupayut-vmeste1.jpg')
+					a.name(href='#') Sony Xperia Z3 (D6603)
+					span.price 34 400 руб.
+				.one-block
+					img(src='./assets/images/pokupayut-vmeste2.jpg')
+					a.name(href='#')  Transcend microSDHC Class 4 4GB + адаптер
+					span.price 245 руб.
+				p Ваша цена: 34 645 руб.
+		.row.section
+			.col-lg-12
+				ul.nav.nav-tabs(role="tablist")
+					li.active(role="presentation")
+						a(href="#harakteristiki" aria-controls="harakteristiki" role="tab" data-toggle="tab") Характеристики
+					li(role="presentation")
+						a(href="#description-tovar" aria-controls="description-tovar" role="tab" data-toggle="tab") Описание
+					li(role="presentation")
+						a(href="#description-tovar" aria-controls="description-tovar" role="tab" data-toggle="tab") Аксессуары
+					li(role="presentation")
+						a(href="#description-tovar" aria-controls="description-tovar" role="tab" data-toggle="tab") Отзывы (5)
+					li(role="presentation")
+						a(href="#description-tovar" aria-controls="description-tovar" role="tab" data-toggle="tab") Похожие товары
+		.row.section
+			.tab-content
+				.tab-pane.active.harakteristiki(role="tabpanel" id="harakteristiki")
+					p Общие характеристики
+					.row
+						.col-lg-8 Тип
+						.col-lg-4 Смартфон
+					.row
+						.col-lg-8 Операционная система Операционная система Операционная система Операционная система Операционная система Операционная система Операционная система Операционная система Операционная система Операционная система Операционная система Операционная система Операционная система Операционная система Операционная система Операционная система
+						.col-lg-4 Android 4.4
+					.row
+						.col-lg-8
+						.col-lg-4
+					.row
+						.col-lg-8
+						.col-lg-4
+					.row
+						.col-lg-8
+						.col-lg-4
+					.row
+						.col-lg-8
+						.col-lg-4
+					//- 	ul.list-unstyled
+					//- 		li Тип корпуса
+					//- 		li Конструкция
+					//- 		li Тип SIM-карты
+					//- 		li Количество SIM-карт
+					//- 		li Вес
+					//- 		li Размеры (ШxВxТ)
+					//- .col-lg-4
+					//- 	ul.list-unstyled
+					//- 		li смартфон 
+					//- 		li Android 4.4 
+					//- 		li классический 
+					//- 		li водозащита 
+					//- 		li nano SIM 
+					//- 		li 1 
+					//- 		li 152 г 
+					//- 		li 72x146x7.3 мм
+				.tab-pane(role="tabpanel" id="description-tovar")
+					p 2
+//- Экран
+
+//- Тип экрана
+//- Диагональ
+//- Число пикселей на дюйм (PPI)
+
+//- цветной IPS, 16.78 млн цветов, сенсорный 
+//- 5.2 дюйм. 
+//- 424 
+
+//- Мультимедийные возможности
+
+//- Фотокамера
+//- Фронтальная камера
+//- Аудио
+//- Разъем для наушников
+
+//- 20.70 млн пикс., светодиодная вспышка 
+//- есть, 2.2 млн пикс. 
+//- MP3, WAV, FM-радио 
+//- 3.5 мм
+	include layouts/you-seen
+	include layouts/brand-list
+	include layouts/footer

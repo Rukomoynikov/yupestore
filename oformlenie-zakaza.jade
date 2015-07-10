@@ -11,74 +11,131 @@ block content
 		.row
 			.col-lg-12
 				h2.page-header Оформление заказа
-		.row.section
+		.row.section.cart-list
 			.col-lg-12.order-count.section-header
 				h2 Мой заказ: 2 товара 
 					a(href='#')  (вернуться в корзину)
-				div.table.33
-					div.table-row
-						div.table-cell.title Смартфон Sony Xperia V (LT25i Black)
-						div.table-cell 1 (плюс)
-						div.table-cell.price 13 885 руб.
-					div.table-row
-						div.table-cell.title Смартфон Samsung Galaxy Alpha (SM-G850F 32Gb)
-						div.table-cell 1 (плюс)
-						div.table-cell.price 13 885 руб.
-		.row.section
+			.col-lg-12
+				.row.one-line
+					.col-lg-8.col-xs-12.title Смартфон Sony Xperia V (LT25i Black)
+					.col-lg-2.col-xs-6 1 
+					.col-lg-2.col-xs-6 13 885 руб.
+				.row.one-line
+					.col-lg-8.col-xs-12.title Смартфон Samsung Galaxy Alpha (SM-G850F 32Gb)
+					.col-lg-2.col-xs-6 1 
+					.col-lg-2.col-xs-6 13 885 руб.
+		.row.section.pokupatel
 			.col-lg-12.section-header
 				h2 Покупатель :
 			.col-lg-12
-				.table
-					.table-row
-						.table-cell Ваше имя: *
-						.table-cell
-							| Введите ваше Ф.И.О.
-							br
-							input(type='text', placeholder='Пример: Иванов Иван Иванович')
-						.table-cell.form-messages - При заполнении допущена ошибка Email не может быть без символа @
-					.table-row
-						.table-cell Ваш E-Mail: *
-						.table-cell
-							| Куда выслать информацию по заказу
-							br
-							input(type='text', placeholder='Пример: ivanov@mail.ru')
-						.table-cell.form-messages - При заполнении допущена ошибка Email не может быть без символа @
-					.table-row
-						.table-cell Ваш телефон: *
-						.table-cell
-							| Для согласования деталей заказа
-							br
-							input(type='text', placeholder='Пример: +7 (123) 456-78-90')
-						.table-cell.form-messages - При заполнении допущена ошибка Email не может быть без символа @
+				.row.one-line
+					.col-lg-2.col-xs-12 Ваше имя: *
+					.col-lg-5.col-xs-12
+						label Введите ваше Ф.И.О.
+						input.correct(type='text', placeholder='Пример: Иванов Иван Иванович')
+					.col-lg-5.col-xs.12.form-messages — При заполнении допущена ошибка Email не может быть без символа @
+				.row.one-line
+					.col-lg-2.col-xs-12 Ваш E-Mail: *
+					.col-lg-5.col-xs-12
+						label Куда выслать информацию по заказу
+						input.incorrect(type='text', placeholder='Пример: ivanov@mail.ru')
+					.col-lg-5.col-xs-12.form-messages — При заполнении допущена ошибка Email не может быть без символа @
+				.row.one-line
+					.col-lg-2.col-xs-12 Ваш телефон: *
+					.col-lg-5.col-xs-12
+						label Для согласования деталей заказа
+						input(type='text', placeholder='Пример: +7 (123) 456-78-90')
+					.col-lg-5.col-xs-12 — При заполнении допущена ошибка Email не может быть без символа @ При заполнении допущена ошибка Email не может быть без символа @
 		.row.section.dostavka
 			.col-lg-12.section-header
 				h2 Доставка 
 					select
 						option Москва
-			.col-lg-12
-				.one-line
-					input(type='radio', name='group1', id='dostavka_ver_1')
-					label(for='dostavka_ver_1') Доставка по Москве - 300 руб.
-						br
-						span Осуществляется на следующий день после подтверждения заказа.
-				.one-line
-					input(type='radio', name='group1', id='dostavka_ver_2')
-					label(for='dostavka_ver_2') Доставка по Москве - 300 руб.
-						br
-						span Осуществляется на следующий день после подтверждения заказа.
+			.col-lg-8
+				form.form-horizontal
+					.form-group
+						.checkbox
+							label
+								input(type="radio") 
+								| Доставка по Москве - 300 руб.
+							br
+							span Осуществляется на следующий день после подтверждения заказа.
+					.form-group
+						.checkbox
+							label
+								input(type="radio") 
+								| Срочная доставка в день заказа в пределах МКАД – 500 р.
+					.form-group
+						.checkbox
+							label
+								input(type="radio") 
+								| Доставка за пределы МКАД – 600 р. (до 9 км включительно)
+							br
+							span Осуществляется на следующий день после подтверждения заказа.
+					.form-group
+						.checkbox
+							label
+								input(type="radio") 
+								| Самовывоз
+							br
+							span Здесь пишем адрес магазина или точки выдачи товаров. Товар можно забрать ежедневно с 13:00 до 20:00 после подтверждения заказа менеджером.
+			.col-lg-4.adres
+				.row
+					.col-lg-12
+						h3 Адрес доставки:
+						p Улица
+						input.form-control(placeholder='Пример: ул. Московская')
+					.col-lg-6
+						p Дом
+						input.form-control(placeholder='Пример: д.7')
+					.col-lg-6
+						p Квартира
+						input.form-control(placeholder='Пример: кв.15')
+					.col-lg-12
+						p Дополнительная информация
+						textarea.form-control
 		.row.section.oplata
 			.col-lg-12.section-header
 				h2 Способ оплаты 
 			.col-lg-12
-				.one-line
-					input(type='radio', name='group1', id='dostavka_ver_1')
-					label(for='dostavka_ver_1') Наличный расчёт при получении
-				.one-line
-					input(type='radio', name='group1', id='dostavka_ver_2')
-					label(for='dostavka_ver_2') Яндекс.Деньги
+				form.form-horizontal
+					.form-group
+						.checkbox
+							label
+								input(type="radio") 
+								| Наличный расчёт при получении
+					.form-group
+						.checkbox
+							label
+								input(type="radio") 
+								| Яндекс.Деньги
+					.form-group
+						.checkbox
+							label
+								input(type="radio") 
+								| QIWI Wallet
+					.form-group
+						.checkbox
+							label
+								input(type="radio") 
+								| Банковский перевод
+					.form-group
+						.checkbox
+							label
+								input(type="radio") 
+								| Почтовый перевод
+		.row.section.coupon
 			.col-lg-12.yellow-container
-				span Купон на скидку
+				span Купон на скидку:
 				input(type='text') 
-				button(type="submit" class="btn btn-default") Submit 
-		.row.
+				button(type="submit" class="btn btn-default") Проверить купон
+		.row.section.itog
+			.col-lg-12.col-with-border
+				p.summ-itog Товаров на сумму: 25 980 рублей
+				p.dostavka-itog Доставка: 300 рублей
+			.col-lg-12
+				p.all-itog Итого: 
+					span 26 280 
+					| рублей 
+				button(type="submit" class="btn btn-default") Оформить заказ
 	include layouts/footer

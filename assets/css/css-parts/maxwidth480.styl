@@ -1,0 +1,57 @@
+// Основная разметка для мобильных телефонов и устройств с разрешением до 480 px. В рамках сетки Bootstrap - col-xs
+
+@media screen and (max-width: 480px)
+
+	.formobile
+		display inline-block !important
+		float left
+		
+		a
+			padding 12px !important
+			display inline-block
+			
+			img
+				margin-right 5px
+		
+	#navbar-collapse
+		position: relative
+		z-index 1000
+		background black
+		border none
+
+	.row.header > .logo
+		text-align center
+		
+		> .slogan
+			display none
+			
+	.header .phone-and-cart
+		text-align center
+		
+		.phone 
+			margin-right 20px
+			
+		.cart-header-block > img 
+			margin-right 10px
+
+	.row.you-seen 
+		margin-left 0px
+		
+		> .col-lg-4
+			margin-bottom 20px
+			
+	.row.menu-and-search
+		
+		> .collapse, .collapse.in, .collapsing
+			width 370px
+
+	.container.content
+		
+		.row.pokupatel
+			
+			.row.one-line
+				height initial
+				
+				input 
+					width 100% !important
+					display block

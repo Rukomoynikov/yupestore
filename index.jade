@@ -1,7 +1,9 @@
+include layouts/mixins
 doctype html
 html
   head
-    title YupeStore
+    block title 
+      title YupeStore
     meta(charset='utf-8')
     link(rel='stylesheet', href='assets/fonts/osans/osans.css')
     link(rel='stylesheet', href='assets/css/bootstrap.min.css')
@@ -20,34 +22,6 @@ html
     .container.content
       .row.novinki
         .col-md-12: h3 Новинки
-        mixin one-product(price, name)
-          .col-md-3.col-lg-3.col-sm-6.col-xs-6
-            .one-product
-              //- if new
-              //-   .feature-label.new NEW
-              //- else 
-              .feature-label.new NEW
-              .image.carousel.slide(data-ride="carousel", id='carousel-main-page-tovar-1')
-                .carousel-inner(role='listbox')
-                  .item.active
-                    img(src='assets/images/tovar1.png')
-                  .item
-                    img(src='assets/images/tovar2.png')
-                  .item
-                    img(src='assets/images/tovar3.png')
-                  .item
-                    img(src='assets/images/tovar4.png')
-                a.left.carousel-control(href="#carousel-main-page-tovar-1" role="button" data-slide="prev")
-                  span.glyphicon.glyphicon-chevron-left(aria-hidden="true")
-                  span.sr-only Previous
-                a.right.carousel-control(href="#carousel-main-page-tovar-1" role="button" data-slide="next")
-                  span.glyphicon.glyphicon-chevron-right(aria-hidden="true")
-                  span.sr-only Next
-              .description 
-                a(href='#')= name
-                span.price= price
-                span.wasprice 15 990 руб
-              include layouts/additional_block
         +one-product('12 990 руб.', 'Смартфон Sony Xperia V (LT25i Black)')
         +one-product('12 990 руб.', 'Смартфон Samsung Galaxy Alpha (SM-G850F 32Gb)')
         +one-product('206 руб.', 'Карта памяти Transcend TS*USDHC10')

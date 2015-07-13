@@ -1,0 +1,40 @@
+mixin one-product(price, name)
+	.col-md-3.col-lg-3.col-sm-6.col-xs-6
+		.one-product
+			.feature-label.new NEW
+			.image.carousel.slide(data-ride="carousel", id='carousel-main-page-tovar-1')
+				.carousel-inner(role='listbox')
+					.item.active
+						img(src='assets/images/tovar1.png')
+					.item
+						img(src='assets/images/tovar2.png')
+					.item
+						img(src='assets/images/tovar3.png')
+					.item
+						img(src='assets/images/tovar4.png')
+			a.left.carousel-control(href="#carousel-main-page-tovar-1" role="button" data-slide="prev")
+				span.glyphicon.glyphicon-chevron-left(aria-hidden="true")
+				span.sr-only Previous
+			a.right.carousel-control(href="#carousel-main-page-tovar-1" role="button" data-slide="next")
+				span.glyphicon.glyphicon-chevron-right(aria-hidden="true")
+				span.sr-only Next
+			.description 
+				a(href='#')= name
+				span.price= price
+				span.wasprice 15 990 руб
+			.additional_block
+				.rate 
+					span.num.icon-rateback 4.5
+					span 7 отзывов
+					span.est Есть в наличии
+				br
+				.icons
+					img(src='assets/images/icon-heart.png')
+					img(src='assets/images/icon-compare.png')
+					span.tocart В корзину
+
+mixin breadcrumbs()
+	.row.breadcrumbs
+		.col-lg-12
+			a(href='#') Главная
+			a(href='#') Корзина

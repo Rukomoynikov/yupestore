@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>YupeStore</title>
+    <title>YupeStore - Карточка товара</title>
     <meta charset="utf-8">
     <link rel="stylesheet" href="assets/fonts/osans/osans.css">
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
@@ -112,28 +112,29 @@
         <h2 class="page-header">Sony Xperia Z3 (D6603)</h2>
         <p>В очередной раз Sony Mobile выпустила отличный топовый аппарат самого высокого качества и класса исполнения. Флагман японцев может похвастать дорогим, броским и стильным дизайном и, конечно же, материалами изготовления премиального класса.</p>
         <div class="row variants">
-          <div class="col-lg-12">Варианты</div>
-          <div class="col-lg-6">Тип</div>
-          <div class="col-lg-6">
+          <div class="col-lg-12 col-md-12">Варианты</div>
+          <div class="col-lg-6 col-md-6">Тип</div>
+          <div class="col-lg-6 col-md-6">
             <select class="form-control">
               <option>Normal</option>
               <option>Not normal</option>
             </select>
           </div>
-          <div class="col-lg-6">Ещё какой-то параметр</div>
-          <div class="col-lg-6">
+          <div class="col-lg-6 col-md-6">Ещё какой-то параметр</div>
+          <div class="col-lg-6 col-md-6">
             <select class="form-control">
               <option>Normal</option>
               <option>Not normal</option>
             </select>
           </div>
-          <div class="col-lg-12 line"></div>
           <div class="col-lg-12">
             <div class="price">Цена: <span>34 400 руб.</span></div>
           </div>
           <div class="col-lg-12">
-            <p>Кол-во</p><a href="#" class="btn button">Купить</a>
-            <p>2 * 34 400 = 68 800 руб.</p>
+            <div class="how-much">Кол-во <span class="minus">- </span><span class="count">1</span><span class="plus">+</span><br><span class="small-itog">2 * 34 400 = 68 800 руб.</span></div>
+            <div>
+              <button href="#" class="btn button">Купить</button>
+            </div>
           </div>
         </div>
       </div>
@@ -167,56 +168,321 @@
         </div>
       </div>
     </div>
-    <div class="row section">
+    <div class="row">
       <div class="col-lg-12 page-header">
         <h2>Вместе с этим товаром покупают</h2>
-        <div class="one-block"><img src="./assets/images/pokupayut-vmeste1.jpg"><a href="#" class="name">Sony Xperia Z3 (D6603)</a><span class="price">34 400 руб.</span></div>
-        <div class="one-block"><img src="./assets/images/pokupayut-vmeste2.jpg"><a href="#" class="name"> Transcend microSDHC Class 4 4GB + адаптер</a><span class="price">245 руб.</span></div>
-        <p>Ваша цена: 34 645 руб.</p>
       </div>
     </div>
-    <div class="row section">
+    <div class="row section buy-with">
+      <div class="one-block">
+        <input type="checkbox" id="ch1" name="ch1" checked>
+        <label for="ch1"></label>
+        <div><img src="./assets/images/pokupayut-vmeste1.jpg"></div><a href="#" class="name">Sony Xperia Z3 (D6603)</a><span class="price">34 400 руб.</span>
+      </div>
+      <div class="one-block">
+        <input type="checkbox" id="ch2" name="ch1" checked>
+        <label for="ch2"></label>
+        <div><img src="./assets/images/pokupayut-vmeste2.jpg"></div><a href="#" class="name"> Transcend microSDHC Class 4 4GB + адаптер</a><span class="price">245 руб.</span>
+      </div>
+      <div class="one-block">
+        <input type="checkbox" id="ch3" name="ch1" checked>
+        <label for="ch3"></label>
+        <div><img src="./assets/images/pokupayut-vmeste2.jpg"></div><a href="#" class="name"> Transcend microSDHC Class 4 4GB + адаптер</a><span class="price">245 руб.</span>
+      </div>
+      <div class="one-block">
+        <p>Ваша цена: <span>34 645 руб.</span></p>
+        <button type="button" class="login btn btn-default"> <img src="./assets/images/icon-cart-small.png">В корзину</button>
+      </div>
+    </div>
+    <div class="row tab-control">
       <div class="col-lg-12">
         <ul role="tablist" class="nav nav-tabs">
           <li role="presentation" class="active"><a href="#harakteristiki" aria-controls="harakteristiki" role="tab" data-toggle="tab">Характеристики</a></li>
           <li role="presentation"><a href="#description-tovar" aria-controls="description-tovar" role="tab" data-toggle="tab">Описание</a></li>
-          <li role="presentation"><a href="#description-tovar" aria-controls="description-tovar" role="tab" data-toggle="tab">Аксессуары</a></li>
-          <li role="presentation"><a href="#description-tovar" aria-controls="description-tovar" role="tab" data-toggle="tab">Отзывы (5)</a></li>
-          <li role="presentation"><a href="#description-tovar" aria-controls="description-tovar" role="tab" data-toggle="tab">Похожие товары</a></li>
+          <li role="presentation"><a href="#description-accs" aria-controls="description-tovar" role="tab" data-toggle="tab">Аксессуары</a></li>
+          <li role="presentation"><a href="#description-reviews" aria-controls="description-tovar" role="tab" data-toggle="tab">Отзывы (5)</a></li>
+          <li role="presentation"><a href="#description-related" aria-controls="description-tovar" role="tab" data-toggle="tab">Похожие товары</a></li>
         </ul>
       </div>
     </div>
-    <div class="row section">
+    <div class="row section tabs">
       <div class="tab-content">
         <div role="tabpanel" id="harakteristiki" class="tab-pane active harakteristiki">
           <p>Общие характеристики</p>
           <div class="row">
-            <div class="col-lg-8">Тип</div>
-            <div class="col-lg-4">Смартфон</div>
+            <div class="col-lg-8"> 
+              <div>Тип</div>
+            </div>
+            <div class="col-lg-4">
+              <div>Смартфон</div>
+            </div>
           </div>
           <div class="row">
-            <div class="col-lg-8">Операционная система Операционная система Операционная система Операционная система Операционная система Операционная система Операционная система Операционная система Операционная система Операционная система Операционная система Операционная система Операционная система Операционная система Операционная система Операционная система</div>
-            <div class="col-lg-4">Android 4.4</div>
+            <div class="col-lg-8"> 
+              <div>Операционная система Операционная система Операционная система Операционная система Операционная система Операционная система Операционная система Операционная система Операционная система Операционная система Операционная система Операционная система Операционная система Операционная система Операционная система Операционная система</div>
+            </div>
+            <div class="col-lg-4"> <span>Android 4.4</span></div>
           </div>
           <div class="row">
-            <div class="col-lg-8"></div>
-            <div class="col-lg-4"></div>
-          </div>
-          <div class="row">
-            <div class="col-lg-8"></div>
-            <div class="col-lg-4"></div>
-          </div>
-          <div class="row">
-            <div class="col-lg-8"></div>
-            <div class="col-lg-4"></div>
-          </div>
-          <div class="row">
-            <div class="col-lg-8"></div>
-            <div class="col-lg-4"></div>
+            <div class="col-lg-8"> 
+              <div>Конструкция</div>
+            </div>
+            <div class="col-lg-4"> 
+              <div>классический</div>
+            </div>
           </div>
         </div>
         <div role="tabpanel" id="description-tovar" class="tab-pane">
           <p>2</p>
+        </div>
+        <div role="tabpanel" id="description-accs" class="tab-pane">
+          <div class="row novinki">
+            <div class="col-md-3 col-lg-3 col-sm-6 col-xs-6">
+              <div class="one-product">
+                <div class="feature-label new">NEW</div>
+                <div data-ride="carousel" id="carousel-main-page-tovar-1" class="image carousel slide">
+                  <div role="listbox" class="carousel-inner">
+                    <div class="item active"><img src="assets/images/tovar1.png"/></div>
+                    <div class="item"><img src="assets/images/tovar2.png"/></div>
+                    <div class="item"><img src="assets/images/tovar3.png"/></div>
+                    <div class="item"><img src="assets/images/tovar4.png"/></div>
+                  </div>
+                </div><a href="#carousel-main-page-tovar-1" role="button" data-slide="prev" class="left carousel-control"><span aria-hidden="true" class="glyphicon glyphicon-chevron-left"></span><span class="sr-only">Previous</span></a><a href="#carousel-main-page-tovar-1" role="button" data-slide="next" class="right carousel-control"><span aria-hidden="true" class="glyphicon glyphicon-chevron-right"></span><span class="sr-only">Next</span></a>
+                <div class="description"> <a href="#">Смартфон Sony Xperia V (LT25i Black)</a><span class="price">12 990 руб.</span><span class="wasprice">15 990 руб</span></div>
+                <div class="additional_block">
+                  <div class="rate"> <span class="num icon-rateback">4.5</span><span>7 отзывов</span><span class="est">Есть в наличии</span></div><br/>
+                  <div class="icons"><img src="assets/images/icon-heart.png"/><img src="assets/images/icon-compare.png"/><span class="tocart">В корзину</span></div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3 col-lg-3 col-sm-6 col-xs-6">
+              <div class="one-product">
+                <div class="feature-label new">NEW</div>
+                <div data-ride="carousel" id="carousel-main-page-tovar-1" class="image carousel slide">
+                  <div role="listbox" class="carousel-inner">
+                    <div class="item active"><img src="assets/images/tovar1.png"/></div>
+                    <div class="item"><img src="assets/images/tovar2.png"/></div>
+                    <div class="item"><img src="assets/images/tovar3.png"/></div>
+                    <div class="item"><img src="assets/images/tovar4.png"/></div>
+                  </div>
+                </div><a href="#carousel-main-page-tovar-1" role="button" data-slide="prev" class="left carousel-control"><span aria-hidden="true" class="glyphicon glyphicon-chevron-left"></span><span class="sr-only">Previous</span></a><a href="#carousel-main-page-tovar-1" role="button" data-slide="next" class="right carousel-control"><span aria-hidden="true" class="glyphicon glyphicon-chevron-right"></span><span class="sr-only">Next</span></a>
+                <div class="description"> <a href="#">Смартфон Samsung Galaxy Alpha (SM-G850F 32Gb)</a><span class="price">12 990 руб.</span><span class="wasprice">15 990 руб</span></div>
+                <div class="additional_block">
+                  <div class="rate"> <span class="num icon-rateback">4.5</span><span>7 отзывов</span><span class="est">Есть в наличии</span></div><br/>
+                  <div class="icons"><img src="assets/images/icon-heart.png"/><img src="assets/images/icon-compare.png"/><span class="tocart">В корзину</span></div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3 col-lg-3 col-sm-6 col-xs-6">
+              <div class="one-product">
+                <div class="feature-label new">NEW</div>
+                <div data-ride="carousel" id="carousel-main-page-tovar-1" class="image carousel slide">
+                  <div role="listbox" class="carousel-inner">
+                    <div class="item active"><img src="assets/images/tovar1.png"/></div>
+                    <div class="item"><img src="assets/images/tovar2.png"/></div>
+                    <div class="item"><img src="assets/images/tovar3.png"/></div>
+                    <div class="item"><img src="assets/images/tovar4.png"/></div>
+                  </div>
+                </div><a href="#carousel-main-page-tovar-1" role="button" data-slide="prev" class="left carousel-control"><span aria-hidden="true" class="glyphicon glyphicon-chevron-left"></span><span class="sr-only">Previous</span></a><a href="#carousel-main-page-tovar-1" role="button" data-slide="next" class="right carousel-control"><span aria-hidden="true" class="glyphicon glyphicon-chevron-right"></span><span class="sr-only">Next</span></a>
+                <div class="description"> <a href="#">Карта памяти Transcend TS*USDHC10</a><span class="price">206 руб.</span><span class="wasprice">15 990 руб</span></div>
+                <div class="additional_block">
+                  <div class="rate"> <span class="num icon-rateback">4.5</span><span>7 отзывов</span><span class="est">Есть в наличии</span></div><br/>
+                  <div class="icons"><img src="assets/images/icon-heart.png"/><img src="assets/images/icon-compare.png"/><span class="tocart">В корзину</span></div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3 col-lg-3 col-sm-6 col-xs-6">
+              <div class="one-product">
+                <div class="feature-label new">NEW</div>
+                <div data-ride="carousel" id="carousel-main-page-tovar-1" class="image carousel slide">
+                  <div role="listbox" class="carousel-inner">
+                    <div class="item active"><img src="assets/images/tovar1.png"/></div>
+                    <div class="item"><img src="assets/images/tovar2.png"/></div>
+                    <div class="item"><img src="assets/images/tovar3.png"/></div>
+                    <div class="item"><img src="assets/images/tovar4.png"/></div>
+                  </div>
+                </div><a href="#carousel-main-page-tovar-1" role="button" data-slide="prev" class="left carousel-control"><span aria-hidden="true" class="glyphicon glyphicon-chevron-left"></span><span class="sr-only">Previous</span></a><a href="#carousel-main-page-tovar-1" role="button" data-slide="next" class="right carousel-control"><span aria-hidden="true" class="glyphicon glyphicon-chevron-right"></span><span class="sr-only">Next</span></a>
+                <div class="description"> <a href="#">Робот-пылесос iClebo Arte</a><span class="price">27 450 руб.</span><span class="wasprice">15 990 руб</span></div>
+                <div class="additional_block">
+                  <div class="rate"> <span class="num icon-rateback">4.5</span><span>7 отзывов</span><span class="est">Есть в наличии</span></div><br/>
+                  <div class="icons"><img src="assets/images/icon-heart.png"/><img src="assets/images/icon-compare.png"/><span class="tocart">В корзину</span></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div role="tabpanel" id="description-reviews" class="tab-pane">
+          <div class="row">
+            <div class="col-lg-9">
+              <div class="one-review"><span class="name">Василий Иванов</span>
+                <div class="rate-line">
+                  <div class="icon-rateback">5</div><span>Отличная модель</span>
+                </div><span class="title">Достоинства:</span><span class="text">ЗАРЯДКА (ее хватает на день с лихвой!!!), размер экрана, «умные» функции, камера, стеклянный корпус, разнообразие функций</span><span class="title">Недостатки:</span><span class="text">слот для симкарты, камера ( и +, и одновременно -) <br>ИХ НЕТ </span><span class="title">Комментарий:</span><span class="text">Теперь обо всем по порядку: <br>Слот для симкарты это пожалуй самая смешная деталь для столь премиального продукта (после айфона это единственный момент который кажется чем-то странным), качество камеры с одной стороны устраивает, а с другой стороны (перешла с iphone 5) не дает такого качества как iphone при быстрой сьемке, тоесть если вы захотите сделать ДЕЙСТВИТЕЛЬНО качественный снимок на уровне, то вам придется присноровиться делать это, но после пары дней вы привыкнете и качество будет просто феноменальным. На мой взгляд Sony, выпустив данный флагман заткнули за пояс Apple с iphone 6, ТАКОЙ мощности iphone просто не снилось! аплодисменты Sony, просто снимаю шляпу, браво! этот телефон мой АСБОЛЮТНЫЙ фаворит, так как у меня были айфоны, блекбери, самсунги, НО ни один из них не дает такого экспириенса как этот.  P.S. первые дни вы будете просто кайфовать от данного аппарата и осознавать, как вы вообще могли пользоваться iphone.<br>ОБНОВЛЕНИЕ ОТЗЫВА: аппарт уже успел "самопроизвольно" сломаться, экран просто погас после 2 недель использования телефона. Очень хороший телефон, но не советую его покупать так как ЗАПРЕДЕЛЬНОЕ количество заводского брака. После гарантийного ремонта поменяли, внимание, 18 (!!!!!!!) позиций внутри телефона! у меня тольок один вопрос "КАК?" за 2 недели бережной экуплуатации аппарата!</span><span class="date">1 апреля, Екатеринбург</span>
+              </div>
+            </div>
+            <div class="col-lg-3 review-summary">
+              <button href="#" class="btn button">Оставить отзыв</button>
+              <div class="rate-line"><span>Средняя оценка</span>
+                <div class="icon-rateback">5</div>
+              </div><span>2 оценки</span>
+            </div>
+          </div>
+        </div>
+        <div role="tabpanel" id="description-related" class="tab-pane">
+          <div class="row novinki">
+            <div class="col-md-3 col-lg-3 col-sm-6 col-xs-6">
+              <div class="one-product">
+                <div class="feature-label new">NEW</div>
+                <div data-ride="carousel" id="carousel-main-page-tovar-1" class="image carousel slide">
+                  <div role="listbox" class="carousel-inner">
+                    <div class="item active"><img src="assets/images/tovar1.png"/></div>
+                    <div class="item"><img src="assets/images/tovar2.png"/></div>
+                    <div class="item"><img src="assets/images/tovar3.png"/></div>
+                    <div class="item"><img src="assets/images/tovar4.png"/></div>
+                  </div>
+                </div><a href="#carousel-main-page-tovar-1" role="button" data-slide="prev" class="left carousel-control"><span aria-hidden="true" class="glyphicon glyphicon-chevron-left"></span><span class="sr-only">Previous</span></a><a href="#carousel-main-page-tovar-1" role="button" data-slide="next" class="right carousel-control"><span aria-hidden="true" class="glyphicon glyphicon-chevron-right"></span><span class="sr-only">Next</span></a>
+                <div class="description"> <a href="#">Смартфон Sony Xperia V (LT25i Black)</a><span class="price">12 990 руб.</span><span class="wasprice">15 990 руб</span></div>
+                <div class="additional_block">
+                  <div class="rate"> <span class="num icon-rateback">4.5</span><span>7 отзывов</span><span class="est">Есть в наличии</span></div><br/>
+                  <div class="icons"><img src="assets/images/icon-heart.png"/><img src="assets/images/icon-compare.png"/><span class="tocart">В корзину</span></div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3 col-lg-3 col-sm-6 col-xs-6">
+              <div class="one-product">
+                <div class="feature-label new">NEW</div>
+                <div data-ride="carousel" id="carousel-main-page-tovar-1" class="image carousel slide">
+                  <div role="listbox" class="carousel-inner">
+                    <div class="item active"><img src="assets/images/tovar1.png"/></div>
+                    <div class="item"><img src="assets/images/tovar2.png"/></div>
+                    <div class="item"><img src="assets/images/tovar3.png"/></div>
+                    <div class="item"><img src="assets/images/tovar4.png"/></div>
+                  </div>
+                </div><a href="#carousel-main-page-tovar-1" role="button" data-slide="prev" class="left carousel-control"><span aria-hidden="true" class="glyphicon glyphicon-chevron-left"></span><span class="sr-only">Previous</span></a><a href="#carousel-main-page-tovar-1" role="button" data-slide="next" class="right carousel-control"><span aria-hidden="true" class="glyphicon glyphicon-chevron-right"></span><span class="sr-only">Next</span></a>
+                <div class="description"> <a href="#">Смартфон Samsung Galaxy Alpha (SM-G850F 32Gb)</a><span class="price">12 990 руб.</span><span class="wasprice">15 990 руб</span></div>
+                <div class="additional_block">
+                  <div class="rate"> <span class="num icon-rateback">4.5</span><span>7 отзывов</span><span class="est">Есть в наличии</span></div><br/>
+                  <div class="icons"><img src="assets/images/icon-heart.png"/><img src="assets/images/icon-compare.png"/><span class="tocart">В корзину</span></div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3 col-lg-3 col-sm-6 col-xs-6">
+              <div class="one-product">
+                <div class="feature-label new">NEW</div>
+                <div data-ride="carousel" id="carousel-main-page-tovar-1" class="image carousel slide">
+                  <div role="listbox" class="carousel-inner">
+                    <div class="item active"><img src="assets/images/tovar1.png"/></div>
+                    <div class="item"><img src="assets/images/tovar2.png"/></div>
+                    <div class="item"><img src="assets/images/tovar3.png"/></div>
+                    <div class="item"><img src="assets/images/tovar4.png"/></div>
+                  </div>
+                </div><a href="#carousel-main-page-tovar-1" role="button" data-slide="prev" class="left carousel-control"><span aria-hidden="true" class="glyphicon glyphicon-chevron-left"></span><span class="sr-only">Previous</span></a><a href="#carousel-main-page-tovar-1" role="button" data-slide="next" class="right carousel-control"><span aria-hidden="true" class="glyphicon glyphicon-chevron-right"></span><span class="sr-only">Next</span></a>
+                <div class="description"> <a href="#">Карта памяти Transcend TS*USDHC10</a><span class="price">206 руб.</span><span class="wasprice">15 990 руб</span></div>
+                <div class="additional_block">
+                  <div class="rate"> <span class="num icon-rateback">4.5</span><span>7 отзывов</span><span class="est">Есть в наличии</span></div><br/>
+                  <div class="icons"><img src="assets/images/icon-heart.png"/><img src="assets/images/icon-compare.png"/><span class="tocart">В корзину</span></div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3 col-lg-3 col-sm-6 col-xs-6">
+              <div class="one-product">
+                <div class="feature-label new">NEW</div>
+                <div data-ride="carousel" id="carousel-main-page-tovar-1" class="image carousel slide">
+                  <div role="listbox" class="carousel-inner">
+                    <div class="item active"><img src="assets/images/tovar1.png"/></div>
+                    <div class="item"><img src="assets/images/tovar2.png"/></div>
+                    <div class="item"><img src="assets/images/tovar3.png"/></div>
+                    <div class="item"><img src="assets/images/tovar4.png"/></div>
+                  </div>
+                </div><a href="#carousel-main-page-tovar-1" role="button" data-slide="prev" class="left carousel-control"><span aria-hidden="true" class="glyphicon glyphicon-chevron-left"></span><span class="sr-only">Previous</span></a><a href="#carousel-main-page-tovar-1" role="button" data-slide="next" class="right carousel-control"><span aria-hidden="true" class="glyphicon glyphicon-chevron-right"></span><span class="sr-only">Next</span></a>
+                <div class="description"> <a href="#">Робот-пылесос iClebo Arte</a><span class="price">27 450 руб.</span><span class="wasprice">15 990 руб</span></div>
+                <div class="additional_block">
+                  <div class="rate"> <span class="num icon-rateback">4.5</span><span>7 отзывов</span><span class="est">Есть в наличии</span></div><br/>
+                  <div class="icons"><img src="assets/images/icon-heart.png"/><img src="assets/images/icon-compare.png"/><span class="tocart">В корзину</span></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container-fluid white-container">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <h3>Вы недавно смотрели</h3>
+        </div>
+      </div>
+      <div class="row you-seen">
+                <div class="col-lg-4 col-xs-12 col-sm-4"><img src="assets/images/youseen.jpg" align="left"><a href="#">Samsung Galaxy A3</a><br><span class="price">19 990 руб</span></div>
+                <div class="col-lg-4 col-xs-12 col-sm-4"><img src="assets/images/youseen.jpg" align="left"><a href="#">Samsung Galaxy A3</a><br><span class="price">19 990 руб</span></div>
+                <div class="col-lg-4 col-xs-12 col-sm-4"><img src="assets/images/youseen.jpg" align="left"><a href="#">Samsung Galaxy A3</a><br><span class="price">19 990 руб</span></div>
+      </div>
+    </div>
+  </div>
+  <div class="container-fluid brands">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 brand-list">
+          <h3> <span>Товары таких брендов</span></h3><img src="assets/images/apple-brand.png"><img src="assets/images/philips-brand.png"><img src="assets/images/braun-brand.png"><img src="assets/images/lg-brand.png"><img src="assets/images/samsung-brand.png"><img src="assets/images/sharp-brand.png"><img src="assets/images/panasonic-brand.png"><img src="assets/images/toshiba-brand.png">
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container-fluid footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-2 col-sm-2">
+          <p>© YupeStore 2015</p><span class="light-grey">Все права защищены.</span>
+        </div>
+        <div class="col-md-2 col-sm-2">
+          <ul class="list-unstyled">
+            <li> <a href="">О компании</a></li>
+            <li> <a href="">Доставка</a></li>
+            <li> <a href="">Оплата</a></li>
+            <li> <a href="">Новости</a></li>
+            <li> <a href="">Бренды</a></li>
+            <li> <a href="">Контакты</a></li>
+          </ul>
+        </div>
+        <div class="col-md-2 col-sm-2">
+          <ul class="list-unstyled">
+            <li> <a href="">Телефония, МР3-плееры, GPS</a></li>
+            <li> <a href="">Домашнее видео</a></li>
+            <li> <a href="">Детские товары</a></li>
+            <li> <a href="">Активный отдых и туризм</a></li>
+            <li> <a href="">Музыкальные инструменты</a></li>
+          </ul>
+        </div>
+        <div class="col-md-3 col-sm-3 contacts"><span class="subtitle">Контакты</span>
+          <ul class="list-unstyled">
+            <li> <img src="./assets/images/footer-phone-icon.png"><span>(123) 456-78-90, 0 (123) 456-78-90</span></li>
+            <li><img src="./assets/images/footer-email-icon.png"><span>E-mail: partner@YupeStore.net</span></li>
+            <li><img src="./assets/images/footer-skype-icon.png"><span>Skype: YupeStore</span></li>
+          </ul>
+        </div>
+        <div class="col-md-2 col-sm-2"><span class="subtitle">Работаем</span>
+          <ul class="list-unstyled"> 
+            <li>Пн–Пт 09:00–20:00</li>
+            <li>Сб 09:00–17:00</li>
+            <li>Вс выходной  </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="callme" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" class="modal fade">
+    <div role="document" class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" data-dismiss="modal" aria-label="Close" class="close"><span aria-hidden="true">&times;</span></button>
+          <h4 id="myModalLabel" class="modal-title">Modal title</h4>
+        </div>
+        <div class="modal-body">...</div>
+        <div class="modal-footer">
+          <button type="button" data-dismiss="modal" class="btn btn-default">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
         </div>
       </div>
     </div>

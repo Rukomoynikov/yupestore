@@ -1,0 +1,220 @@
+body
+	font-family "OpenSansRegular"
+	background-color: #f4f4f4;
+	color: #2e2e2e;
+
+// div.table
+// 	display table
+	
+// 	div.table-row
+// 		display table-row
+		
+// 		div.table-cell
+// 			display table-cell
+			
+// .table.33 > .table-row > .table-cell:not(:first-child)
+// 	width 33%
+// 	text-align right
+
+// .table > .table-row > .table-cell.price
+// 	font-family "OpenSansBold"
+	
+.grey
+	color: #b8b8b8;
+
+.light-grey
+	color: #b0b0b0;
+
+.col-with-border
+	border-bottom 1px solid #f4f4f4
+
+.without-bottom-margin
+	margin 0px
+// Используется в бейджах, активном пункте меню, фон для строки поиска
+light-blue-color = #22b5cd
+// Фон для шапки
+dark-black-color = #2e2e2e
+light-grey-color = #b0b0b0
+yellow-color = #eeec51;
+
+/*! ----- Шрифты ----- */
+normal-font = "OpenSansRegular"
+bold-font = "OpenSansBold"
+light-font = "OpenSansLightRegular"
+	
+.light-blue
+	background-color: light-blue-color
+
+.text-uppercase
+	text-transform uppercase
+
+.badge 
+	font-size 11px
+	vertical-align middle
+	
+.navbar-collapse
+	padding 0px
+	
+.white-container
+	background white
+	padding 45px 0px
+
+.container.main
+	// padding-bottom 112px
+
+@require './css-parts/inner-pages'
+@require './css-parts/cross-pages-blocks'
+
+// .navbar-right .login a:before
+// 	display block
+// 	position absolute
+// 	content " "
+// 	border 1px solid light-blue-color
+// 	padding 5px
+// 	line-height 30px
+// 	width: 100px;
+// 	margin-left: -19px;
+// 	height: 29px;
+// 	margin-top: -3px;
+
+
+
+		
+// Основная таблица продуктов	
+.row.novinki
+	
+	h2	
+		color: dark-black-color
+		font-size: 26px;
+		line-height: 24px;
+	
+	.one-product .additional_block
+		display none
+		
+		> .rate
+			padding 0px 10px
+			
+			> .num 
+				// background url("../images/rateback.png")
+				line-height 27px
+				display block
+				width 44px
+				padding-left 8px 
+				float left
+				margin-right 5px
+				
+			> .est
+				float right
+			
+		> .icons
+			padding 0px 10px
+			margin-bottom 10px
+			
+			> * 
+				margin-right 5px
+
+		>.icons img
+			padding 10px 
+			border 1px solid #cbcbcb
+			vertical-align top
+			
+		> .icons > .tocart
+			background url("../images/tocart.png") light-blue-color no-repeat 20px center
+			height 40px 
+			line-height 40px
+			color white
+			padding 10px 20px 10px 50px
+			width 130px
+			margin-right 0px
+	
+	.one-product
+		position relative
+		border 3px solid #f4f4f4
+		
+		&:hover
+			border 3px solid #00b8d2
+		
+		&:hover .additional_block
+			display block
+		
+		> .feature-label
+			position absolute
+			top 10px
+			right 10px
+			width 50px
+			height 50px
+			border-radius 50%
+			font-size: 14px;
+			text-align center
+			line-height 50px
+			color white
+			z-index 1000
+			
+		> .feature-label.hit
+			background-color: #f54d19;
+			
+		> .feature-label.new
+			background-color: #93cd22;
+					
+		.image
+			height 300px
+			line-height 300px
+			background white
+			text-align center
+			
+			img
+				display inline
+				vertical-align middle
+							
+		.description 
+			padding 23px 20px 50px 20px
+			text-align center
+			background-color: #f8f8f8;
+			
+			a 
+				display block
+				margin 0px auto 20px auto
+				text-align center
+				text-decoration underline
+				color light-blue-color
+				font-family light-font				 
+				
+			> .price 
+				color: dark-black-color
+				font-size: 18px;
+				font-family bold-font
+				margin-right 10px
+				
+			> .wasprice
+				color: #e4003a;
+				font-size: 12px;
+				text-decoration: line-through;
+				vertical-align top
+				font-family light-font
+
+.row.section 
+	background white
+	padding 15px
+	margin 0px 0px 20px 0px
+	
+	> div.section-header-dark
+		color white
+		background black
+		margin-right -15px
+		margin-left -15px
+
+	> div.section-header > h2
+		font-size 18px
+		font-family bold-font
+		border-bottom: 2px solid #d2d2d2;
+		padding-bottom 10px
+		
+		> a
+			font-size 12px
+			font-family normal-font
+			text-decoration underline
+			color light-grey-color
+
+
+@require "./css-parts/maxwidth1000"			
+@require "./css-parts/maxwidth480"

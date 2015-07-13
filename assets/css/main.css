@@ -58,6 +58,48 @@ body {
   padding: 40px 15px 15px 15px;
   margin: 0px;
 }
+.container.content .row.section.kartochka-tovara .how-much {
+  color: #b0b3b7;
+  font-size: 14px;
+  display: inline-block;
+  margin-right: 50px;
+}
+.container.content .row.section.kartochka-tovara .how-much span {
+  color: #2e2e2e;
+  font-size: 14px;
+  margin-left: 20px;
+  font-family: "OpenSansRegular";
+}
+.container.content .row.section.kartochka-tovara .how-much span:last-child {
+  margin-left: 0px;
+  font-family: "OpenSansLightRegular";
+}
+.container.content .row.section.kartochka-tovara .how-much .minus,
+.container.content .row.section.kartochka-tovara .how-much .plus {
+  padding: 10px;
+  cursor: pointer;
+}
+.container.content .row.section.kartochka-tovara .how-much .count {
+  padding: 0px;
+}
+.container.content .row.section.kartochka-tovara .how-much .small-itog {
+  color: #b0b3b7;
+}
+.container.content .row.section.kartochka-tovara .how-much + div {
+  display: inline-block;
+  vertical-align: top;
+}
+.container.content .row.section.kartochka-tovara .how-much + div button {
+  background: #22b5cd;
+  min-width: 140px;
+  text-align: center;
+  height: 40px;
+  color: #fff;
+  border: none;
+  font-family: "OpenSansLightRegular";
+  font-size: 14px;
+  border-radius: 0px;
+}
 .container.content .row.section.kartochka-tovara #main-image {
   width: 390px;
   height: 390px;
@@ -145,25 +187,226 @@ body {
 }
 .container.content .row.section.kartochka-tovara-features {
   background: #ededed;
+  padding: 45px;
   margin-bottom: 0px;
 }
 .container.content .row.section.kartochka-tovara-features > div > img {
   display: inline-block;
   vertical-align: top;
+  margin-top: -10px;
 }
 .container.content .row.section.kartochka-tovara-features > div > div {
   display: inline-block;
   margin-left: 20px;
+  max-width: 258px;
 }
 .container.content .row.section.kartochka-tovara-features > div > div > span {
   font-family: "OpenSansBold";
+  display: block;
+  text-transform: uppercase;
+  margin-bottom: 10px;
 }
 .container.content .row.section.kartochka-tovara-features > div > div > ul > li {
   margin-bottom: 10px;
 }
-.container.content .row.section > .tab-content .harakteristiki li {
-  display: block;
+.container.content .row.section > .tab-content .harakteristiki > .row {
+  margin-bottom: 20px;
+}
+.container.content .row.section > .tab-content .harakteristiki > .row > .col-lg-8 > div {
   background: url("../images/dots-background.jpg") repeat-x bottom left;
+}
+.container.content .row.section > .tab-content .harakteristiki > .row > .col-lg-4 > span {
+  vertical-align: bottom;
+}
+.container.content .row.section.buy-with {
+  padding: 20px 50px;
+}
+.container.content .row.section.buy-with > .one-block {
+  text-align: center;
+  width: 165px;
+  display: inline-block;
+  vertical-align: top;
+  position: relative;
+  margin-left: 100px;
+}
+.container.content .row.section.buy-with > .one-block > input[type='checkbox'] {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  display: none;
+}
+.container.content .row.section.buy-with > .one-block > input[type='checkbox'] + label {
+  background: none;
+  border: 1px solid #a9a9a9;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  right: 0px;
+  top: 0px;
+}
+.container.content .row.section.buy-with > .one-block > input[type='checkbox']:checked + label {
+  background: url("../images/checked-blue.png") no-repeat center center;
+  border: 1px solid #a9a9a9;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+}
+.container.content .row.section.buy-with > .one-block > div {
+  margin-bottom: 10px;
+  line-height: 105px;
+}
+.container.content .row.section.buy-with > .one-block > a {
+  display: block;
+  color: #22b5cd;
+  font-family: "OpenSansLightRegular";
+  text-align: center;
+  font-size: 15px;
+  text-decoration: underline;
+  margin-bottom: 10px;
+}
+.container.content .row.section.buy-with > .one-block > span {
+  font-family: "OpenSansRegular";
+  font-size: 18px;
+}
+.container.content .row.section.buy-with > .one-block:before {
+  content: "+";
+  display: block;
+  position: absolute;
+  color: #2e2e2e;
+  font-size: 36px;
+  font-family: "OpenSansBold";
+  left: -70px;
+  top: 35px;
+  margin-top: -10px;
+}
+.container.content .row.section.buy-with > .one-block > p {
+  font-size: 15px;
+  text-align: left;
+}
+.container.content .row.section.buy-with > .one-block > p span {
+  display: block;
+  font-size: 30px;
+  font-family: "OpenSansBold";
+}
+.container.content .row.section.buy-with > .one-block > button {
+  background: #22b5cd;
+  border-radius: 0px;
+  border: 0px;
+  width: 140px;
+  color: #fff;
+  text-align: center;
+  height: 40px;
+  font-size: 14px;
+}
+.container.content .row.section.buy-with > .one-block > button > img {
+  margin-right: 10px;
+}
+.container.content .row.section.buy-with > .one-block:first-child {
+  margin-left: 0px;
+}
+.container.content .row.section.buy-with > .one-block:first-child:before {
+  content: "";
+}
+.container.content .row.section.buy-with > .one-block:last-child {
+  text-align: left;
+}
+.container.content .row.section.buy-with > .one-block:last-child:before {
+  content: "=";
+}
+.container.content .row.tab-control {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+.container.content .row.tab-control ul.nav.nav-tabs {
+  border-bottom: 0px;
+  display: inline-block;
+}
+.container.content .row.tab-control ul.nav.nav-tabs > li > a {
+  border: none;
+  border-radius: none;
+  background: initial;
+  border-bottom: 1px dashed #22b5cd;
+  color: #22b5cd;
+  padding: 1px;
+  margin-right: 10px;
+  font-size: 18px;
+  font-family: "OpenSansLightRegular";
+}
+.container.content .row.tab-control ul.nav.nav-tabs > li.active > a {
+  color: #2e2e2e;
+  border: none;
+}
+.container.content .row.section.tabs {
+  padding: 20px;
+}
+.container.content .review-summary button {
+  background-color: #22b5cd;
+  display: block;
+  color: #fff;
+  width: 266px;
+  height: 55px;
+  font-size: 18px;
+  margin-bottom: 20px;
+  outline: none;
+  border-radius: 0px;
+  border: none;
+}
+.container.content .review-summary > span {
+  color: #b0b3b7;
+  font-size: 12px;
+}
+.container.content .review-summary .rate-line {
+  line-height: 27px;
+  height: 27px;
+}
+.container.content .review-summary .rate-line > * {
+  display: inline-block;
+  vertical-align: middle;
+}
+.container.content .review-summary .rate-line > .icon-rateback {
+  text-align: center;
+  padding-right: 4px;
+}
+.container.content .review-summary .rate-line span {
+  margin-right: 20px;
+  color: #2e2e2e;
+}
+.container.content #description-reviews > .row > div > .one-review .rate-line {
+  line-height: 27px;
+  height: 27px;
+  margin-bottom: 20px;
+}
+.container.content #description-reviews > .row > div > .one-review .rate-line > * {
+  display: inline-block;
+  vertical-align: middle;
+}
+.container.content #description-reviews > .row > div > .one-review .rate-line > .icon-rateback {
+  text-align: center;
+  padding-right: 4px;
+}
+.container.content #description-reviews > .row > div > .one-review .rate-line span {
+  margin-left: 20px;
+  color: #b0b3b7;
+}
+.container.content #description-reviews > .row > div > .one-review span.name {
+  font-size: 15px;
+  font-family: "OpenSansBold";
+  margin-bottom: 20px;
+}
+.container.content #description-reviews > .row > div > .one-review span.title {
+  font-size: 13px;
+  font-family: "OpenSansBold";
+  margin-bottom: 20px;
+}
+.container.content #description-reviews > .row > div > .one-review span.text {
+  font-size: 13px;
+  font-family: "OpenSansLightRegular";
+  margin-bottom: 20px;
+}
+.container.content #description-reviews > .row > div > .one-review span {
+  display: block;
 }
 .container.content .row.section.cart-list .row.one-line > div:first-child {
   text-align: left;
@@ -426,8 +669,16 @@ body {
 .container.content.cart .product-list {
   margin: 0px;
 }
+.container.content.cart .product-list input[type=checkbox] {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  margin-top: -10px;
+  box-shadow: 0 0 5px #d3edf1;
+}
 .container.content.cart .row.section.quick-order-form > div {
   margin-bottom: 20px;
+  padding-bottom: 20px;
 }
 .container.content.cart .row.section.quick-order-form > div input {
   border: 2px solid #d2d2d2;

@@ -1,10 +1,13 @@
 extends index
 
+block title
+	title YupeStore - Карточка товара
+
 block slider
 
 block content
 	.container.content
-		include layouts/breadcrumbs
+		+breadcrumbs
 		.row.section.kartochka-tovara
 			.col-lg-6
 				#main-image
@@ -33,25 +36,29 @@ block content
 				h2.page-header Sony Xperia Z3 (D6603)
 				p В очередной раз Sony Mobile выпустила отличный топовый аппарат самого высокого качества и класса исполнения. Флагман японцев может похвастать дорогим, броским и стильным дизайном и, конечно же, материалами изготовления премиального класса.
 				.row.variants
-					.col-lg-12 Варианты
-					.col-lg-6 Тип
-					.col-lg-6
+					.col-lg-12.col-md-12 Варианты
+					.col-lg-6.col-md-6 Тип
+					.col-lg-6.col-md-6
 						select.form-control
 							option Normal
 							option Not normal
-					.col-lg-6 Ещё какой-то параметр
-					.col-lg-6
+					.col-lg-6.col-md-6 Ещё какой-то параметр
+					.col-lg-6.col-md-6
 						select.form-control
 							option Normal
 							option Not normal
-					.col-lg-12.line
 					.col-lg-12
 						.price Цена: 
 							span 34 400 руб.
 					.col-lg-12
-						p Кол-во
-						a.btn.button(href="#") Купить
-						p 2 * 34 400 = 68 800 руб.
+						.how-much Кол-во 
+							span.minus - 
+							span.count 1
+							span.plus +
+							br
+							span.small-itog 2 * 34 400 = 68 800 руб.
+						div
+							button.btn.button(href="#") Купить
 		.row.section.kartochka-tovara-features
 			.col-lg-4.col-md-4.col-sm-4.col-xs-12
 				img(src='./assets/images/icon-kartochka-tovara-dostavka.png', align='left')
@@ -77,19 +84,38 @@ block content
 					span Гарантии
 					ul.list-unstyled
 						li Здесь можно написать, какие-то гарантии и всё такое.
-		.row.section
+		.row
 			.col-lg-12.page-header
 				h2 Вместе с этим товаром покупают
+		.row.section.buy-with
 				.one-block
-					img(src='./assets/images/pokupayut-vmeste1.jpg')
+					input(type='checkbox', id='ch1', name='ch1' checked)
+					label(for='ch1')
+					div
+						img(src='./assets/images/pokupayut-vmeste1.jpg')
 					a.name(href='#') Sony Xperia Z3 (D6603)
 					span.price 34 400 руб.
 				.one-block
-					img(src='./assets/images/pokupayut-vmeste2.jpg')
+					input(type='checkbox', id='ch2', name='ch1'  checked)
+					label(for='ch2')
+					div
+						img(src='./assets/images/pokupayut-vmeste2.jpg')
 					a.name(href='#')  Transcend microSDHC Class 4 4GB + адаптер
 					span.price 245 руб.
-				p Ваша цена: 34 645 руб.
-		.row.section
+				.one-block
+					input(type='checkbox', id='ch3', name='ch1'  checked)
+					label(for='ch3')
+					div
+						img(src='./assets/images/pokupayut-vmeste2.jpg')
+					a.name(href='#')  Transcend microSDHC Class 4 4GB + адаптер
+					span.price 245 руб.
+				.one-block
+					p Ваша цена: 
+						span 34 645 руб.
+					button.login(type="button" class="btn btn-default") 
+						img(src='./assets/images/icon-cart-small.png') 
+						| В корзину
+		.row.tab-control
 			.col-lg-12
 				ul.nav.nav-tabs(role="tablist")
 					li.active(role="presentation")
@@ -97,33 +123,39 @@ block content
 					li(role="presentation")
 						a(href="#description-tovar" aria-controls="description-tovar" role="tab" data-toggle="tab") Описание
 					li(role="presentation")
-						a(href="#description-tovar" aria-controls="description-tovar" role="tab" data-toggle="tab") Аксессуары
+						a(href="#description-accs" aria-controls="description-tovar" role="tab" data-toggle="tab") Аксессуары
 					li(role="presentation")
-						a(href="#description-tovar" aria-controls="description-tovar" role="tab" data-toggle="tab") Отзывы (5)
+						a(href="#description-reviews" aria-controls="description-tovar" role="tab" data-toggle="tab") Отзывы (5)
 					li(role="presentation")
-						a(href="#description-tovar" aria-controls="description-tovar" role="tab" data-toggle="tab") Похожие товары
-		.row.section
+						a(href="#description-related" aria-controls="description-tovar" role="tab" data-toggle="tab") Похожие товары
+		.row.section.tabs
 			.tab-content
 				.tab-pane.active.harakteristiki(role="tabpanel" id="harakteristiki")
 					p Общие характеристики
 					.row
-						.col-lg-8 Тип
-						.col-lg-4 Смартфон
-					.row
-						.col-lg-8 Операционная система Операционная система Операционная система Операционная система Операционная система Операционная система Операционная система Операционная система Операционная система Операционная система Операционная система Операционная система Операционная система Операционная система Операционная система Операционная система
-						.col-lg-4 Android 4.4
-					.row
-						.col-lg-8
+						.col-lg-8 
+							div Тип
 						.col-lg-4
+							div Смартфон
 					.row
-						.col-lg-8
-						.col-lg-4
+						.col-lg-8 
+							div Операционная система Операционная система Операционная система Операционная система Операционная система Операционная система Операционная система Операционная система Операционная система Операционная система Операционная система Операционная система Операционная система Операционная система Операционная система Операционная система
+						.col-lg-4 
+							span Android 4.4
 					.row
-						.col-lg-8
-						.col-lg-4
-					.row
-						.col-lg-8
-						.col-lg-4
+						.col-lg-8 
+							div Конструкция
+						.col-lg-4 
+							div классический
+					//- .row
+					//- 	.col-lg-8
+					//- 	.col-lg-4
+					//- .row
+					//- 	.col-lg-8
+					//- 	.col-lg-4
+					//- .row
+					//- 	.col-lg-8
+					//- 	.col-lg-4
 					//- 	ul.list-unstyled
 					//- 		li Тип корпуса
 					//- 		li Конструкция
@@ -143,6 +175,48 @@ block content
 					//- 		li 72x146x7.3 мм
 				.tab-pane(role="tabpanel" id="description-tovar")
 					p 2
+				.tab-pane(role="tabpanel" id="description-accs")
+					.row.novinki
+						+one-product('12 990 руб.', 'Смартфон Sony Xperia V (LT25i Black)')
+						+one-product('12 990 руб.', 'Смартфон Samsung Galaxy Alpha (SM-G850F 32Gb)')
+						+one-product('206 руб.', 'Карта памяти Transcend TS*USDHC10')
+						+one-product('27 450 руб.', 'Робот-пылесос iClebo Arte')
+				.tab-pane(role="tabpanel" id="description-reviews")
+					.row
+						.col-lg-9
+							.one-review
+								span.name Василий Иванов
+								.rate-line
+									.icon-rateback 5
+									span Отличная модель
+								span.title Достоинства:
+								span.text ЗАРЯДКА (ее хватает на день с лихвой!!!), размер экрана, «умные» функции, камера, стеклянный корпус, разнообразие функций
+								span.title Недостатки:
+								span.text слот для симкарты, камера ( и +, и одновременно -) 
+									br 
+									| ИХ НЕТ 
+								span.title Комментарий:
+								span.text Теперь обо всем по порядку: 
+									br
+									| Слот для симкарты это пожалуй самая смешная деталь для столь премиального продукта (после айфона это единственный момент который кажется чем-то странным), качество камеры с одной стороны устраивает, а с другой стороны (перешла с iphone 5) не дает такого качества как iphone при быстрой сьемке, тоесть если вы захотите сделать ДЕЙСТВИТЕЛЬНО качественный снимок на уровне, то вам придется присноровиться делать это, но после пары дней вы привыкнете и качество будет просто феноменальным. На мой взгляд Sony, выпустив данный флагман заткнули за пояс Apple с iphone 6, ТАКОЙ мощности iphone просто не снилось! аплодисменты Sony, просто снимаю шляпу, браво! этот телефон мой АСБОЛЮТНЫЙ фаворит, так как у меня были айфоны, блекбери, самсунги, НО ни один из них не дает такого экспириенса как этот.  P.S. первые дни вы будете просто кайфовать от данного аппарата и осознавать, как вы вообще могли пользоваться iphone.
+									br
+									| ОБНОВЛЕНИЕ ОТЗЫВА: аппарт уже успел "самопроизвольно" сломаться, экран просто погас после 2 недель использования телефона. Очень хороший телефон, но не советую его покупать так как ЗАПРЕДЕЛЬНОЕ количество заводского брака. После гарантийного ремонта поменяли, внимание, 18 (!!!!!!!) позиций внутри телефона! у меня тольок один вопрос "КАК?" за 2 недели бережной экуплуатации аппарата!
+								span.date 1 апреля, Екатеринбург
+						.col-lg-3.review-summary
+							button.btn.button(href="#") Оставить отзыв
+							.rate-line
+								span Средняя оценка
+								.icon-rateback 5
+							span 2 оценки
+				.tab-pane(role="tabpanel" id="description-related")
+					.row.novinki
+						+one-product('12 990 руб.', 'Смартфон Sony Xperia V (LT25i Black)')
+						+one-product('12 990 руб.', 'Смартфон Samsung Galaxy Alpha (SM-G850F 32Gb)')
+						+one-product('206 руб.', 'Карта памяти Transcend TS*USDHC10')
+						+one-product('27 450 руб.', 'Робот-пылесос iClebo Arte')
+	include layouts/you-seen
+	include layouts/brand-list
+	include layouts/footer
 //- Экран
 
 //- Тип экрана
@@ -164,6 +238,3 @@ block content
 //- есть, 2.2 млн пикс. 
 //- MP3, WAV, FM-радио 
 //- 3.5 мм
-	include layouts/you-seen
-	include layouts/brand-list
-	include layouts/footer

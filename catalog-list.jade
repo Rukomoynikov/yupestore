@@ -1,0 +1,29 @@
+extends index
+
+block title
+	title YupeStore - Каталог товаров
+
+block slider
+
+block content
+	.container.content.catalog
+		+breadcrumbs
+		.row
+			.col-lg-12
+				h2.page-header Мобильные телефоны
+		.row
+			.col-lg-3
+				.filter
+			.col-lg-9
+				.row.sort 
+					.col-lg-12 Сортировать :
+						a(href="").active по популярности
+						a(href="") по цене
+						a(href="") по новизне
+				.row.novinki.list
+					+one-12-product('12 990 руб.', 'Смартфон Sony Xperia V (LT25i Black)')
+					+one-12-product('12 990 руб.', 'Смартфон Samsung Galaxy Alpha (SM-G850F 32Gb)')
+					+one-12-product('206 руб.', 'Карта памяти Transcend TS*USDHC10')
+	include layouts/you-seen
+	include layouts/brand-list
+	include layouts/footer

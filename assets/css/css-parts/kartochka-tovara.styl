@@ -1,0 +1,375 @@
+.one-tovar
+	// ----- Начало разметки для страницы "КАРТОЧКА ТОВАРА"		
+	.row.section.kartochka-tovara
+		padding 40px 15px 15px 15px
+		margin 0px
+		
+		.how-much
+			color: #b0b3b7;
+			font-size: 14px;
+			display inline-block
+			margin-right 50px
+			
+			span
+				color: #2e2e2e;
+				font-size: 14px;
+				margin-left 20px
+				font-family normal-font
+				
+			span:last-child
+				margin-left 0px 
+				font-family light-font
+			
+			.minus, .plus
+				padding 10px
+				cursor pointer
+				
+			.count
+				padding 0px
+				
+			.small-itog
+				color: #b0b3b7;
+				
+			+ div
+				display inline-block
+				vertical-align top
+				
+				button
+					background light-blue-color
+					min-width 140px
+					text-align center
+					height 40px
+					color: #fff;
+					border: none;
+					font-family: "OpenSansLightRegular";
+					font-size: 14px;
+					border-radius: 0px;
+		
+		#main-image
+			width 390px
+			height 390px
+			display inline-block
+			text-align center
+			vertical-align top
+			
+		.image-list
+			width 70px
+			display inline-block
+			
+			
+			> div
+				width 70px
+				height 70px
+				text-align center
+				line-height 70px
+				
+			> div.active
+				border 2px solid light-blue-color				
+				
+		.row.variants 
+			
+				
+			> .line
+				border-bottom 1px solid light-grey-color
+				
+			> div:first-child
+				font-family bold-font
+				color: #2e2e2e;
+				font-size: 18px;
+				text-transform: uppercase;
+				margin-top 40px
+				
+			> div
+				color: #2e2e2e;
+				font-size: 15px;
+				margin-bottom 40px
+				line-height: 34px;
+				
+				> select
+					display block
+					border-radius initial
+					border none
+					outline none
+					color: #2e2e2e;
+					font-size: 13px;
+					padding 0px 10px
+					
+				> .price
+					font-size: 30px;
+					font-family normal-font
+					font-weight lighter
+					
+					> span
+						font-family bold-font
+		
+		.additional_block
+			
+			> .rate
+				padding 0px 10px
+				line-height 40px
+				float left
+				
+				> .num 
+					background url("../images/rateback.png") no-repeat left center
+					line-height 40px
+					display block
+					width 44px
+					padding-left 8px 
+					float left
+					margin-right 5px
+					vertical-align middle
+					
+				> .est
+					float right
+				
+			> .icons
+				padding 0px 10px
+				margin-bottom 10px
+				float right
+				
+				> * 
+					margin-right 5px
+					border: 1px solid #cbcbcb;
+					width 40px
+					height 40px
+					text-align center
+					line-height 40px
+					display inline-block
+					
+	.row.section.kartochka-tovara-features
+		background #ededed
+		padding 45px
+		margin-bottom 0px
+		
+		> div
+						
+			> img
+				display inline-block
+				vertical-align top
+				margin-top -10px
+		
+			> div
+				display inline-block
+				margin-left 20px
+				max-width 258px
+			
+				> span
+					font-family bold-font
+					display: block;
+					text-transform uppercase
+					margin-bottom 10px
+					
+				> ul > li
+					margin-bottom 10px
+					
+	.row.section > .tab-content .harakteristiki 
+		
+		> .row
+			margin-bottom 20px
+		
+			> .col-lg-8 > div
+				background url("../images/dots-background.jpg") repeat-x bottom left
+				
+			> .col-lg-4 > span
+				vertical-align bottom
+			
+	.row.section.buy-with 
+		padding 20px 50px
+		
+		> .one-block
+			text-align center
+			width 165px
+			display inline-block
+			vertical-align top
+			position relative
+			margin-left: 100px;
+			
+			> input[type='checkbox']
+				position absolute
+				top 0px
+				right 0px
+				display none
+			
+			> input[type='checkbox'] + label 	
+				background none
+				border 1px solid #a9a9a9
+				display inline-block
+				width 20px
+				height 20px
+				position: absolute;
+				right: 0px;
+				top: 0px;
+				
+			> input[type='checkbox']:checked + label
+				background url('../images/checked-blue.png') no-repeat center center
+				border 1px solid #a9a9a9
+				display inline-block
+				width 20px
+				height 20px				
+				
+			// > input[type='checkbox']:not(:checked) + label + div
+			// 	opacity 0.3
+
+			
+			> div
+				margin-bottom 10px
+				line-height 105px
+			
+			> a
+				display block
+				color light-blue-color
+				font-family light-font
+				text-align center
+				font-size: 15px;
+				text-decoration: underline;
+				margin-bottom 10px
+				
+			> span
+				font-family normal-font
+				font-size: 18px;
+				
+			&:before
+				content "+"
+				display block
+				position absolute
+				color: #2e2e2e;
+				font-size: 36px;
+				font-family bold-font
+				left -70px
+				top 35px
+				margin-top -10px
+				
+			> p
+				font-size: 15px;
+				text-align left
+				
+				span 
+					display block
+					font-size: 30px;
+					font-family bold-font
+					
+			> button
+				background light-blue-color
+				border-radius 0px
+				border 0px
+				width: 140px;
+				color white
+				text-align center
+				height 40px
+				font-size: 14px;
+				
+				> img 
+					margin-right 10px
+				
+		> .one-block:first-child
+			margin-left 0px
+			
+			&:before
+				content ""
+
+
+		> .one-block:last-child
+			text-align left
+			
+			&:before
+				content "="
+			
+	.row.tab-control 
+		margin-top 20px
+		margin-bottom 20px
+		text-align center
+
+		ul.nav.nav-tabs
+			border-bottom 0px
+			display inline-block
+			
+			> li > a
+				border none
+				border-radius none
+				background initial
+				border-bottom 1px dashed light-blue-color
+				color light-blue-color
+				padding 1px
+				margin-right 10px
+				font-size: 18px;
+				font-family light-font
+				
+			> li.active > a
+				color: #2e2e2e;
+				border none
+				
+	.row.section.tabs
+		padding 20px
+		
+	.review-summary
+		
+		button
+			background-color: #22b5cd;
+			display block
+			color white
+			width: 266px;
+			height: 55px;
+			font-size: 18px
+			margin-bottom 20px
+			outline none
+			border-radius 0px
+			border none
+			
+		> span 
+			color: #b0b3b7;
+			font-size: 12px;
+		
+		.rate-line
+			line-height 27px
+			height 27px
+			
+			> *
+				display inline-block
+				vertical-align middle
+				
+			> .icon-rateback
+				text-align center
+				padding-right: 4px;
+			
+			span 
+				margin-right 20px
+				color: #2e2e2e;
+				
+	#description-reviews > .row > div > .one-review
+		
+		.rate-line
+			line-height 27px
+			height 27px
+			margin-bottom 20px
+			
+			> *
+				display inline-block
+				vertical-align middle
+				
+			> .icon-rateback
+				text-align center
+				padding-right: 4px;
+			
+			span 
+				margin-left 20px
+				color: #b0b3b7;
+		
+		span.name
+			font-size: 15px;
+			font-family bold-font
+			margin-bottom 20px
+			
+		span.title
+			font-size: 13px;
+			font-family bold-font
+			margin-bottom 20px
+			
+		span.text
+			font-size: 13px;
+			font-family light-font
+			margin-bottom 20px
+			
+		span
+			display block
+			
+	// ----- Завершение разметки для страницы "КАРТОЧКА ТОВАРА"				

@@ -59,11 +59,8 @@ light-font = "OpenSansLightRegular"
 	background white
 	padding 45px 0px
 
-.container.main
+// .container.main
 	// padding-bottom 112px
-
-@require './css-parts/inner-pages'
-@require './css-parts/cross-pages-blocks'
 
 // .navbar-right .login a:before
 // 	display block
@@ -91,8 +88,21 @@ light-font = "OpenSansLightRegular"
 	.one-product .additional_block
 		display none
 		
+		> .line
+			margin 0px 10px
+			border-top 1px solid light-grey-color
+			height 1px
+			padding-bottom 10px
+			background #f8f8f8
+			
 		> .rate
 			padding 0px 10px
+			font-size: 12px;
+			line-height: 27px;
+			margin-bottom: 11px;
+			color dark-black-color
+			background #f8f8f8
+			padding-bottom 10px
 			
 			> .num 
 				// background url("../images/rateback.png")
@@ -105,7 +115,12 @@ light-font = "OpenSansLightRegular"
 				
 			> .est
 				float right
+				font-size: 12px;
 			
+			> a
+				color dark-black-color
+				text-decoration underline
+
 		> .icons
 			padding 0px 10px
 			margin-bottom 10px
@@ -126,6 +141,8 @@ light-font = "OpenSansLightRegular"
 			padding 10px 20px 10px 50px
 			width 130px
 			margin-right 0px
+			font-size: 13px;
+			margin-left 7px
 	
 	.one-product
 		position relative
@@ -133,10 +150,14 @@ light-font = "OpenSansLightRegular"
 		
 		&:hover
 			border 3px solid #00b8d2
-		
-		&:hover .additional_block
+			
+		&:hover .additional_block, &:hover a.left, &:hover a.right
 			display block
-		
+					
+		a.left, a.right
+			// display none
+			background none
+
 		> .feature-label
 			position absolute
 			top 10px
@@ -170,6 +191,7 @@ light-font = "OpenSansLightRegular"
 			padding 23px 20px 50px 20px
 			text-align center
 			background-color: #f8f8f8;
+			min-height 160px
 			
 			a 
 				display block
@@ -178,6 +200,7 @@ light-font = "OpenSansLightRegular"
 				text-decoration underline
 				color light-blue-color
 				font-family light-font				 
+				font-size: 15px;
 				
 			> .price 
 				color: dark-black-color
@@ -191,6 +214,134 @@ light-font = "OpenSansLightRegular"
 				text-decoration: line-through;
 				vertical-align top
 				font-family light-font
+				
+.row.novinki.list
+
+		.one-product.bought
+			
+			&:hover
+				border 3px solid #93cd22
+				
+			> .add-to-cart > .tocart
+				background url("../images/tocart.png") #93cd22 no-repeat 20px center
+			
+		.one-product
+			font-size 0px
+			height 136px
+			border 3px solid white
+			// margin-bottom 10px
+				
+			&:hover
+				border 3px solid light-blue-color
+			
+			> .feature-label
+				width 45px
+				height 22px
+				top 10px
+				left 10px
+				border-radius 10px
+				font-size: 14px;
+				text-align center
+				line-height 22px
+				
+			> .image
+				width 165px
+				height 130px
+				line-height 130px
+				display inline-block
+				
+			> .description
+				display: inline-block;
+				vertical-align: top;
+				background white
+				height 130px
+				font-size 12px
+				width 397px
+				padding-top 14px
+				min-height initial
+				
+				> a
+					line-height: 26px;
+					font-size: 15px;
+					text-align left
+				
+				> .icons
+					text-align left
+					
+					> a
+						font-size 12px
+						text-decoration none
+						color dark-black-color
+						display inline-block
+				
+					> .icon-rateback
+						background url("../images/rate-bakcground.svg")
+						height 23px
+						width 38px
+						line-height 23px
+						display: inline-block;
+						text-align: left;
+						padding-left: 7px;
+						margin-right 10px
+						
+					> img
+						margin-left 25px;
+						
+			> .price
+				display inline-block
+				background white
+				height 130px
+				vertical-align top
+				padding-top 35px
+				width 109px
+				
+				> .price 
+					color: dark-black-color
+					font-size: 18px;
+					font-family bold-font
+					margin-right 10px
+					
+				> .wasprice
+					color: #e4003a;
+					font-size: 12px;
+					text-decoration: line-through;
+					vertical-align top
+					font-family light-font
+					display block
+					text-align center
+				
+			> .add-to-cart
+				display inline-block
+				vertical-align top
+				background white
+				width 170px
+				height 130px
+				font-size: 13px;
+				text-align center
+				padding-top 30px
+				
+				> .tocart
+					background url("../images/tocart.png") light-blue-color no-repeat 20px center
+					height 40px 
+					line-height 40px
+					color white
+					padding 10px 20px 10px 50px
+					width 130px
+					margin-right 0px
+					font-size: 13px;
+					
+				> .est
+					display block
+					margin 0px auto
+					text-align center
+					margin-top 10px
+
+			> .additional_block
+				display inline-block
+				vertical-align top
+				background white
+				height 130px
+				
 
 .row.section 
 	background white
@@ -214,7 +365,49 @@ light-font = "OpenSansLightRegular"
 			font-family normal-font
 			text-decoration underline
 			color light-grey-color
+			
+.container.content
+	padding-bottom 112px
+	
+	.page-header
+		border-bottom 0px
+		margin 10px 0px 20px
+		font-family light-font
+		font-size: 26px;
 
+	.page-sub-header
+		border-bottom 0px
+		margin -20px 0px 20px
+		font-family normal-font
+		font-size: 18px;
+		
+	// .row.section
+		
+	// 	.table-cell.title
+	// 		font-size 18px
+	// 		line-height 48px
+
+	.row.section.cart-list .row.one-line
+		
+		> div:first-child
+			text-align left
+			font-size 18px
+			line-height 48px
+			
+		> div
+			line-height 48px
+			
+		> div:last-child
+			text-align right
+			
+// @require './css-parts/inner-pages'
+// @require './css-parts/catalog-list'
+@require './css-parts/catalog'
+@require './css-parts/kartochka-tovara'
+@require './css-parts/korzina'
+@require './css-parts/oformlenie-zakaza'
+@require './css-parts/oformlenie-zakaza-spasibo'
+@require './css-parts/cross-pages-blocks'
 
 @require "./css-parts/maxwidth1000"			
 @require "./css-parts/maxwidth480"

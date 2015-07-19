@@ -1,0 +1,181 @@
+.container.content.order-confirmation 
+	
+	.row.section.pokupatel
+	
+		.row.one-line
+			height 70px
+			margin-bottom 20px
+			
+			> div:first-child
+				color: #2e2e2e;
+				font-size: 16px;
+				height: 100%;
+				line-height: 70px;
+				
+			> div:nth-of-type(3)
+				padding-left 20px
+				color: #2e2e2e;
+				line-height: 34px;
+
+			> div
+				vertical-align bottom
+
+				input
+					background-color: white;
+					border: 1px solid #d2d2d2;
+					width 364px
+					outline none
+					padding 5px 40px 5px 20px
+					color: #2e2e2e;
+					
+				input.correct
+					border: 1px solid #93cd22;
+					box-shadow: 0 0 5px #b6dd6b;
+					background url("../images/icon-correct.png") #ecf7d8 no-repeat 324px center;
+
+				input.incorrect
+					background url("../images/icon-incorrect.png") #fce4df no-repeat 324px center;
+					border: 1px solid #e35b40;
+					box-shadow: 0 0 5px #eaa79a;
+					
+			> div:nth-of-type(2) > label
+				font-size: 14px;
+				margin-left 10px
+				margin-bottom 5px
+				display block
+				
+	.row.dostavka
+		
+		input
+			margin-right 20px
+			
+		.form-group
+			margin-bottom 20px
+			
+			> .checkbox
+				
+				> label
+					font-family bold-font
+					color: #2e2e2e;
+					font-size: 18px;
+				
+				> span
+					font-family normal-font
+					color: #747474;
+					font-size: 14px;
+					margin-left 53px
+					display inline-block
+					
+		.adres 
+			
+			h3
+				font-size: 16px;
+				font-family bold-font
+				margin-top 7px
+				
+			.form-control
+				border-radius 0px
+				border 1px solid #b0b3b7;
+			
+			> .row > div:not(:last-child)
+				margin-bottom 20px
+					
+		// .one-line
+		// 	vertical-align top
+			
+		// 	label
+		// 		font-family "OpenSansBold"
+		// 		color: #2e2e2e;
+		// 		font-size: 18px;
+				
+		// 		span
+		// 			font-family "OpenSansRegular"
+		// 			color: #747474;
+		// 			font-size: 14px;
+		
+		select
+			border: none;
+			background-color: white;
+			padding-right: 10px;
+			color light-blue-color
+		
+	.row.section.oplata
+		margin-bottom 0px
+		
+		.form-group
+			
+			label
+				font-size: 18px;
+				line-height: 24px;
+				margin-bottom 10px
+				font-family bold-font
+			
+			input
+				margin-right 20px
+			// input
+			// 	margin-right 20px
+			// 	vertical-align middle
+			// 	line-height 24px
+				
+			// label
+			// 	font-family "OpenSansBold"
+			// 	line-height 24px
+			
+	.row.section.coupon
+		margin-top 0px
+		margin-bottom 0px
+		padding 0px
+		text-align center
+		padding 45px 0px
+		background yellow-color
+		
+		span 
+			color: #2e2e2e;
+			font-size: 26px;
+			margin-right 20px
+			
+		input
+			width: 223px;
+			height: 40px;
+			border: 1px solid #d2d2d2;
+			margin-right 20px
+			font-size: 14px;
+			font-family bold-font
+			padding-left 10px
+			text-transform uppercase
+			
+		button
+			background light-blue-color
+			height: 40px;
+			color: white;
+			font-size: 14px;
+			font-family normal-font
+			
+	.row.section.itog
+		margin-top 0px
+		
+		> div
+			padding-top 20px
+			padding-bottom 20px
+		
+		p.summ-itog, p.dostavka-itog
+			color: #2e2e2e;
+			font-size: 18px;
+			font-family bold-font
+			margin-bottom 20px
+			
+		p.all-itog
+			font-size: 30px;
+			font-family bold-font
+			margin-bottom 30px
+			
+			span 
+				color light-blue-color
+				
+		button
+			background light-blue-color
+			width: 266px;
+			height: 56px;
+			text-align center
+			color white
+			font-size: 18px;

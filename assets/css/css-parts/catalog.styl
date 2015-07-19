@@ -1,0 +1,93 @@
+.container.content.catalog
+	
+	.filter
+		background white
+		border 2px solid #d2d2d2
+		padding 20px
+		
+		.collapse-block
+			border-bottom 1px solid #ededed
+			padding 22px 0px 22px
+			
+			&:first-child
+				border-top 1px solid #ededed
+			
+			> svg
+				vertical-align middle
+				
+			> a
+				color dark-black-color
+				text-decoration none
+				font-size: 15px;
+				font-family light-font
+				font-weight 400
+				
+			> .collapse, .collapsing
+				margin-top 20px
+		
+		input[type='checkbox']
+			margin-right 10px
+			width 0px
+			height 0px
+			display inline-block
+			position absolute
+			top 0px
+			left 0px
+			display none
+			
+			&+ label
+				border 1px solid #a9a9a9
+				width 14px
+				height 14px
+				position absolute
+				left 0px
+				top 50%
+				margin-top -7px
+				margin-bottom 0px
+				
+				&+ label
+					margin-left 20px
+					margin-bottom 0px
+					cursor pointer
+					-webkit-touch-callout: none;
+					-webkit-user-select: none;
+					-khtml-user-select: none;
+					-moz-user-select: none;
+					-ms-user-select: none;
+					user-select: none;					
+				
+				
+			&:checked + label
+				background url("../images/blue-checked.svg") no-repeat center center
+			
+		input[type='submit']
+			color dark-black-color
+			border 1px solid light-blue-color
+			font-family light-font
+			background white
+			text-align center
+			display block
+			margin 0px auto
+			font-size: 13px;
+			padding 10px 50px
+			margin-top 20px
+		
+		.w50
+			width: 48%;
+			display: inline-block;
+			position relative
+			margin-bottom 10px
+			
+
+			
+	// Строка с выбором сортировки
+	.sort
+		margin-bottom 20px
+		
+		a
+			margin-left 20px
+			
+			&.active
+				font-family bold-font	
+				color black
+				text-decoration none

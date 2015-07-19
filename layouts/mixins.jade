@@ -1,3 +1,71 @@
+mixin one-4-product(price, name)
+	.col-md-4.col-lg-4.col-sm-6.col-xs-6
+		.one-product
+			.feature-label.new NEW
+			.image.carousel.slide(data-ride="carousel", id='carousel-main-page-tovar-1')
+				.carousel-inner(role='listbox')
+					.item.active
+						img(src='assets/images/tovar1.png')
+					.item
+						img(src='assets/images/tovar2.png')
+					.item
+						img(src='assets/images/tovar3.png')
+					.item
+						img(src='assets/images/tovar4.png')
+				a.left.carousel-control(href="#carousel-main-page-tovar-1" role="button" data-slide="prev")
+					span.glyphicon.glyphicon-chevron-left(aria-hidden="true")
+					span.sr-only Previous
+				a.right.carousel-control(href="#carousel-main-page-tovar-1" role="button" data-slide="next")
+					span.glyphicon.glyphicon-chevron-right(aria-hidden="true")
+					span.sr-only Next
+			.description 
+				a(href='#')= name
+				span.price= price
+				span.wasprice 15 990 руб
+			.additional_block
+				.rate 
+					span.num.icon-rateback 4.5
+					a(href='#') 7 отзывов
+					span.est Есть в наличии
+				.icons
+					img(src='assets/images/icon-heart.png')
+					img(src='assets/images/icon-compare.png')
+					span.tocart В корзину
+
+mixin one-12-product(price, name)
+	.col-md-12.col-lg-12.col-sm-12.col-xs-12
+		.one-product
+			.feature-label.new NEW
+			.image.carousel.slide(data-ride="carousel", id='carousel-main-page-tovar-1')
+				.carousel-inner(role='listbox')
+					.item.active
+						img(src='assets/images/catalog-list-image1.jpg')
+					.item
+						img(src='assets/images/catalog-list-image2.jpg')
+					.item
+						img(src='assets/images/catalog-list-image3.jpg')
+					.item
+						img(src='assets/images/catalog-list-image4.jpg')
+				a.left.carousel-control(href="#carousel-main-page-tovar-1" role="button" data-slide="prev")
+					span.glyphicon.glyphicon-chevron-left(aria-hidden="true")
+					span.sr-only Previous
+				a.right.carousel-control(href="#carousel-main-page-tovar-1" role="button" data-slide="next")
+					span.glyphicon.glyphicon-chevron-right(aria-hidden="true")
+					span.sr-only Next
+			.description 
+				a(href='#')= name
+				.icons
+					span.num.icon-rateback 4.5
+					a(href='#') 7 отзывов
+					img(src='./assets/images/icon-heart.svg')
+					img(src='assets/images/icon-compare.svg')
+			.price
+				span.wasprice 15 990 руб
+				span.price= price
+			.add-to-cart
+				span.tocart В корзину
+				span.est Есть в наличии
+
 mixin one-product(price, name)
 	.col-md-3.col-lg-3.col-sm-6.col-xs-6
 		.one-product
@@ -12,22 +80,22 @@ mixin one-product(price, name)
 						img(src='assets/images/tovar3.png')
 					.item
 						img(src='assets/images/tovar4.png')
-			a.left.carousel-control(href="#carousel-main-page-tovar-1" role="button" data-slide="prev")
-				span.glyphicon.glyphicon-chevron-left(aria-hidden="true")
-				span.sr-only Previous
-			a.right.carousel-control(href="#carousel-main-page-tovar-1" role="button" data-slide="next")
-				span.glyphicon.glyphicon-chevron-right(aria-hidden="true")
-				span.sr-only Next
+				a.left.carousel-control(href="#carousel-main-page-tovar-1" role="button" data-slide="prev")
+					span.glyphicon.glyphicon-chevron-left(aria-hidden="true")
+					span.sr-only Previous
+				a.right.carousel-control(href="#carousel-main-page-tovar-1" role="button" data-slide="next")
+					span.glyphicon.glyphicon-chevron-right(aria-hidden="true")
+					span.sr-only Next
 			.description 
 				a(href='#')= name
 				span.price= price
 				span.wasprice 15 990 руб
 			.additional_block
+				.line
 				.rate 
 					span.num.icon-rateback 4.5
-					span 7 отзывов
+					a(href='#') 7 отзывов
 					span.est Есть в наличии
-				br
 				.icons
 					img(src='assets/images/icon-heart.png')
 					img(src='assets/images/icon-compare.png')
@@ -38,3 +106,34 @@ mixin breadcrumbs()
 		.col-lg-12
 			a(href='#') Главная
 			a(href='#') Корзина
+
+mixin filter-dropdown(id, text)
+	.collapse-block
+		include ../assets/images/arrow-top.svg 
+		a(data-toggle="collapse" href="##{id}")= text 
+		.collapse(id="#{id}") 
+			.w50
+				input(type='checkbox', name='#{id}_name', id='#{id}_name')
+				label.customcheck(for="#{id}_name")
+				label(for="#{id}_name") Alcatel
+			.w50
+				input(type='checkbox', name='#{id}_name', id='#{id}_name')
+				label.customcheck(for="#{id}_name")
+				label(for="#{id}_name") Alcatel
+			.w50
+				input(type='checkbox', name='#{id}_name', id='#{id}_name')
+				label.customcheck(for="#{id}_name")
+				label(for="#{id}_name") Alcatel
+			.w50
+				input(type='checkbox', name='#{id}_name', id='#{id}_name')
+				label.customcheck(for="#{id}_name")
+				label(for="#{id}_name") Alcatel
+			.w50
+				input(type='checkbox', name='#{id}_name', id='#{id}_name')
+				label.customcheck(for="#{id}_name")
+				label(for="#{id}_name") Alcatel
+
+mixin one-checkbox()
+	.collapse-block
+		input(type='checkbox')
+		label Слот для карты памяти

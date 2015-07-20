@@ -74,7 +74,7 @@ body {
   text-decoration: underline;
 }
 .row.novinki .one-product .additional_block > .icons {
-  padding: 0px 10px;
+  padding: 0px 5px;
   margin-bottom: 10px;
 }
 .row.novinki .one-product .additional_block > .icons > * {
@@ -114,6 +114,7 @@ body {
 }
 .row.novinki .one-product a.left,
 .row.novinki .one-product a.right {
+  display: none;
   background: url("../images/arrow-slider-grey.svg") no-repeat 50% 50%;
 }
 .row.novinki .one-product a.left:hover,
@@ -1125,6 +1126,9 @@ body {
 .navbar .navbar-nav.left-menu>.active>a {
   background: none;
   color: #22b5cd;
+}
+.navbar .navbar-nav.left-menu > li:first-child a {
+  padding-left: 0px;
 }
 .navbar .navbar-nav > li {
   font-size: 11px;

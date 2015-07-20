@@ -1095,6 +1095,10 @@ body {
   text-transform: uppercase;
   border: none;
 }
+.navbar .navbar-nav.left-menu>.active>a {
+  background: none;
+  color: #22b5cd;
+}
 .navbar .navbar-nav > li {
   font-size: 11px;
   font-weight: 400;
@@ -1122,7 +1126,6 @@ body {
 .navbar .navbar-nav > li > a:hover,
 .navbar .navbar-nav > li a:active {
   color: #22b5cd;
-  background: none;
 }
 .navbar .navbar-nav > li > a:after {
   content: " | ";

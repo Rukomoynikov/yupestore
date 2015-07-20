@@ -242,6 +242,7 @@
 
 	.menu-main 
 		padding-right 0px
+		// display table
 		// background #22b5cd
 		
 		> a
@@ -268,6 +269,7 @@
 		top 60px
 		padding-left: 0px;
 		margin-left: 15px;
+		padding-right 0px
 		
 		> ul
 			margin 0px 
@@ -287,9 +289,9 @@
 				box-shadow 1px 1px 10px black
 				font-family normal-font
 				
-				
 				> ul 
 					list-style-type none
+					display inline-block
 					
 					> li
 						font-family bold-font
@@ -312,7 +314,7 @@
 				background url("../images/arrow-to-bottom.png") #22b5cd no-repeat 280px center;;
 				
 			li a:hover + .submenu,  li a + .submenu:hover
-				display block
+				display table-cell
 
 	> .search-field
 		height 100%

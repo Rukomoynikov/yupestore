@@ -348,6 +348,7 @@ body {
 .container.content.catalog .filter .collapse-block {
   border-bottom: 1px solid #ededed;
   padding: 22px 0px 22px;
+  position: relative;
 }
 .container.content.catalog .filter .collapse-block:first-child {
   border-top: 1px solid #ededed;
@@ -428,6 +429,10 @@ body {
   font-family: "OpenSansBold";
   color: #000;
   text-decoration: none;
+}
+.container.content.catalog .sort .switcher {
+  display: inline-block;
+  float: right;
 }
 .one-tovar .row.section.kartochka-tovara {
   padding: 40px 15px 15px 15px;
@@ -1321,6 +1326,7 @@ body {
   top: 60px;
   padding-left: 0px;
   margin-left: 15px;
+  padding-right: 0px;
 }
 .row.menu-and-search > .collapse > ul,
 .row.menu-and-search .collapse.in > ul,
@@ -1348,6 +1354,7 @@ body {
 .row.menu-and-search .collapse.in > ul li .submenu > ul,
 .row.menu-and-search .collapsing > ul li .submenu > ul {
   list-style-type: none;
+  display: inline-block;
 }
 .row.menu-and-search > .collapse > ul li .submenu > ul > li,
 .row.menu-and-search .collapse.in > ul li .submenu > ul > li,
@@ -1383,7 +1390,7 @@ body {
 .row.menu-and-search > .collapse > ul li a + .submenu:hover,
 .row.menu-and-search .collapse.in > ul li a + .submenu:hover,
 .row.menu-and-search .collapsing > ul li a + .submenu:hover {
-  display: block;
+  display: table-cell;
 }
 .row.menu-and-search > .search-field {
   height: 100%;

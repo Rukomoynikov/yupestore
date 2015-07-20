@@ -135,5 +135,6 @@ mixin filter-dropdown(id, text)
 
 mixin one-checkbox()
 	.collapse-block
-		input(type='checkbox')
-		label Слот для карты памяти
+		input(type='checkbox', name='slot_filter', id='slot_filter')
+		label.customcheck(for="slot_filter")
+		label(for="slot_filter") Слот для карты памяти и чего то там ещё

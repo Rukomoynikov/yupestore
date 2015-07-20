@@ -99,6 +99,7 @@ body {
 .row.novinki .one-product {
   position: relative;
   border: 3px solid #f4f4f4;
+  margin-bottom: 105px;
 }
 .row.novinki .one-product:hover {
   border: 3px solid #00b8d2;
@@ -108,9 +109,28 @@ body {
 .row.novinki .one-product:hover a.right {
   display: block;
 }
+.row.novinki .one-product:hover .additional_block {
+  position: absolute;
+}
 .row.novinki .one-product a.left,
 .row.novinki .one-product a.right {
-  background: none;
+  background: url("../images/arrow-slider-grey.svg") no-repeat 50% 50%;
+}
+.row.novinki .one-product a.left:hover,
+.row.novinki .one-product a.right:hover {
+  background: url("../images/arrow-slider-blue.svg") no-repeat 50% 50%;
+}
+.row.novinki .one-product a.left:hover {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+}
+.row.novinki .one-product a.right {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+}
+.row.novinki .one-product a.right:hover {
+  -webkit-transform: rotateY(0deg);
+          transform: rotateY(0deg);
 }
 .row.novinki .one-product > .feature-label {
   position: absolute;

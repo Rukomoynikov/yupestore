@@ -147,16 +147,33 @@ light-font = "OpenSansLightRegular"
 	.one-product
 		position relative
 		border 3px solid #f4f4f4
+		margin-bottom 105px
 		
 		&:hover
 			border 3px solid #00b8d2
 			
 		&:hover .additional_block, &:hover a.left, &:hover a.right
 			display block
+			
+		&:hover .additional_block
+			position absolute
 					
 		a.left, a.right
 			// display none
-			background none
+			background url('../images/arrow-slider-grey.svg')  no-repeat 50% 50%
+			
+		a.left:hover, a.right:hover
+			// display none
+			background url('../images/arrow-slider-blue.svg')  no-repeat 50% 50%
+			
+		a.left:hover
+			transform rotateY(180deg)
+
+		a.right
+			transform rotateY(180deg)
+			
+		a.right:hover
+			transform rotateY(0deg)
 
 		> .feature-label
 			position absolute

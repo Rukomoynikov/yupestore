@@ -699,6 +699,10 @@ body {
   margin-bottom: 20px;
   text-align: center;
 }
+.one-tovar .row.tab-control > div {
+  text-align: left;
+  padding-left: 40px;
+}
 .one-tovar .row.tab-control ul.nav.nav-tabs {
   border-bottom: 0px;
   display: inline-block;
@@ -717,6 +721,9 @@ body {
 .one-tovar .row.tab-control ul.nav.nav-tabs > li.active > a {
   color: #2e2e2e;
   border: none;
+}
+.one-tovar .row.tab-control ul.nav.nav-tabs > li:not(.active) > a:hover {
+  border-bottom: 1px solid #22b5cd;
 }
 .one-tovar .row.section.tabs {
   padding: 20px;

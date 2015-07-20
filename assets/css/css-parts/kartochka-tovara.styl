@@ -278,6 +278,10 @@
 		margin-top 20px
 		margin-bottom 20px
 		text-align center
+		
+		> div
+			text-align: left;
+			padding-left: 40px;
 
 		ul.nav.nav-tabs
 			border-bottom 0px
@@ -297,6 +301,9 @@
 			> li.active > a
 				color: #2e2e2e;
 				border none
+				
+			> li:not(.active) > a:hover
+				border-bottom 1px solid light-blue-color
 				
 	.row.section.tabs
 		padding 20px

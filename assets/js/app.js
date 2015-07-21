@@ -1,13 +1,3 @@
-// $(document).ready(function(){
-// 	$('.carousel').carousel()
-// })
-
-
-// jQuery.fn.Test = {
-// 		open : function(){
-// 			return self
-// 		}, 
-// 		close : function(){
-
-// 		}
-// 	}
+$(document).on('click',function(){
+	$('.collapse').collapse('hide');
+})

@@ -1425,7 +1425,7 @@ body {
 .row.menu-and-search > .collapse > ul li a:hover,
 .row.menu-and-search .collapse.in > ul li a:hover,
 .row.menu-and-search .collapsing > ul li a:hover {
-  background: url("../images/arrow-to-bottom.png") #22b5cd no-repeat 280px center;
+  background: url("../images/menu-arrow.svg") #22b5cd no-repeat 280px center;
 }
 .row.menu-and-search > .collapse > ul li a:hover + .submenu,
 .row.menu-and-search .collapse.in > ul li a:hover + .submenu,

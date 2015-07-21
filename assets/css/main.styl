@@ -122,8 +122,9 @@ light-font = "OpenSansLightRegular"
 				text-decoration underline
 
 		> .icons
-			padding: 0px 5px;
+			padding: 10px 5px;
 			margin-bottom 10px
+			background #e7e7e7
 			
 			> * 
 				margin-right 5px
@@ -147,7 +148,9 @@ light-font = "OpenSansLightRegular"
 	.one-product
 		position relative
 		border 3px solid #f4f4f4
-		margin-bottom 105px
+		margin-bottom 20px
+		height 556px
+		overflow hidden
 		
 		&:hover
 			border 3px solid #00b8d2
@@ -156,7 +159,7 @@ light-font = "OpenSansLightRegular"
 			display block
 			
 		&:hover .additional_block
-			position absolute
+			position relative
 					
 		a.left, a.right
 			display none
@@ -205,10 +208,11 @@ light-font = "OpenSansLightRegular"
 				vertical-align middle
 							
 		.description 
-			padding 23px 20px 50px 20px
+			padding 23px 20px 0px 20px
 			text-align center
 			background-color: #f8f8f8;
-			min-height 160px
+			// min-height 160px
+			min-height 130px
 			
 			a 
 				display block
@@ -358,7 +362,6 @@ light-font = "OpenSansLightRegular"
 				vertical-align top
 				background white
 				height 130px
-				
 
 .row.section 
 	background white

@@ -58,12 +58,34 @@ body {
   padding-bottom: 10px;
 }
 .row.novinki .one-product .additional_block > .rate > .num {
+  position: relative;
   line-height: 27px;
   display: block;
   width: 44px;
-  padding-left: 8px;
   float: left;
   margin-right: 5px;
+  text-align: center;
+  padding-right: 2px;
+}
+.row.novinki .one-product .additional_block > .rate > .num > svg {
+  position: absolute;
+  left: 0px;
+  top: 1px;
+}
+.row.novinki .one-product .additional_block > .rate > .num.svg-grey > svg > polyline {
+  stroke: #b0b0b0;
+}
+.row.novinki .one-product .additional_block > .rate > .num.svg-green > svg > polyline {
+  stroke: #93cd22;
+}
+.row.novinki .one-product .additional_block > .rate > .num.svg-red > svg > polyline {
+  stroke: #f00;
+}
+.row.novinki .one-product .additional_block > .rate > .num.svg-skewed > svg > polyline.normal {
+  display: none;
+}
+.row.novinki .one-product .additional_block > .rate > .num.svg-normal > svg > polyline.skewed {
+  display: none;
 }
 .row.novinki .one-product .additional_block > .rate > .est {
   float: right;

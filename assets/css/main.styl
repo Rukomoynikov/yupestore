@@ -105,13 +105,36 @@ light-font = "OpenSansLightRegular"
 			padding-bottom 10px
 			
 			> .num 
-				// background url("../images/rateback.png")
+				// background url("../images/rating-background.svg")
+				position relative
 				line-height 27px
 				display block
 				width 44px
-				padding-left 8px 
+				// padding-left 8px 
 				float left
 				margin-right 5px
+				text-align: center;
+				padding-right: 2px;
+				
+				> svg
+					position absolute
+					left 0px
+					top 1px
+					
+				&.svg-grey > svg > polyline
+					stroke light-grey-color
+					
+				&.svg-green > svg > polyline
+					stroke #93cd22
+					
+				&.svg-red > svg > polyline
+					stroke red
+					
+				&.svg-skewed > svg > polyline.normal
+					display none
+
+				&.svg-normal > svg > polyline.skewed
+					display none
 				
 			> .est
 				float right
@@ -150,6 +173,7 @@ light-font = "OpenSansLightRegular"
 		border 3px solid #f4f4f4
 		margin-bottom 20px
 		height 556px
+		// height 544px
 		overflow hidden
 		
 		&:hover

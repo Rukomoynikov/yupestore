@@ -1,0 +1,4 @@
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
+	<polyline class='normal' points='2,2 31,2 38,11 31,22 2,22 2,2' fill='none' stroke-width='2px' stroke='red' />
+	<polyline class='skewed' points='2,2 31,2 38,11 31,22 2,22 9,11 2,2' fill='none' stroke-width='2px' stroke='red' />
+</svg>

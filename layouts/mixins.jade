@@ -1,3 +1,4 @@
+// Используется на странице каталога.
 mixin one-4-product(price, name)
 	.col-md-4.col-lg-4.col-sm-6.col-xs-6
 		.one-product
@@ -24,7 +25,8 @@ mixin one-4-product(price, name)
 				span.wasprice 15 990 руб
 			.additional_block
 				.rate 
-					span.num.icon-rateback 4.5
+					span.num.svg-red.svg-skewed 4.5
+						include ../assets/images/rating-background.svg
 					a(href='#') 7 отзывов
 					span.est Есть в наличии
 				.icons
@@ -55,7 +57,8 @@ mixin one-12-product(price, name)
 			.description 
 				a(href='#')= name
 				.icons
-					span.num.icon-rateback 4.5
+					span.num.svg-grey.svg-normal 4.5
+						include ../assets/images/rating-background.svg
 					a(href='#') 7 отзывов
 					img(src='./assets/images/icon-heart.svg')
 					img(src='assets/images/icon-compare.svg')
@@ -66,6 +69,7 @@ mixin one-12-product(price, name)
 				span.tocart В корзину
 				span.est Есть в наличии
 
+// Используется на главной странице.
 mixin one-product(price, name)
 	.col-md-3.col-lg-3.col-sm-6.col-xs-6
 		.one-product
@@ -93,7 +97,8 @@ mixin one-product(price, name)
 			.additional_block
 				.line
 				.rate 
-					span.num.icon-rateback 4.5
+					span.num.svg-grey.svg-normal 4.5
+						include ../assets/images/rating-background.svg
 					a(href='#') 7 отзывов
 					span.est Есть в наличии
 				.icons

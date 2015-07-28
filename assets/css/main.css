@@ -203,6 +203,7 @@ body {
   font-size: 0px;
   height: 136px;
   border: 3px solid #fff;
+  margin-bottom: 0px;
 }
 .row.novinki.list .one-product:hover {
   border: 3px solid #22b5cd;
@@ -412,7 +413,8 @@ body {
   margin-bottom: 0px;
 }
 .container.content.catalog .filter input[type='checkbox']+ label+ label {
-  margin-left: 20px;
+  font-family: "OpenSansLightRegular";
+  margin-left: 25px;
   margin-bottom: 0px;
   cursor: pointer;
   -webkit-touch-callout: none;
@@ -1231,11 +1233,11 @@ body {
   color: #b8b8b8;
   font-family: "OpenSansLightRegular";
 }
-.header > .logo > img {
-  margin-right: 30px;
-}
-.header > .logo > span.slogan {
+.header > .logo > a.slogan {
   display: inline-block;
+  margin-left: 30px;
+  color: #b0b0b0;
+  text-decoration: none;
 }
 .header .phone-and-cart {
   text-align: right;
@@ -1557,6 +1559,32 @@ body {
 }
 .row.breadcrumbs div ahover {
   text-decoration: underline;
+}
+.row.paginate {
+  text-align: center;
+}
+.row.paginate li {
+  margin-right: 5px;
+  display: inline-block;
+}
+.row.paginate li.active a {
+  pointer-events: none;
+  background: #93cd22;
+  border: none;
+  color: #fff;
+}
+.row.paginate li a {
+  background: none;
+  border: 1px solid #b0b0b0;
+  color: #000;
+  width: 38px;
+  height: 34px;
+}
+.row.paginate li a:hover:not(.active) {
+  border: 1px solid #000;
+}
+.row.paginate li a:last-child {
+  border-radius: 0px;
 }
 @media screen and (max-width: 992px) {
   .row.menu-and-search > .menu-main {

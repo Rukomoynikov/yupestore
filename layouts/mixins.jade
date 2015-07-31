@@ -1,4 +1,4 @@
-// Используется на странице каталога.
+// Используется на странице каталога плиткой.
 mixin one-4-product(price, name)
 	.col-md-4.col-lg-4.col-sm-6.col-xs-6
 		.one-product
@@ -20,7 +20,7 @@ mixin one-4-product(price, name)
 					//- span.glyphicon.glyphicon-chevron-right(aria-hidden="true")
 					span.sr-only Next
 			.description 
-				a(href='#')= name
+				a(href='kartocha-tovara.html')= name
 				span.price= price
 				span.wasprice 15 990 руб
 			.additional_block
@@ -34,6 +34,7 @@ mixin one-4-product(price, name)
 					img(src='assets/images/icon-compare.png')
 					span.tocart В корзину
 
+// Используется на странице каталога списком.
 mixin one-12-product(price, name)
 	.col-md-12.col-lg-12.col-sm-12.col-xs-12
 		.one-product
@@ -55,7 +56,7 @@ mixin one-12-product(price, name)
 					//- span.glyphicon.glyphicon-chevron-right(aria-hidden="true")
 					span.sr-only Next
 			.description 
-				a(href='#')= name
+				a(href='kartocha-tovara.html')= name
 				.icons
 					span.num.svg-grey.svg-normal 4.5
 						include ../assets/images/rating-background.svg
@@ -91,7 +92,7 @@ mixin one-product(price, name)
 					//- span.glyphicon.glyphicon-chevron-right(aria-hidden="true")
 					span.sr-only Next
 			.description 
-				a(href='#')= name
+				a(href='kartocha-tovara.html')= name
 				span.price= price
 				span.wasprice 15 990 руб
 			.additional_block
@@ -105,41 +106,43 @@ mixin one-product(price, name)
 					img(src='assets/images/icon-heart.png')
 					img(src='assets/images/icon-compare.png')
 					span.tocart В корзину
-
+// Хлебные крошки
 mixin breadcrumbs()
 	.row.breadcrumbs
 		.col-lg-12
 			a(href='#') Главная
 			a(href='#') Корзина
 
+// Фильтр для страницы каталога
 mixin filter-dropdown(id, text)
 	.collapse-block
-		include ../assets/images/arrow-top.svg 
-		a(data-toggle="collapse" href="##{id}")= text 
+		a.collapsed(data-toggle="collapse" href="##{id}")
+			include ../assets/images/arrow-top.svg 
+			| #{text}
 		.collapse(id="#{id}") 
 			.w50
-				input(type='checkbox', name='#{id}_name', id='#{id}_name')
+				input.styled-checkbox(type='checkbox', name='#{id}_name', id='#{id}_name')
 				label.customcheck(for="#{id}_name")
 				label(for="#{id}_name") Alcatel
 			.w50
-				input(type='checkbox', name='#{id}_name', id='#{id}_name')
+				input.styled-checkbox(type='checkbox', name='#{id}_name', id='#{id}_name')
 				label.customcheck(for="#{id}_name")
 				label(for="#{id}_name") Alcatel
 			.w50
-				input(type='checkbox', name='#{id}_name', id='#{id}_name')
+				input.styled-checkbox(type='checkbox', name='#{id}_name', id='#{id}_name')
 				label.customcheck(for="#{id}_name")
 				label(for="#{id}_name") Alcatel
 			.w50
-				input(type='checkbox', name='#{id}_name', id='#{id}_name')
+				input.styled-checkbox(type='checkbox', name='#{id}_name', id='#{id}_name')
 				label.customcheck(for="#{id}_name")
 				label(for="#{id}_name") Alcatel
 			.w50
-				input(type='checkbox', name='#{id}_name', id='#{id}_name')
+				input.styled-checkbox(type='checkbox', name='#{id}_name', id='#{id}_name')
 				label.customcheck(for="#{id}_name")
 				label(for="#{id}_name") Alcatel
 
 mixin one-checkbox()
 	.collapse-block
-		input(type='checkbox', name='slot_filter', id='slot_filter')
+		input.styled-checkbox(type='checkbox', name='slot_filter', id='slot_filter')
 		label.customcheck(for="slot_filter")
 		label(for="slot_filter") Слот для карты памяти и чего то там ещё

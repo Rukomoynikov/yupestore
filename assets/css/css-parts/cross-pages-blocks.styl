@@ -314,8 +314,16 @@
 							font-family normal-font
 							list-style-type none
 							padding-left 0px
+							
+				a
+					background white
+					padding initial
+					color dark-black-color
+					
+					&:hover
+						background initial
 				
-			li a
+			> li a
 				// background url("../images/arrow-to-bottom.png") black no-repeat 280px center;
 				background url("../images/menu-arrow.svg") black no-repeat 280px center;
 				color white
@@ -479,3 +487,70 @@
 				
 		a:last-child
 			border-radius: 0px
+			
+.row.section.coupon
+	margin-top 0px
+	margin-bottom 0px
+	padding 0px
+	text-align center
+	padding 45px 0px
+	background yellow-color
+	
+	span 
+		color: #2e2e2e;
+		font-size: 26px;
+		margin-right 20px
+		
+	input
+		width: 223px;
+		height: 40px;
+		border: 1px solid #d2d2d2;
+		margin-right 20px
+		font-size: 14px;
+		font-family bold-font
+		padding-left 10px
+		text-transform uppercase
+		
+	button
+		background light-blue-color
+		height: 40px;
+		color: white;
+		font-size: 14px;
+		font-family normal-font
+		
+
+input.styled-checkbox[type='checkbox']
+	margin-right 10px
+	width 0px
+	height 0px
+	display inline-block
+	position absolute
+	top 0px
+	left 0px
+	display none
+	
+	&+ label
+		border 1px solid #a9a9a9
+		width 14px
+		height 14px
+		position absolute
+		left 0px
+		top 50%
+		margin-top -7px
+		margin-bottom 0px
+		
+		&+ label
+			font-family light-font 
+			margin-left 25px
+			margin-bottom 0px
+			cursor pointer
+			-webkit-touch-callout: none;
+			-webkit-user-select: none;
+			-khtml-user-select: none;
+			-moz-user-select: none;
+			-ms-user-select: none;
+			user-select: none;					
+		
+		
+	&:checked + label
+		background url("../images/blue-checked.svg") no-repeat center center

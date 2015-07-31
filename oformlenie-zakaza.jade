@@ -45,34 +45,41 @@ block content
 					.col-lg-5.col-xs-12 — При заполнении допущена ошибка Email не может быть без символа @ При заполнении допущена ошибка Email не может быть без символа @
 		.row.section.dostavka
 			.col-lg-12.section-header
-				h2 Доставка 
-					select
-						option Москва
+				h2 Доставка: 
+						a.opencitylist(data-toggle="collapse" href="#city-list") Москва
+						.collapse#city-list
+							ul
+								li Москва
+								li Санкт-Петербург
 			.col-lg-8
 				form.form-horizontal
 					.form-group
 						.checkbox
 							label
-								input(type="radio") 
+								input(type="radio", name="group1") 
+								label
 								| Доставка по Москве - 300 руб.
 							br
 							span Осуществляется на следующий день после подтверждения заказа.
 					.form-group
 						.checkbox
 							label
-								input(type="radio") 
+								input(type="radio", name="group1") 
+								label
 								| Срочная доставка в день заказа в пределах МКАД – 500 р.
 					.form-group
 						.checkbox
 							label
-								input(type="radio") 
+								input(type="radio", name="group1") 
+								label
 								| Доставка за пределы МКАД – 600 р. (до 9 км включительно)
 							br
 							span Осуществляется на следующий день после подтверждения заказа.
 					.form-group
 						.checkbox
 							label
-								input(type="radio") 
+								input(type="radio", name="group1") 
+								label
 								| Самовывоз
 							br
 							span Здесь пишем адрес магазина или точки выдачи товаров. Товар можно забрать ежедневно с 13:00 до 20:00 после подтверждения заказа менеджером.
@@ -99,27 +106,32 @@ block content
 					.form-group
 						.checkbox
 							label
-								input(type="radio") 
+								input(type="radio", name="group2")
+								label
 								| Наличный расчёт при получении
 					.form-group
 						.checkbox
 							label
-								input(type="radio") 
+								input(type="radio", name="group2") 
+								label
 								| Яндекс.Деньги
 					.form-group
 						.checkbox
 							label
-								input(type="radio") 
+								input(type="radio", name="group2")
+								label
 								| QIWI Wallet
 					.form-group
 						.checkbox
 							label
-								input(type="radio") 
+								input(type="radio", name="group2") 
+								label
 								| Банковский перевод
 					.form-group
 						.checkbox
 							label
-								input(type="radio") 
+								input(type="radio", name="group2") 
+								label
 								| Почтовый перевод
 		.row.section.coupon
 			.col-lg-12.yellow-container

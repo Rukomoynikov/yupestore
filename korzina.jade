@@ -17,19 +17,25 @@ block content
 					.col-lg-2.col-md-2.col-sm-2.col-xs-12 Количество
 					.col-lg-2.col-md-2.col-sm-2.col-xs-12 Сумма, руб.
 			.col-lg-12
-				mixin product-line
+				mixin product-line()
 					.row.product-line
 						.col-lg-2.col-md-2.col-sm-2.col-xs-12
-							input(type='checkbox')
+							input.styled-checkbox(type='checkbox', name='', id='custom-ch')
+							label.customcheck(for="custom-ch")
 							img(src='./assets/images/oformlenie-zakaza-spasibo.jpg')
 						.col-lg-4.col-md-4.col-sm-4.col-xs-12
 							div Мобильный телефон 
 								a(href='#') Sony Xperia V (LT25i Black)
 						.col-lg-2.col-md-2.col-sm-2.col-xs-12 12 990
-						.col-lg-2.col-md-2.col-sm-2.col-xs-12 2
+						.col-lg-2.col-md-2.col-sm-2.col-xs-12.amount
+							span -
+							input(type='text', value='1')
+							span +
 						.col-lg-2.col-md-2.col-sm-2.col-xs-12 25 980
-				+product-line
-				+product-line
+							include ./assets/images/korzina-remove-one.svg
+				+product-line()
+				+product-line()
+				+product-line()
 		.row.section.coupon
 			.col-lg-12.yellow-container
 				span Купон на скидку:

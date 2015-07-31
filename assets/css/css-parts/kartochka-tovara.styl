@@ -127,7 +127,7 @@
 				margin-bottom 10px
 				float right
 				
-				> * 
+				> div 
 					margin-right 5px
 					border: 1px solid #cbcbcb;
 					width 40px
@@ -135,6 +135,18 @@
 					text-align center
 					line-height 40px
 					display inline-block
+					cursor pointer
+					
+					> svg
+						vertical-align middle
+					
+					&:hover
+						border 1px solid light-blue-color
+						// background light-blue-color
+						
+						> svg > path
+							fill light-blue-color
+						
 					
 	.row.section.kartochka-tovara-features
 		background #ededed

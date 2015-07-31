@@ -10,57 +10,27 @@
 			padding 22px 0px 22px
 			position relative
 			
-			&:first-child
-				border-top 1px solid #ededed
-			
-			> svg
-				vertical-align middle
+			// &:first-child
+				// border-top 1px solid #ededed
 				
-			> a
+			a
 				color dark-black-color
 				text-decoration none
 				font-size: 15px;
 				font-family light-font
 				font-weight 400
 				
+				> svg
+					transform rotateX(180deg)
+					transform-origin 50% 30%
+					
+				&:not(.collapsed) > svg
+					transform rotateX(0deg)
+					vertical-align middle
+					// transition all 0.3s 
+									
 			> .collapse, .collapsing
 				margin-top 20px
-		
-		input[type='checkbox']
-			margin-right 10px
-			width 0px
-			height 0px
-			display inline-block
-			position absolute
-			top 0px
-			left 0px
-			display none
-			
-			&+ label
-				border 1px solid #a9a9a9
-				width 14px
-				height 14px
-				position absolute
-				left 0px
-				top 50%
-				margin-top -7px
-				margin-bottom 0px
-				
-				&+ label
-					font-family light-font 
-					margin-left 25px
-					margin-bottom 0px
-					cursor pointer
-					-webkit-touch-callout: none;
-					-webkit-user-select: none;
-					-khtml-user-select: none;
-					-moz-user-select: none;
-					-ms-user-select: none;
-					user-select: none;					
-				
-				
-			&:checked + label
-				background url("../images/blue-checked.svg") no-repeat center center
 			
 		input[type='submit']
 			color dark-black-color

@@ -14,6 +14,12 @@ block content
 		.row
 			.col-lg-3
 				.filter
+					form
+						+filter-dropdown("type1", "Производитель")
+						+filter-dropdown("type2", "Тип")
+						+filter-dropdown("type3", "Платформа")
+						+one-checkbox()
+						input(type='submit', value='Применить')
 			.col-lg-9
 				.row.sort 
 					.col-lg-12 Сортировать :

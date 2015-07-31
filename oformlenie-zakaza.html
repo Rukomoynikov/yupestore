@@ -1,6 +1,9 @@
 
-<!-- Используется на странице каталога.-->
-<!-- Используется на главной странице.--><!DOCTYPE html>
+<!-- Используется на странице каталога плиткой.-->
+<!-- Используется на странице каталога списком.-->
+<!-- Используется на главной странице.-->
+<!-- Хлебные крошки-->
+<!-- Фильтр для страницы каталога--><!DOCTYPE html>
 <html>
   <head>
     <title>YupeStore</title>
@@ -66,12 +69,11 @@
           <li> <a href="catalog.html">Мелкая техника для кухни</a>
             <div class="submenu">
               <ul> 
-                <li>Вытяжки
-                  <ul> 
-                    <li>Встраиваемые </li>
-                    <li>Купольные</li>
-                  </ul>
-                </li>
+                <li><a href="catalog.html">Вытяжки
+                    <ul> 
+                      <li><a href="catalog.html">Встраиваемые </a></li>
+                      <li><a href="catalog.html">Купольные</a></li>
+                    </ul></a></li>
                 <li>Встраиваемые духовые шкафы</li>
               </ul>
               <ul> 
@@ -183,10 +185,13 @@
     </div>
     <div class="row section dostavka">
       <div class="col-lg-12 section-header">
-        <h2>Доставка 
-          <select>
-            <option>Москва</option>
-          </select>
+        <h2>Доставка: <a data-toggle="collapse" href="#city-list" class="opencitylist">Москва</a>
+          <div id="city-list" class="collapse">
+            <ul>
+              <li>Москва</li>
+              <li>Санкт-Петербург</li>
+            </ul>
+          </div>
         </h2>
       </div>
       <div class="col-lg-8">
@@ -194,28 +199,32 @@
           <div class="form-group">
             <div class="checkbox">
               <label>
-                <input type="radio">Доставка по Москве - 300 руб.
+                <input type="radio" name="group1">
+                <label></label>Доставка по Москве - 300 руб.
               </label><br><span>Осуществляется на следующий день после подтверждения заказа.</span>
             </div>
           </div>
           <div class="form-group">
             <div class="checkbox">
               <label>
-                <input type="radio">Срочная доставка в день заказа в пределах МКАД – 500 р.
+                <input type="radio" name="group1">
+                <label></label>Срочная доставка в день заказа в пределах МКАД – 500 р.
               </label>
             </div>
           </div>
           <div class="form-group">
             <div class="checkbox">
               <label>
-                <input type="radio">Доставка за пределы МКАД – 600 р. (до 9 км включительно)
+                <input type="radio" name="group1">
+                <label></label>Доставка за пределы МКАД – 600 р. (до 9 км включительно)
               </label><br><span>Осуществляется на следующий день после подтверждения заказа.</span>
             </div>
           </div>
           <div class="form-group">
             <div class="checkbox">
               <label>
-                <input type="radio">Самовывоз
+                <input type="radio" name="group1">
+                <label></label>Самовывоз
               </label><br><span>Здесь пишем адрес магазина или точки выдачи товаров. Товар можно забрать ежедневно с 13:00 до 20:00 после подтверждения заказа менеджером.</span>
             </div>
           </div>
@@ -252,35 +261,40 @@
           <div class="form-group">
             <div class="checkbox">
               <label>
-                <input type="radio">Наличный расчёт при получении
+                <input type="radio" name="group2">
+                <label></label>Наличный расчёт при получении
               </label>
             </div>
           </div>
           <div class="form-group">
             <div class="checkbox">
               <label>
-                <input type="radio">Яндекс.Деньги
+                <input type="radio" name="group2">
+                <label></label>Яндекс.Деньги
               </label>
             </div>
           </div>
           <div class="form-group">
             <div class="checkbox">
               <label>
-                <input type="radio">QIWI Wallet
+                <input type="radio" name="group2">
+                <label></label>QIWI Wallet
               </label>
             </div>
           </div>
           <div class="form-group">
             <div class="checkbox">
               <label>
-                <input type="radio">Банковский перевод
+                <input type="radio" name="group2">
+                <label></label>Банковский перевод
               </label>
             </div>
           </div>
           <div class="form-group">
             <div class="checkbox">
               <label>
-                <input type="radio">Почтовый перевод
+                <input type="radio" name="group2">
+                <label></label>Почтовый перевод
               </label>
             </div>
           </div>

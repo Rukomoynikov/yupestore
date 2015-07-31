@@ -1070,6 +1070,16 @@ body {
   text-align: center;
   line-height: 176px;
 }
+.row.section.product-list > div > .row.product-line > div:first-child > label {
+  position: absolute;
+  left: 10px;
+}
+.row.section.product-list > div > .row.product-line > div:last-child > svg {
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  margin-top: -6px;
+}
 .row.section.product-list > div > .row.product-line > div:nth-of-type(2) {
   text-align: left;
   color: #b0b3b7;
@@ -1095,10 +1105,8 @@ body {
 .row.section.product-list > div > .row.product-line div.amount > input {
   border: 0px;
   outline: none;
-  display: inline;
   text-align: center;
-  height: 20px;
-  width: 30px;
+  width: 70px;
 }
 .itogi {
   border-top: 1px solid #f4f4f4;

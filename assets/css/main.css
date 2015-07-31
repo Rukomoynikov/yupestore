@@ -121,13 +121,14 @@ body {
 }
 .row.novinki .one-product {
   position: relative;
-  border: 3px solid #f4f4f4;
-  margin-bottom: 20px;
-  height: 556px;
+  border: 0px;
+  outline: none;
+  height: 550px;
   overflow: hidden;
+  margin-bottom: 3px;
 }
 .row.novinki .one-product:hover {
-  border: 3px solid #00b8d2;
+  outline: 3px solid #22b5cd;
 }
 .row.novinki .one-product:hover .additional_block,
 .row.novinki .one-product:hover a.left,

@@ -7,3 +7,11 @@ $(document).on('keydown',function(key){
 		$('.collapse').collapse('hide');
 	}
 })
+
+$(function(){
+
+	$('li.choosecity').on('click', function(elem){
+		$('.opencitylist').text($(this).text());
+	})
+
+})

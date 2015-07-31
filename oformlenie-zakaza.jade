@@ -45,12 +45,13 @@ block content
 					.col-lg-5.col-xs-12 — При заполнении допущена ошибка Email не может быть без символа @ При заполнении допущена ошибка Email не может быть без символа @
 		.row.section.dostavka
 			.col-lg-12.section-header
+				input(type='hidden', name='city', value='', id='city')
 				h2 Доставка: 
-						a.opencitylist(data-toggle="collapse" href="#city-list") Москва
+						a.collapsed.opencitylist(data-toggle="collapse" href="#city-list") Москва
 						.collapse#city-list
 							ul
-								li Москва
-								li Санкт-Петербург
+								li.choosecity Москва
+								li.choosecity Санкт-Петербург
 			.col-lg-8
 				form.form-horizontal
 					.form-group

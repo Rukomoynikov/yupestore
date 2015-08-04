@@ -3,6 +3,7 @@
 <!-- Используется на странице каталога списком.-->
 <!-- Используется на главной странице.-->
 <!-- Хлебные крошки-->
+<!-- Фильтр для страницы каталога слайдер-->
 <!-- Фильтр для страницы каталога--><!DOCTYPE html>
 <html>
   <head>
@@ -11,8 +12,11 @@
     <link rel="stylesheet" href="assets/fonts/osans/osans.css">
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/jquery-ui.min.css">
     <link rel="stylesheet" href="assets/images/sprite/sprite.css">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
     <script type="text/javascript" src="assets/js/jquery.min.js"></script>
+    <script type="text/javascript" src="assets/js/jquery-ui.min.js"></script>
     <script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="assets/js/app.js"></script>
   </head>
@@ -127,251 +131,253 @@
     </div>
   </div>
   <div class="container content order-confirmation">
-    <div class="row breadcrumbs">
-      <div class="col-lg-12"><a href="#">Главная</a><a href="#">Корзина</a></div>
-    </div>
-    <div class="row">
-      <div class="col-lg-12">
-        <h2 class="page-header">Оформление заказа</h2>
+    <form>
+      <div class="row breadcrumbs">
+        <div class="col-lg-12"><a href="#">Главная</a><a href="#">Корзина</a></div>
       </div>
-    </div>
-    <div class="row section cart-list">
-      <div class="col-lg-12 order-count section-header">
-        <h2>Мой заказ: 2 товара <a href="#"> (вернуться в корзину)</a></h2>
-      </div>
-      <div class="col-lg-12">
-        <div class="row one-line">
-          <div class="col-lg-8 col-xs-12 title">Смартфон Sony Xperia V (LT25i Black)</div>
-          <div class="col-lg-2 col-xs-6">1 </div>
-          <div class="col-lg-2 col-xs-6">13 885 руб.</div>
-        </div>
-        <div class="row one-line">
-          <div class="col-lg-8 col-xs-12 title">Смартфон Samsung Galaxy Alpha (SM-G850F 32Gb)</div>
-          <div class="col-lg-2 col-xs-6">1 </div>
-          <div class="col-lg-2 col-xs-6">13 885 руб.</div>
+      <div class="row">
+        <div class="col-lg-12">
+          <h2 class="page-header">Оформление заказа</h2>
         </div>
       </div>
-    </div>
-    <div class="row section pokupatel">
-      <div class="col-lg-12 section-header">
-        <h2>Покупатель :</h2>
-      </div>
-      <div class="col-lg-12">
-        <div class="row one-line">
-          <div class="col-lg-2 col-xs-12">Ваше имя: *</div>
-          <div class="col-lg-5 col-xs-12">
-            <label>Введите ваше Ф.И.О.</label>
-            <input type="text" placeholder="Пример: Иванов Иван Иванович" class="correct">
+      <div class="row section cart-list">
+        <div class="col-lg-12 order-count section-header">
+          <h2>Мой заказ: 2 товара <a href="#"> (вернуться в корзину)</a></h2>
+        </div>
+        <div class="col-lg-12">
+          <div class="row one-line">
+            <div class="col-lg-8 col-xs-12 title">Смартфон Sony Xperia V (LT25i Black)</div>
+            <div class="col-lg-2 col-xs-6">1 </div>
+            <div class="col-lg-2 col-xs-6">13 885 руб.</div>
           </div>
-          <div class="col-lg-5 col-xs 12 form-messages">— При заполнении допущена ошибка Email не может быть без символа @</div>
-        </div>
-        <div class="row one-line">
-          <div class="col-lg-2 col-xs-12">Ваш E-Mail: *</div>
-          <div class="col-lg-5 col-xs-12">
-            <label>Куда выслать информацию по заказу</label>
-            <input type="text" placeholder="Пример: ivanov@mail.ru" class="incorrect">
+          <div class="row one-line">
+            <div class="col-lg-8 col-xs-12 title">Смартфон Samsung Galaxy Alpha (SM-G850F 32Gb)</div>
+            <div class="col-lg-2 col-xs-6">1 </div>
+            <div class="col-lg-2 col-xs-6">13 885 руб.</div>
           </div>
-          <div class="col-lg-5 col-xs-12 form-messages">— При заполнении допущена ошибка Email не может быть без символа @</div>
-        </div>
-        <div class="row one-line">
-          <div class="col-lg-2 col-xs-12">Ваш телефон: *</div>
-          <div class="col-lg-5 col-xs-12">
-            <label>Для согласования деталей заказа</label>
-            <input type="text" placeholder="Пример: +7 (123) 456-78-90">
-          </div>
-          <div class="col-lg-5 col-xs-12">— При заполнении допущена ошибка Email не может быть без символа @ При заполнении допущена ошибка Email не может быть без символа @</div>
         </div>
       </div>
-    </div>
-    <div class="row section dostavka">
-      <div class="col-lg-12 section-header">
-        <input type="hidden" name="city" value="" id="city">
-        <h2>Доставка: <a data-toggle="collapse" href="#city-list" class="collapsed opencitylist">Москва</a>
-          <div id="city-list" class="collapse">
-            <ul>
-              <li class="choosecity">Москва</li>
-              <li class="choosecity">Санкт-Петербург</li>
+      <div class="row section pokupatel">
+        <div class="col-lg-12 section-header">
+          <h2>Покупатель :</h2>
+        </div>
+        <div class="col-lg-12">
+          <div class="row one-line">
+            <div class="col-lg-2 col-xs-12">Ваше имя: *</div>
+            <div class="col-lg-5 col-xs-12">
+              <label>Введите ваше Ф.И.О.</label>
+              <input type="text" placeholder="Пример: Иванов Иван Иванович" class="correct">
+            </div>
+            <div class="col-lg-5 col-xs 12 form-messages">— При заполнении допущена ошибка Email не может быть без символа @</div>
+          </div>
+          <div class="row one-line">
+            <div class="col-lg-2 col-xs-12">Ваш E-Mail: *</div>
+            <div class="col-lg-5 col-xs-12">
+              <label>Куда выслать информацию по заказу</label>
+              <input type="text" placeholder="Пример: ivanov@mail.ru" class="incorrect">
+            </div>
+            <div class="col-lg-5 col-xs-12 form-messages">— При заполнении допущена ошибка Email не может быть без символа @</div>
+          </div>
+          <div class="row one-line">
+            <div class="col-lg-2 col-xs-12">Ваш телефон: *</div>
+            <div class="col-lg-5 col-xs-12">
+              <label>Для согласования деталей заказа</label>
+              <input type="text" placeholder="Пример: +7 (123) 456-78-90">
+            </div>
+            <div class="col-lg-5 col-xs-12">— При заполнении допущена ошибка Email не может быть без символа @ При заполнении допущена ошибка Email не может быть без символа @</div>
+          </div>
+        </div>
+      </div>
+      <div class="row section dostavka">
+        <div class="col-lg-12 section-header">
+          <input type="hidden" name="city" value="" id="city">
+          <h2>Доставка: <a data-toggle="collapse" href="#city-list" class="collapsed opencitylist">Москва</a>
+            <div id="city-list" class="collapse">
+              <ul>
+                <li class="choosecity">Москва</li>
+                <li class="choosecity">Санкт-Петербург</li>
+              </ul>
+            </div>
+          </h2>
+        </div>
+        <div class="col-lg-8">
+          <form class="form-horizontal">
+            <div class="form-group">
+              <div class="checkbox">
+                <label>
+                  <input type="radio" name="group1">
+                  <label></label>Доставка по Москве - 300 руб.
+                </label><br><span>Осуществляется на следующий день после подтверждения заказа.</span>
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="checkbox">
+                <label>
+                  <input type="radio" name="group1">
+                  <label></label>Срочная доставка в день заказа в пределах МКАД – 500 р.
+                </label>
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="checkbox">
+                <label>
+                  <input type="radio" name="group1">
+                  <label></label>Доставка за пределы МКАД – 600 р. (до 9 км включительно)
+                </label><br><span>Осуществляется на следующий день после подтверждения заказа.</span>
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="checkbox">
+                <label>
+                  <input type="radio" name="group1">
+                  <label></label>Самовывоз
+                </label><br><span>Здесь пишем адрес магазина или точки выдачи товаров. Товар можно забрать ежедневно с 13:00 до 20:00 после подтверждения заказа менеджером.</span>
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="col-lg-4 adres">
+          <div class="row">
+            <div class="col-lg-12">
+              <h3>Адрес доставки:</h3>
+              <p>Улица</p>
+              <input placeholder="Пример: ул. Московская" class="form-control">
+            </div>
+            <div class="col-lg-6">
+              <p>Дом</p>
+              <input placeholder="Пример: д.7" class="form-control">
+            </div>
+            <div class="col-lg-6">
+              <p>Квартира</p>
+              <input placeholder="Пример: кв.15" class="form-control">
+            </div>
+            <div class="col-lg-12">
+              <p>Дополнительная информация</p>
+              <textarea class="form-control"></textarea>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row section oplata">
+        <div class="col-lg-12 section-header">
+          <h2>Способ оплаты </h2>
+        </div>
+        <div class="col-lg-12">
+          <form class="form-horizontal">
+            <div class="form-group">
+              <div class="checkbox">
+                <label>
+                  <input type="radio" name="group2">
+                  <label></label>Наличный расчёт при получении
+                </label>
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="checkbox">
+                <label>
+                  <input type="radio" name="group2">
+                  <label></label>Яндекс.Деньги
+                </label>
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="checkbox">
+                <label>
+                  <input type="radio" name="group2">
+                  <label></label>QIWI Wallet
+                </label>
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="checkbox">
+                <label>
+                  <input type="radio" name="group2">
+                  <label></label>Банковский перевод
+                </label>
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="checkbox">
+                <label>
+                  <input type="radio" name="group2">
+                  <label></label>Почтовый перевод
+                </label>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="row section coupon">
+        <div class="col-lg-12 yellow-container"><span>Купон на скидку:</span>
+          <input type="text">
+          <button type="submit" class="btn btn-default">Проверить купон</button>
+        </div>
+      </div>
+      <div class="row section itog">
+        <div class="col-lg-12 col-with-border">
+          <p class="summ-itog">Товаров на сумму: 25 980 рублей</p>
+          <p class="dostavka-itog">Доставка: 300 рублей</p>
+        </div>
+        <div class="col-lg-12">
+          <p class="all-itog">Итого: <span>26 280 </span>рублей </p>
+          <button type="submit" class="btn btn-default">Оформить заказ</button>
+        </div>
+      </div>
+    </form>
+    <div class="container-fluid footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-2 col-sm-2">
+            <p>© YupeStore 2015</p><span class="light-grey">Все права защищены.</span>
+          </div>
+          <div class="col-md-2 col-sm-2">
+            <ul class="list-unstyled">
+              <li> <a href="">О компании</a></li>
+              <li> <a href="">Доставка</a></li>
+              <li> <a href="">Оплата</a></li>
+              <li> <a href="">Новости</a></li>
+              <li> <a href="">Бренды</a></li>
+              <li> <a href="">Контакты</a></li>
             </ul>
           </div>
-        </h2>
-      </div>
-      <div class="col-lg-8">
-        <form class="form-horizontal">
-          <div class="form-group">
-            <div class="checkbox">
-              <label>
-                <input type="radio" name="group1">
-                <label></label>Доставка по Москве - 300 руб.
-              </label><br><span>Осуществляется на следующий день после подтверждения заказа.</span>
-            </div>
+          <div class="col-md-2 col-sm-2">
+            <ul class="list-unstyled">
+              <li> <a href="">Телефония, МР3-плееры, GPS</a></li>
+              <li> <a href="">Домашнее видео</a></li>
+              <li> <a href="">Детские товары</a></li>
+              <li> <a href="">Активный отдых и туризм</a></li>
+              <li> <a href="">Музыкальные инструменты</a></li>
+            </ul>
           </div>
-          <div class="form-group">
-            <div class="checkbox">
-              <label>
-                <input type="radio" name="group1">
-                <label></label>Срочная доставка в день заказа в пределах МКАД – 500 р.
-              </label>
-            </div>
+          <div class="col-md-3 col-sm-3 contacts"><span class="subtitle">Контакты</span>
+            <ul class="list-unstyled">
+              <li> <img src="./assets/images/footer-phone-icon.png"><span>(123) 456-78-90, 0 (123) 456-78-90</span></li>
+              <li><img src="./assets/images/footer-email-icon.png"><span>E-mail: partner@YupeStore.net</span></li>
+              <li><img src="./assets/images/footer-skype-icon.png"><span>Skype: YupeStore</span></li>
+            </ul>
           </div>
-          <div class="form-group">
-            <div class="checkbox">
-              <label>
-                <input type="radio" name="group1">
-                <label></label>Доставка за пределы МКАД – 600 р. (до 9 км включительно)
-              </label><br><span>Осуществляется на следующий день после подтверждения заказа.</span>
-            </div>
-          </div>
-          <div class="form-group">
-            <div class="checkbox">
-              <label>
-                <input type="radio" name="group1">
-                <label></label>Самовывоз
-              </label><br><span>Здесь пишем адрес магазина или точки выдачи товаров. Товар можно забрать ежедневно с 13:00 до 20:00 после подтверждения заказа менеджером.</span>
-            </div>
-          </div>
-        </form>
-      </div>
-      <div class="col-lg-4 adres">
-        <div class="row">
-          <div class="col-lg-12">
-            <h3>Адрес доставки:</h3>
-            <p>Улица</p>
-            <input placeholder="Пример: ул. Московская" class="form-control">
-          </div>
-          <div class="col-lg-6">
-            <p>Дом</p>
-            <input placeholder="Пример: д.7" class="form-control">
-          </div>
-          <div class="col-lg-6">
-            <p>Квартира</p>
-            <input placeholder="Пример: кв.15" class="form-control">
-          </div>
-          <div class="col-lg-12">
-            <p>Дополнительная информация</p>
-            <textarea class="form-control"></textarea>
+          <div class="col-md-2 col-sm-2"><span class="subtitle">Работаем</span>
+            <ul class="list-unstyled"> 
+              <li>Пн–Пт 09:00–20:00</li>
+              <li>Сб 09:00–17:00</li>
+              <li>Вс выходной  </li>
+            </ul>
           </div>
         </div>
       </div>
     </div>
-    <div class="row section oplata">
-      <div class="col-lg-12 section-header">
-        <h2>Способ оплаты </h2>
-      </div>
-      <div class="col-lg-12">
-        <form class="form-horizontal">
-          <div class="form-group">
-            <div class="checkbox">
-              <label>
-                <input type="radio" name="group2">
-                <label></label>Наличный расчёт при получении
-              </label>
-            </div>
+    <div id="callme" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" class="modal fade">
+      <div role="document" class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" data-dismiss="modal" aria-label="Close" class="close"><span aria-hidden="true">&times;</span></button>
+            <h4 id="myModalLabel" class="modal-title">Modal title</h4>
           </div>
-          <div class="form-group">
-            <div class="checkbox">
-              <label>
-                <input type="radio" name="group2">
-                <label></label>Яндекс.Деньги
-              </label>
-            </div>
+          <div class="modal-body">...</div>
+          <div class="modal-footer">
+            <button type="button" data-dismiss="modal" class="btn btn-default">Close</button>
+            <button type="button" class="btn btn-primary">Save changes</button>
           </div>
-          <div class="form-group">
-            <div class="checkbox">
-              <label>
-                <input type="radio" name="group2">
-                <label></label>QIWI Wallet
-              </label>
-            </div>
-          </div>
-          <div class="form-group">
-            <div class="checkbox">
-              <label>
-                <input type="radio" name="group2">
-                <label></label>Банковский перевод
-              </label>
-            </div>
-          </div>
-          <div class="form-group">
-            <div class="checkbox">
-              <label>
-                <input type="radio" name="group2">
-                <label></label>Почтовый перевод
-              </label>
-            </div>
-          </div>
-        </form>
-      </div>
-    </div>
-    <div class="row section coupon">
-      <div class="col-lg-12 yellow-container"><span>Купон на скидку:</span>
-        <input type="text">
-        <button type="submit" class="btn btn-default">Проверить купон</button>
-      </div>
-    </div>
-    <div class="row section itog">
-      <div class="col-lg-12 col-with-border">
-        <p class="summ-itog">Товаров на сумму: 25 980 рублей</p>
-        <p class="dostavka-itog">Доставка: 300 рублей</p>
-      </div>
-      <div class="col-lg-12">
-        <p class="all-itog">Итого: <span>26 280 </span>рублей </p>
-        <button type="submit" class="btn btn-default">Оформить заказ</button>
-      </div>
-    </div>
-  </div>
-  <div class="container-fluid footer">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-2 col-sm-2">
-          <p>© YupeStore 2015</p><span class="light-grey">Все права защищены.</span>
-        </div>
-        <div class="col-md-2 col-sm-2">
-          <ul class="list-unstyled">
-            <li> <a href="">О компании</a></li>
-            <li> <a href="">Доставка</a></li>
-            <li> <a href="">Оплата</a></li>
-            <li> <a href="">Новости</a></li>
-            <li> <a href="">Бренды</a></li>
-            <li> <a href="">Контакты</a></li>
-          </ul>
-        </div>
-        <div class="col-md-2 col-sm-2">
-          <ul class="list-unstyled">
-            <li> <a href="">Телефония, МР3-плееры, GPS</a></li>
-            <li> <a href="">Домашнее видео</a></li>
-            <li> <a href="">Детские товары</a></li>
-            <li> <a href="">Активный отдых и туризм</a></li>
-            <li> <a href="">Музыкальные инструменты</a></li>
-          </ul>
-        </div>
-        <div class="col-md-3 col-sm-3 contacts"><span class="subtitle">Контакты</span>
-          <ul class="list-unstyled">
-            <li> <img src="./assets/images/footer-phone-icon.png"><span>(123) 456-78-90, 0 (123) 456-78-90</span></li>
-            <li><img src="./assets/images/footer-email-icon.png"><span>E-mail: partner@YupeStore.net</span></li>
-            <li><img src="./assets/images/footer-skype-icon.png"><span>Skype: YupeStore</span></li>
-          </ul>
-        </div>
-        <div class="col-md-2 col-sm-2"><span class="subtitle">Работаем</span>
-          <ul class="list-unstyled"> 
-            <li>Пн–Пт 09:00–20:00</li>
-            <li>Сб 09:00–17:00</li>
-            <li>Вс выходной  </li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div id="callme" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" class="modal fade">
-    <div role="document" class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" data-dismiss="modal" aria-label="Close" class="close"><span aria-hidden="true">&times;</span></button>
-          <h4 id="myModalLabel" class="modal-title">Modal title</h4>
-        </div>
-        <div class="modal-body">...</div>
-        <div class="modal-footer">
-          <button type="button" data-dismiss="modal" class="btn btn-default">Close</button>
-          <button type="button" class="btn btn-primary">Save changes</button>
         </div>
       </div>
     </div>

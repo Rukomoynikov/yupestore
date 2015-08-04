@@ -418,7 +418,8 @@ body {
   vertical-align: middle;
 }
 .container.content.catalog .filter > .collapse,
-.container.content.catalog .filter .collapsing {
+.container.content.catalog .filter .collapsing,
+.container.content.catalog .filter .collapse.in {
   margin-top: 20px;
 }
 .container.content.catalog input[type='submit'] {
@@ -433,11 +434,41 @@ body {
   padding: 10px 50px;
   margin-top: 20px;
 }
+.container.content.catalog .slider-range {
+  margin-bottom: 20px;
+  border-radius: none;
+  border: none;
+  border-radius: 0px;
+  background: #b0b0b0;
+  height: 10px;
+}
+.container.content.catalog .slider-range > .ui-slider-handle {
+  width: 10px;
+  background-color: #f2f2f2;
+  background-image: linear-gradient(to top, #d7d7d7 0%, #fff 100%);
+  border: 1px solid #d2d2d2;
+  border-radius: 2px;
+  box-shadow: 0 1px 0 #aeaeae;
+  outline: none;
+}
+.container.content.catalog .slider-range > .ui-slider-range {
+  background: #22b5cd;
+}
 .container.content.catalog .w50 {
   width: 48%;
   display: inline-block;
   position: relative;
   margin-bottom: 10px;
+}
+.container.content.catalog .w50 > input[type='text'] {
+  width: 100%;
+  padding-left: 23px;
+  outline: none;
+}
+.container.content.catalog .w50 > input[type='text']+ span {
+  position: absolute;
+  top: 3px;
+  left: 5px;
 }
 .sort {
   margin-bottom: 20px;
@@ -453,6 +484,13 @@ body {
 .sort .switcher {
   display: inline-block;
   float: right;
+}
+.sort .switcher a:hover,
+.sort .switcher a {
+  text-decoration: none;
+}
+.sort .switcher a.active > svg > path {
+  fill: #2e2e2e;
 }
 .one-tovar .row.section.kartochka-tovara {
   padding: 40px 15px 15px 15px;

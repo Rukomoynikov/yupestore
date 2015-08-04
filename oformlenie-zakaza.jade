@@ -4,148 +4,149 @@ block slider
 
 block content
 	.container.content.order-confirmation
-		include layouts/breadcrumbs
-		.row
-			.col-lg-12
-				h2.page-header Оформление заказа
-		.row.section.cart-list
-			.col-lg-12.order-count.section-header
-				h2 Мой заказ: 2 товара 
-					a(href='#')  (вернуться в корзину)
-			.col-lg-12
-				.row.one-line
-					.col-lg-8.col-xs-12.title Смартфон Sony Xperia V (LT25i Black)
-					.col-lg-2.col-xs-6 1 
-					.col-lg-2.col-xs-6 13 885 руб.
-				.row.one-line
-					.col-lg-8.col-xs-12.title Смартфон Samsung Galaxy Alpha (SM-G850F 32Gb)
-					.col-lg-2.col-xs-6 1 
-					.col-lg-2.col-xs-6 13 885 руб.
-		.row.section.pokupatel
-			.col-lg-12.section-header
-				h2 Покупатель :
-			.col-lg-12
-				.row.one-line
-					.col-lg-2.col-xs-12 Ваше имя: *
-					.col-lg-5.col-xs-12
-						label Введите ваше Ф.И.О.
-						input.correct(type='text', placeholder='Пример: Иванов Иван Иванович')
-					.col-lg-5.col-xs.12.form-messages — При заполнении допущена ошибка Email не может быть без символа @
-				.row.one-line
-					.col-lg-2.col-xs-12 Ваш E-Mail: *
-					.col-lg-5.col-xs-12
-						label Куда выслать информацию по заказу
-						input.incorrect(type='text', placeholder='Пример: ivanov@mail.ru')
-					.col-lg-5.col-xs-12.form-messages — При заполнении допущена ошибка Email не может быть без символа @
-				.row.one-line
-					.col-lg-2.col-xs-12 Ваш телефон: *
-					.col-lg-5.col-xs-12
-						label Для согласования деталей заказа
-						input(type='text', placeholder='Пример: +7 (123) 456-78-90')
-					.col-lg-5.col-xs-12 — При заполнении допущена ошибка Email не может быть без символа @ При заполнении допущена ошибка Email не может быть без символа @
-		.row.section.dostavka
-			.col-lg-12.section-header
-				input(type='hidden', name='city', value='', id='city')
-				h2 Доставка: 
-						a.collapsed.opencitylist(data-toggle="collapse" href="#city-list") Москва
-						.collapse#city-list
-							ul
-								li.choosecity Москва
-								li.choosecity Санкт-Петербург
-			.col-lg-8
-				form.form-horizontal
-					.form-group
-						.checkbox
-							label
-								input(type="radio", name="group1") 
+		form
+			include layouts/breadcrumbs
+			.row
+				.col-lg-12
+					h2.page-header Оформление заказа
+			.row.section.cart-list
+				.col-lg-12.order-count.section-header
+					h2 Мой заказ: 2 товара 
+						a(href='#')  (вернуться в корзину)
+				.col-lg-12
+					.row.one-line
+						.col-lg-8.col-xs-12.title Смартфон Sony Xperia V (LT25i Black)
+						.col-lg-2.col-xs-6 1 
+						.col-lg-2.col-xs-6 13 885 руб.
+					.row.one-line
+						.col-lg-8.col-xs-12.title Смартфон Samsung Galaxy Alpha (SM-G850F 32Gb)
+						.col-lg-2.col-xs-6 1 
+						.col-lg-2.col-xs-6 13 885 руб.
+			.row.section.pokupatel
+				.col-lg-12.section-header
+					h2 Покупатель :
+				.col-lg-12
+					.row.one-line
+						.col-lg-2.col-xs-12 Ваше имя: *
+						.col-lg-5.col-xs-12
+							label Введите ваше Ф.И.О.
+							input.correct(type='text', placeholder='Пример: Иванов Иван Иванович')
+						.col-lg-5.col-xs.12.form-messages — При заполнении допущена ошибка Email не может быть без символа @
+					.row.one-line
+						.col-lg-2.col-xs-12 Ваш E-Mail: *
+						.col-lg-5.col-xs-12
+							label Куда выслать информацию по заказу
+							input.incorrect(type='text', placeholder='Пример: ivanov@mail.ru')
+						.col-lg-5.col-xs-12.form-messages — При заполнении допущена ошибка Email не может быть без символа @
+					.row.one-line
+						.col-lg-2.col-xs-12 Ваш телефон: *
+						.col-lg-5.col-xs-12
+							label Для согласования деталей заказа
+							input(type='text', placeholder='Пример: +7 (123) 456-78-90')
+						.col-lg-5.col-xs-12 — При заполнении допущена ошибка Email не может быть без символа @ При заполнении допущена ошибка Email не может быть без символа @
+			.row.section.dostavka
+				.col-lg-12.section-header
+					input(type='hidden', name='city', value='', id='city')
+					h2 Доставка: 
+							a.collapsed.opencitylist(data-toggle="collapse" href="#city-list") Москва
+							.collapse#city-list
+								ul
+									li.choosecity Москва
+									li.choosecity Санкт-Петербург
+				.col-lg-8
+					form.form-horizontal
+						.form-group
+							.checkbox
 								label
-								| Доставка по Москве - 300 руб.
-							br
-							span Осуществляется на следующий день после подтверждения заказа.
-					.form-group
-						.checkbox
-							label
-								input(type="radio", name="group1") 
+									input(type="radio", name="group1") 
+									label
+									| Доставка по Москве - 300 руб.
+								br
+								span Осуществляется на следующий день после подтверждения заказа.
+						.form-group
+							.checkbox
 								label
-								| Срочная доставка в день заказа в пределах МКАД – 500 р.
-					.form-group
-						.checkbox
-							label
-								input(type="radio", name="group1") 
+									input(type="radio", name="group1") 
+									label
+									| Срочная доставка в день заказа в пределах МКАД – 500 р.
+						.form-group
+							.checkbox
 								label
-								| Доставка за пределы МКАД – 600 р. (до 9 км включительно)
-							br
-							span Осуществляется на следующий день после подтверждения заказа.
-					.form-group
-						.checkbox
-							label
-								input(type="radio", name="group1") 
+									input(type="radio", name="group1") 
+									label
+									| Доставка за пределы МКАД – 600 р. (до 9 км включительно)
+								br
+								span Осуществляется на следующий день после подтверждения заказа.
+						.form-group
+							.checkbox
 								label
-								| Самовывоз
-							br
-							span Здесь пишем адрес магазина или точки выдачи товаров. Товар можно забрать ежедневно с 13:00 до 20:00 после подтверждения заказа менеджером.
-			.col-lg-4.adres
-				.row
-					.col-lg-12
-						h3 Адрес доставки:
-						p Улица
-						input.form-control(placeholder='Пример: ул. Московская')
-					.col-lg-6
-						p Дом
-						input.form-control(placeholder='Пример: д.7')
-					.col-lg-6
-						p Квартира
-						input.form-control(placeholder='Пример: кв.15')
-					.col-lg-12
-						p Дополнительная информация
-						textarea.form-control
-		.row.section.oplata
-			.col-lg-12.section-header
-				h2 Способ оплаты 
-			.col-lg-12
-				form.form-horizontal
-					.form-group
-						.checkbox
-							label
-								input(type="radio", name="group2")
+									input(type="radio", name="group1") 
+									label
+									| Самовывоз
+								br
+								span Здесь пишем адрес магазина или точки выдачи товаров. Товар можно забрать ежедневно с 13:00 до 20:00 после подтверждения заказа менеджером.
+				.col-lg-4.adres
+					.row
+						.col-lg-12
+							h3 Адрес доставки:
+							p Улица
+							input.form-control(placeholder='Пример: ул. Московская')
+						.col-lg-6
+							p Дом
+							input.form-control(placeholder='Пример: д.7')
+						.col-lg-6
+							p Квартира
+							input.form-control(placeholder='Пример: кв.15')
+						.col-lg-12
+							p Дополнительная информация
+							textarea.form-control
+			.row.section.oplata
+				.col-lg-12.section-header
+					h2 Способ оплаты 
+				.col-lg-12
+					form.form-horizontal
+						.form-group
+							.checkbox
 								label
-								| Наличный расчёт при получении
-					.form-group
-						.checkbox
-							label
-								input(type="radio", name="group2") 
+									input(type="radio", name="group2")
+									label
+									| Наличный расчёт при получении
+						.form-group
+							.checkbox
 								label
-								| Яндекс.Деньги
-					.form-group
-						.checkbox
-							label
-								input(type="radio", name="group2")
+									input(type="radio", name="group2") 
+									label
+									| Яндекс.Деньги
+						.form-group
+							.checkbox
 								label
-								| QIWI Wallet
-					.form-group
-						.checkbox
-							label
-								input(type="radio", name="group2") 
+									input(type="radio", name="group2")
+									label
+									| QIWI Wallet
+						.form-group
+							.checkbox
 								label
-								| Банковский перевод
-					.form-group
-						.checkbox
-							label
-								input(type="radio", name="group2") 
+									input(type="radio", name="group2") 
+									label
+									| Банковский перевод
+						.form-group
+							.checkbox
 								label
-								| Почтовый перевод
-		.row.section.coupon
-			.col-lg-12.yellow-container
-				span Купон на скидку:
-				input(type='text') 
-				button(type="submit" class="btn btn-default") Проверить купон
-		.row.section.itog
-			.col-lg-12.col-with-border
-				p.summ-itog Товаров на сумму: 25 980 рублей
-				p.dostavka-itog Доставка: 300 рублей
-			.col-lg-12
-				p.all-itog Итого: 
-					span 26 280 
-					| рублей 
-				button(type="submit" class="btn btn-default") Оформить заказ
-	include layouts/footer
+									input(type="radio", name="group2") 
+									label
+									| Почтовый перевод
+			.row.section.coupon
+				.col-lg-12.yellow-container
+					span Купон на скидку:
+					input(type='text') 
+					button(type="submit" class="btn btn-default") Проверить купон
+			.row.section.itog
+				.col-lg-12.col-with-border
+					p.summ-itog Товаров на сумму: 25 980 рублей
+					p.dostavka-itog Доставка: 300 рублей
+				.col-lg-12
+					p.all-itog Итого: 
+						span 26 280 
+						| рублей 
+					button(type="submit" class="btn btn-default") Оформить заказ
+		include layouts/footer

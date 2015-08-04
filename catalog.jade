@@ -15,6 +15,7 @@ block content
 			.col-lg-3
 				.filter
 					form
+						+filter-dropdown-slider("type0", "Цена, руб.")
 						+filter-dropdown("type1", "Производитель")
 						+filter-dropdown("type2", "Тип")
 						+filter-dropdown("type3", "Платформа")
@@ -27,8 +28,10 @@ block content
 						a(href="") по цене
 						a(href="") по новизне
 						.switcher
-							include ./assets/images/icon-list-catalog.svg
-							include ./assets/images/icon-plitka-catalog.svg
+							a(href='catalog-list.html')
+								include ./assets/images/icon-list-catalog.svg
+							a.active(href='catalog.html')
+								include ./assets/images/icon-plitka-catalog.svg
 				.row.novinki
 					+one-4-product('12 990 руб.', 'Смартфон Sony Xperia V (LT25i Black)')
 					+one-4-product('12 990 руб.', 'Смартфон Samsung Galaxy Alpha (SM-G850F 32Gb)')

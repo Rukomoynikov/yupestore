@@ -113,6 +113,22 @@ mixin breadcrumbs()
 			a(href='#') Главная
 			a(href='#') Корзина
 
+// Фильтр для страницы каталога слайдер
+mixin filter-dropdown-slider(id, text)
+	.collapse-block
+		a.collapsed(data-toggle="collapse" href="##{id}")
+			include ../assets/images/arrow-top.svg 
+			| #{text}
+		.collapse(id="#{id}")
+			input(type="hidden" id="amount" readonly style="border:0; color:#f6931f; font-weight:bold;")
+			#slider-range.slider-range
+			.w50
+				input.styled-checkbox(type='text', name='#{id}_name', id='#{id}_name', placeholder='100')
+				span от 
+			.w50
+				input.styled-checkbox(type='text', name='#{id}_name', id='#{id}_name_2', placeholder='4500')
+				span до
+
 // Фильтр для страницы каталога
 mixin filter-dropdown(id, text)
 	.collapse-block

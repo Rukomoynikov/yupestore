@@ -29,7 +29,7 @@
 					vertical-align middle
 					// transition all 0.3s 
 									
-			> .collapse, .collapsing
+			> .collapse, .collapsing, .collapse.in
 				margin-top 20px
 			
 		input[type='submit']
@@ -44,13 +44,41 @@
 			padding 10px 50px
 			margin-top 20px
 		
+		.slider-range
+			margin-bottom 20px	
+			border-radius none
+			border none
+			border-radius 0px
+			background light-grey-color
+			height 10px
+			
+			> .ui-slider-handle
+				width 10px
+				background-color: #f2f2f2;
+				background-image: linear-gradient(to top, #d7d7d7 0%, white 100%);
+				border: 1px solid #d2d2d2;
+				border-radius: 2px;
+				box-shadow: 0 1px 0 #aeaeae;
+				outline none
+				
+			> .ui-slider-range
+				background light-blue-color
+		
 		.w50
 			width: 48%;
 			display: inline-block;
 			position relative
 			margin-bottom 10px
 			
-
+			> input[type='text']
+				width 100%
+				padding-left 23px
+				outline none
+				
+				&+ span
+					position absolute
+					top 3px
+					left 5px
 			
 	// Строка с выбором сортировки
 	.sort
@@ -67,3 +95,9 @@
 		.switcher
 			display: inline-block;
 			float: right;
+			
+			a:hover, a
+				text-decoration none
+			
+			a.active > svg > path
+				fill #2e2e2e

@@ -20,390 +20,391 @@
     <script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="assets/js/app.js"></script>
   </head>
-  <body></body>
-  <nav class="navbar navbar-default">
-    <div class="container">
-      <div class="navbar-header">
-        <button type="button" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false" class="navbar-toggle collapsed"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+  <body>
+    <nav class="navbar navbar-default">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false" class="navbar-toggle collapsed"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+        </div>
+        <div id="navbar-collapse" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav left-menu">
+            <li><a href="#">О компании <span class="sr-only"></span></a></li>
+            <li class="active"><a href="#">Доставка<span class="sr-only"></span></a></li>
+            <li><a href="#">Оплата<span class="sr-only"></span></a></li>
+            <li><a href="#">Новости<span class="sr-only"></span></a></li>
+            <li><a href="#">Бренды<span class="sr-only"></span></a></li>
+            <li><a href="#">Контакты<span class="sr-only"></span></a></li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li class="favicon"><a href="#">
+                 
+                Избранное<span class="badge light-blue">42</span><span class="sr-only"></span></a></li>
+            <li class="compare"><a href="#">
+                 
+                Сравнение товаров<span class="sr-only"></span><span class="badge light-blue">2</span></a></li>
+            <button type="button" style="float: right" class="login btn btn-default navbar-btn">Войти</button>
+          </ul>
+        </div>
       </div>
-      <div id="navbar-collapse" class="collapse navbar-collapse">
-        <ul class="nav navbar-nav left-menu">
-          <li><a href="#">О компании <span class="sr-only"></span></a></li>
-          <li class="active"><a href="#">Доставка<span class="sr-only"></span></a></li>
-          <li><a href="#">Оплата<span class="sr-only"></span></a></li>
-          <li><a href="#">Новости<span class="sr-only"></span></a></li>
-          <li><a href="#">Бренды<span class="sr-only"></span></a></li>
-          <li><a href="#">Контакты<span class="sr-only"></span></a></li>
-        </ul>
-        <ul class="nav navbar-nav navbar-right">
-          <li class="favicon"><a href="#">
-               
-              Избранное<span class="badge light-blue">42</span><span class="sr-only"></span></a></li>
-          <li class="compare"><a href="#">
-               
-              Сравнение товаров<span class="sr-only"></span><span class="badge light-blue">2</span></a></li>
-          <button type="button" style="float: right" class="login btn btn-default navbar-btn">Войти</button>
-        </ul>
-      </div>
-    </div>
-  </nav>
-  <div class="container main">
-    <!-- логотип, корзина, номер телефона и пр.-->
-    <div class="row header">
-      <div class="col-lg-6 col-md-6 logo"><a href="index.html"><img src="assets/images/logo.png"></a><a href="index.html" class="slogan">Магазин бытовой техники</a></div>
-      <div class="col-lg-6 col-md-6 phone-and-cart">
-        <div class="phone">8 (800) 000-00-00<br><a href="#" data-toggle="modal" data-target="#callme">Заказать</a></div>
-        <div class="cart-header-block"><img src="assets/images/icon-cart.png" align="left"><span class="badge light-blue">42</span><span class="cart-header">Моя корзина</span><a data-toggle="collapse" href="#small-cart"><img src="./assets/images/icon-small-cart.png"></a><br><span class="summ">Сумма: <span class="cartsumm">27 710 руб.</span></span>
-          <div id="small-cart" class="cart-block collapse">
-            <div class="line clearfix"><img src="./assets/images/youseen.jpg" align="left"><a href="">Samsung Galaxy A3</a><br><span>23 200 руб.</span></div>
-            <div class="line clearfix"><img src="./assets/images/youseen.jpg" align="left"><a href="">Samsung Galaxy A31</a><br><span>23 200 руб.</span></div>
-            <button type="submit" class="btn btn-default">Оформить заказ</button>
+    </nav>
+    <div class="container main">
+      <!-- логотип, корзина, номер телефона и пр.-->
+      <div class="row header">
+        <div class="col-lg-6 col-md-6 logo"><a href="index.html"><img src="assets/images/logo.png"></a><a href="index.html" class="slogan">Магазин бытовой техники</a></div>
+        <div class="col-lg-6 col-md-6 phone-and-cart">
+          <div class="phone">8 (800) 000-00-00<br><a href="#" data-toggle="modal" data-target="#callme">Заказать</a></div>
+          <div class="cart-header-block"><img src="assets/images/icon-cart.png" align="left"><span class="badge light-blue">42</span><span class="cart-header">Моя корзина</span><a data-toggle="collapse" href="#small-cart"><img src="./assets/images/icon-small-cart.png"></a><br><span class="summ">Сумма: <span class="cartsumm">27 710 руб.</span></span>
+            <div id="small-cart" class="cart-block collapse">
+              <div class="line clearfix"><img src="./assets/images/youseen.jpg" align="left"><a href="">Samsung Galaxy A3</a><br><span>23 200 руб.</span></div>
+              <div class="line clearfix"><img src="./assets/images/youseen.jpg" align="left"><a href="">Samsung Galaxy A31</a><br><span>23 200 руб.</span></div>
+              <button type="submit" class="btn btn-default">Оформить заказ</button>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-    <!-- Меню каталога, форма поиска-->
-    <div class="row menu-and-search">
-      <div class="col-lg-2 col-md-3 col-xs-12 menu-main"> <a data-toggle="collapse" href="#mainmenu">Каталог товаров</a></div>
-      <div class="col-lg-10 col-md-9 col-xs-12 search-field"> 
-        <input placeholder="Sony Xperia V (LT25i Black)" type="text">
-      </div>
-      <div id="mainmenu" style="" class="col-md-12 collapse">
-        <ul>
-          <li> <a href="catalog.html">Мелкая техника для кухни</a>
-            <div class="submenu">
-              <ul> 
-                <li><a href="catalog.html">Вытяжки
+      <!-- Меню каталога, форма поиска-->
+      <div class="row menu-and-search">
+        <div class="col-lg-2 col-md-3 col-xs-12 menu-main"> <a data-toggle="collapse" href="#mainmenu">Каталог товаров</a></div>
+        <div class="col-lg-10 col-md-9 col-xs-12 search-field"> 
+          <input placeholder="Sony Xperia V (LT25i Black)" type="text">
+        </div>
+        <div id="mainmenu" style="" class="col-md-12 collapse">
+          <ul>
+            <li> <a href="catalog.html">Мелкая техника для кухни</a>
+              <div class="submenu">
+                <ul> 
+                  <li><a href="catalog.html">Вытяжки
+                      <ul> 
+                        <li><a href="catalog.html">Встраиваемые </a></li>
+                        <li><a href="catalog.html">Купольные</a></li>
+                      </ul></a></li>
+                  <li>Встраиваемые духовые шкафы</li>
+                </ul>
+                <ul> 
+                  <li>Вытяжки
                     <ul> 
-                      <li><a href="catalog.html">Встраиваемые </a></li>
-                      <li><a href="catalog.html">Купольные</a></li>
-                    </ul></a></li>
-                <li>Встраиваемые духовые шкафы</li>
-              </ul>
-              <ul> 
-                <li>Вытяжки
-                  <ul> 
-                    <li>Встраиваемые </li>
-                    <li>Купольные</li>
-                  </ul>
-                </li>
-                <li>Встраиваемые духовые шкафы</li>
-              </ul>
-              <ul> 
-                <li>Вытяжки
-                  <ul> 
-                    <li>Встраиваемые </li>
-                    <li>Купольные</li>
-                  </ul>
-                </li>
-                <li>Встраиваемые духовые шкафы</li>
-              </ul>
-              <ul> 
-                <li>Вытяжки
-                  <ul> 
-                    <li>Встраиваемые </li>
-                    <li>Купольные</li>
-                  </ul>
-                </li>
-                <li>Встраиваемые духовые шкафы</li>
-              </ul>
-              <ul> 
-                <li>Вытяжки
-                  <ul> 
-                    <li>Встраиваемые </li>
-                    <li>Купольные</li>
-                  </ul>
-                </li>
-                <li>Встраиваемые духовые шкафы</li>
-              </ul>
-            </div>
-          </li>
-          <li> <a href="">Встраиваемая бытовая техника</a></li>
-          <li> <a href="">Приготовление кофе</a></li>
-          <li> <a href="">Акксесуары для бытовой техники</a></li>
-          <li> <a href="">Кухонные принадлежности</a></li>
-          <li> <a href="">Техника для дома</a></li>
-          <li> <a href="">Климатическая техника</a></li>
-          <li> <a href="">Кулеры, диспенсеры и <br>фильтры для воды</a></li>
-          <li> <a href="">Бытовая химия</a></li>
-        </ul>
-      </div>
-    </div>
-  </div>
-  <div class="container content catalog">
-    <div class="row breadcrumbs">
-      <div class="col-lg-12"><a href="#">Главная</a><a href="#">Корзина</a></div>
-    </div>
-    <div class="row">
-      <div class="col-lg-12">
-        <h2 class="page-header">Мобильные телефоны</h2>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-lg-3">
-        <div class="filter">
-          <form>
-            <div class="collapse-block"><a data-toggle="collapse" href="#type1" class="collapsed"><svg height="15" width="21" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 21 15">
-    <path fill="#b0b3b7" fill-rule="evenodd" d="M 6.75 3.82 C 6.44 4.11 5.93 4.11 5.62 3.82 C 5.62 3.82 3.41 1.79 3.41 1.79 C 3.41 1.79 1.23 3.78 1.23 3.78 C 0.94 4.05 0.48 4.05 0.19 3.78 C -0.09 3.52 -0.09 3.1 0.19 2.83 C 0.19 2.83 2.59 0.64 2.59 0.64 C 2.61 0.49 2.68 0.34 2.81 0.22 C 3.12 -0.07 3.62 -0.07 3.93 0.22 C 3.93 0.22 6.75 2.79 6.75 2.79 C 7.06 3.08 7.06 3.54 6.75 3.82 Z" />
-</svg>Производитель</a>
-              <div id="type1" class="collapse"> 
-                <div class="w50">
-                  <input type="checkbox" name="type1_name" id="type1_name" class="styled-checkbox"/>
-                  <label for="type1_name" class="customcheck"></label>
-                  <label for="type1_name">Alcatel</label>
-                </div>
-                <div class="w50">
-                  <input type="checkbox" name="type1_name" id="type1_name" class="styled-checkbox"/>
-                  <label for="type1_name" class="customcheck"></label>
-                  <label for="type1_name">Alcatel</label>
-                </div>
-                <div class="w50">
-                  <input type="checkbox" name="type1_name" id="type1_name" class="styled-checkbox"/>
-                  <label for="type1_name" class="customcheck"></label>
-                  <label for="type1_name">Alcatel</label>
-                </div>
-                <div class="w50">
-                  <input type="checkbox" name="type1_name" id="type1_name" class="styled-checkbox"/>
-                  <label for="type1_name" class="customcheck"></label>
-                  <label for="type1_name">Alcatel</label>
-                </div>
-                <div class="w50">
-                  <input type="checkbox" name="type1_name" id="type1_name" class="styled-checkbox"/>
-                  <label for="type1_name" class="customcheck"></label>
-                  <label for="type1_name">Alcatel</label>
-                </div>
+                      <li>Встраиваемые </li>
+                      <li>Купольные</li>
+                    </ul>
+                  </li>
+                  <li>Встраиваемые духовые шкафы</li>
+                </ul>
+                <ul> 
+                  <li>Вытяжки
+                    <ul> 
+                      <li>Встраиваемые </li>
+                      <li>Купольные</li>
+                    </ul>
+                  </li>
+                  <li>Встраиваемые духовые шкафы</li>
+                </ul>
+                <ul> 
+                  <li>Вытяжки
+                    <ul> 
+                      <li>Встраиваемые </li>
+                      <li>Купольные</li>
+                    </ul>
+                  </li>
+                  <li>Встраиваемые духовые шкафы</li>
+                </ul>
+                <ul> 
+                  <li>Вытяжки
+                    <ul> 
+                      <li>Встраиваемые </li>
+                      <li>Купольные</li>
+                    </ul>
+                  </li>
+                  <li>Встраиваемые духовые шкафы</li>
+                </ul>
               </div>
-            </div>
-            <div class="collapse-block"><a data-toggle="collapse" href="#type2" class="collapsed"><svg height="15" width="21" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 21 15">
-    <path fill="#b0b3b7" fill-rule="evenodd" d="M 6.75 3.82 C 6.44 4.11 5.93 4.11 5.62 3.82 C 5.62 3.82 3.41 1.79 3.41 1.79 C 3.41 1.79 1.23 3.78 1.23 3.78 C 0.94 4.05 0.48 4.05 0.19 3.78 C -0.09 3.52 -0.09 3.1 0.19 2.83 C 0.19 2.83 2.59 0.64 2.59 0.64 C 2.61 0.49 2.68 0.34 2.81 0.22 C 3.12 -0.07 3.62 -0.07 3.93 0.22 C 3.93 0.22 6.75 2.79 6.75 2.79 C 7.06 3.08 7.06 3.54 6.75 3.82 Z" />
-</svg>Тип</a>
-              <div id="type2" class="collapse"> 
-                <div class="w50">
-                  <input type="checkbox" name="type2_name" id="type2_name" class="styled-checkbox"/>
-                  <label for="type2_name" class="customcheck"></label>
-                  <label for="type2_name">Alcatel</label>
-                </div>
-                <div class="w50">
-                  <input type="checkbox" name="type2_name" id="type2_name" class="styled-checkbox"/>
-                  <label for="type2_name" class="customcheck"></label>
-                  <label for="type2_name">Alcatel</label>
-                </div>
-                <div class="w50">
-                  <input type="checkbox" name="type2_name" id="type2_name" class="styled-checkbox"/>
-                  <label for="type2_name" class="customcheck"></label>
-                  <label for="type2_name">Alcatel</label>
-                </div>
-                <div class="w50">
-                  <input type="checkbox" name="type2_name" id="type2_name" class="styled-checkbox"/>
-                  <label for="type2_name" class="customcheck"></label>
-                  <label for="type2_name">Alcatel</label>
-                </div>
-                <div class="w50">
-                  <input type="checkbox" name="type2_name" id="type2_name" class="styled-checkbox"/>
-                  <label for="type2_name" class="customcheck"></label>
-                  <label for="type2_name">Alcatel</label>
-                </div>
-              </div>
-            </div>
-            <div class="collapse-block"><a data-toggle="collapse" href="#type3" class="collapsed"><svg height="15" width="21" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 21 15">
-    <path fill="#b0b3b7" fill-rule="evenodd" d="M 6.75 3.82 C 6.44 4.11 5.93 4.11 5.62 3.82 C 5.62 3.82 3.41 1.79 3.41 1.79 C 3.41 1.79 1.23 3.78 1.23 3.78 C 0.94 4.05 0.48 4.05 0.19 3.78 C -0.09 3.52 -0.09 3.1 0.19 2.83 C 0.19 2.83 2.59 0.64 2.59 0.64 C 2.61 0.49 2.68 0.34 2.81 0.22 C 3.12 -0.07 3.62 -0.07 3.93 0.22 C 3.93 0.22 6.75 2.79 6.75 2.79 C 7.06 3.08 7.06 3.54 6.75 3.82 Z" />
-</svg>Платформа</a>
-              <div id="type3" class="collapse"> 
-                <div class="w50">
-                  <input type="checkbox" name="type3_name" id="type3_name" class="styled-checkbox"/>
-                  <label for="type3_name" class="customcheck"></label>
-                  <label for="type3_name">Alcatel</label>
-                </div>
-                <div class="w50">
-                  <input type="checkbox" name="type3_name" id="type3_name" class="styled-checkbox"/>
-                  <label for="type3_name" class="customcheck"></label>
-                  <label for="type3_name">Alcatel</label>
-                </div>
-                <div class="w50">
-                  <input type="checkbox" name="type3_name" id="type3_name" class="styled-checkbox"/>
-                  <label for="type3_name" class="customcheck"></label>
-                  <label for="type3_name">Alcatel</label>
-                </div>
-                <div class="w50">
-                  <input type="checkbox" name="type3_name" id="type3_name" class="styled-checkbox"/>
-                  <label for="type3_name" class="customcheck"></label>
-                  <label for="type3_name">Alcatel</label>
-                </div>
-                <div class="w50">
-                  <input type="checkbox" name="type3_name" id="type3_name" class="styled-checkbox"/>
-                  <label for="type3_name" class="customcheck"></label>
-                  <label for="type3_name">Alcatel</label>
-                </div>
-              </div>
-            </div>
-            <div class="collapse-block">
-              <input type="checkbox" name="slot_filter" id="slot_filter" class="styled-checkbox"/>
-              <label for="slot_filter" class="customcheck"></label>
-              <label for="slot_filter">Слот для карты памяти и чего то там ещё</label>
-            </div>
-            <input type="submit" value="Применить">
-          </form>
+            </li>
+            <li> <a href="">Встраиваемая бытовая техника</a></li>
+            <li> <a href="">Приготовление кофе</a></li>
+            <li> <a href="">Акксесуары для бытовой техники</a></li>
+            <li> <a href="">Кухонные принадлежности</a></li>
+            <li> <a href="">Техника для дома</a></li>
+            <li> <a href="">Климатическая техника</a></li>
+            <li> <a href="">Кулеры, диспенсеры и <br>фильтры для воды</a></li>
+            <li> <a href="">Бытовая химия</a></li>
+          </ul>
         </div>
       </div>
-      <div class="col-lg-9">
-        <div class="row sort"> 
-          <div class="col-lg-12">Сортировать :<a href="" class="active">по популярности</a><a href="">по цене</a><a href="">по новизне</a>
-            <div class="switcher"><a href="catalog-list.html" class="active"><!-- Generator: Avocode undefined - http://avocode.com -->
+    </div>
+    <div class="container content catalog">
+      <div class="row breadcrumbs">
+        <div class="col-lg-12"><a href="#">Главная</a><a href="#">Корзина</a></div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <h2 class="page-header">Мобильные телефоны</h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-3">
+          <div class="filter">
+            <form>
+              <div class="collapse-block"><a data-toggle="collapse" href="#type1" class="collapsed"><svg height="15" width="21" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 21 15">
+    <path fill="#b0b3b7" fill-rule="evenodd" d="M 6.75 3.82 C 6.44 4.11 5.93 4.11 5.62 3.82 C 5.62 3.82 3.41 1.79 3.41 1.79 C 3.41 1.79 1.23 3.78 1.23 3.78 C 0.94 4.05 0.48 4.05 0.19 3.78 C -0.09 3.52 -0.09 3.1 0.19 2.83 C 0.19 2.83 2.59 0.64 2.59 0.64 C 2.61 0.49 2.68 0.34 2.81 0.22 C 3.12 -0.07 3.62 -0.07 3.93 0.22 C 3.93 0.22 6.75 2.79 6.75 2.79 C 7.06 3.08 7.06 3.54 6.75 3.82 Z" />
+</svg>Производитель</a>
+                <div id="type1" class="collapse"> 
+                  <div class="w50">
+                    <input type="checkbox" name="type1_name" id="type1_name" class="styled-checkbox"/>
+                    <label for="type1_name" class="customcheck"></label>
+                    <label for="type1_name">Alcatel</label>
+                  </div>
+                  <div class="w50">
+                    <input type="checkbox" name="type1_name" id="type1_name" class="styled-checkbox"/>
+                    <label for="type1_name" class="customcheck"></label>
+                    <label for="type1_name">Alcatel</label>
+                  </div>
+                  <div class="w50">
+                    <input type="checkbox" name="type1_name" id="type1_name" class="styled-checkbox"/>
+                    <label for="type1_name" class="customcheck"></label>
+                    <label for="type1_name">Alcatel</label>
+                  </div>
+                  <div class="w50">
+                    <input type="checkbox" name="type1_name" id="type1_name" class="styled-checkbox"/>
+                    <label for="type1_name" class="customcheck"></label>
+                    <label for="type1_name">Alcatel</label>
+                  </div>
+                  <div class="w50">
+                    <input type="checkbox" name="type1_name" id="type1_name" class="styled-checkbox"/>
+                    <label for="type1_name" class="customcheck"></label>
+                    <label for="type1_name">Alcatel</label>
+                  </div>
+                </div>
+              </div>
+              <div class="collapse-block"><a data-toggle="collapse" href="#type2" class="collapsed"><svg height="15" width="21" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 21 15">
+    <path fill="#b0b3b7" fill-rule="evenodd" d="M 6.75 3.82 C 6.44 4.11 5.93 4.11 5.62 3.82 C 5.62 3.82 3.41 1.79 3.41 1.79 C 3.41 1.79 1.23 3.78 1.23 3.78 C 0.94 4.05 0.48 4.05 0.19 3.78 C -0.09 3.52 -0.09 3.1 0.19 2.83 C 0.19 2.83 2.59 0.64 2.59 0.64 C 2.61 0.49 2.68 0.34 2.81 0.22 C 3.12 -0.07 3.62 -0.07 3.93 0.22 C 3.93 0.22 6.75 2.79 6.75 2.79 C 7.06 3.08 7.06 3.54 6.75 3.82 Z" />
+</svg>Тип</a>
+                <div id="type2" class="collapse"> 
+                  <div class="w50">
+                    <input type="checkbox" name="type2_name" id="type2_name" class="styled-checkbox"/>
+                    <label for="type2_name" class="customcheck"></label>
+                    <label for="type2_name">Alcatel</label>
+                  </div>
+                  <div class="w50">
+                    <input type="checkbox" name="type2_name" id="type2_name" class="styled-checkbox"/>
+                    <label for="type2_name" class="customcheck"></label>
+                    <label for="type2_name">Alcatel</label>
+                  </div>
+                  <div class="w50">
+                    <input type="checkbox" name="type2_name" id="type2_name" class="styled-checkbox"/>
+                    <label for="type2_name" class="customcheck"></label>
+                    <label for="type2_name">Alcatel</label>
+                  </div>
+                  <div class="w50">
+                    <input type="checkbox" name="type2_name" id="type2_name" class="styled-checkbox"/>
+                    <label for="type2_name" class="customcheck"></label>
+                    <label for="type2_name">Alcatel</label>
+                  </div>
+                  <div class="w50">
+                    <input type="checkbox" name="type2_name" id="type2_name" class="styled-checkbox"/>
+                    <label for="type2_name" class="customcheck"></label>
+                    <label for="type2_name">Alcatel</label>
+                  </div>
+                </div>
+              </div>
+              <div class="collapse-block"><a data-toggle="collapse" href="#type3" class="collapsed"><svg height="15" width="21" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 21 15">
+    <path fill="#b0b3b7" fill-rule="evenodd" d="M 6.75 3.82 C 6.44 4.11 5.93 4.11 5.62 3.82 C 5.62 3.82 3.41 1.79 3.41 1.79 C 3.41 1.79 1.23 3.78 1.23 3.78 C 0.94 4.05 0.48 4.05 0.19 3.78 C -0.09 3.52 -0.09 3.1 0.19 2.83 C 0.19 2.83 2.59 0.64 2.59 0.64 C 2.61 0.49 2.68 0.34 2.81 0.22 C 3.12 -0.07 3.62 -0.07 3.93 0.22 C 3.93 0.22 6.75 2.79 6.75 2.79 C 7.06 3.08 7.06 3.54 6.75 3.82 Z" />
+</svg>Платформа</a>
+                <div id="type3" class="collapse"> 
+                  <div class="w50">
+                    <input type="checkbox" name="type3_name" id="type3_name" class="styled-checkbox"/>
+                    <label for="type3_name" class="customcheck"></label>
+                    <label for="type3_name">Alcatel</label>
+                  </div>
+                  <div class="w50">
+                    <input type="checkbox" name="type3_name" id="type3_name" class="styled-checkbox"/>
+                    <label for="type3_name" class="customcheck"></label>
+                    <label for="type3_name">Alcatel</label>
+                  </div>
+                  <div class="w50">
+                    <input type="checkbox" name="type3_name" id="type3_name" class="styled-checkbox"/>
+                    <label for="type3_name" class="customcheck"></label>
+                    <label for="type3_name">Alcatel</label>
+                  </div>
+                  <div class="w50">
+                    <input type="checkbox" name="type3_name" id="type3_name" class="styled-checkbox"/>
+                    <label for="type3_name" class="customcheck"></label>
+                    <label for="type3_name">Alcatel</label>
+                  </div>
+                  <div class="w50">
+                    <input type="checkbox" name="type3_name" id="type3_name" class="styled-checkbox"/>
+                    <label for="type3_name" class="customcheck"></label>
+                    <label for="type3_name">Alcatel</label>
+                  </div>
+                </div>
+              </div>
+              <div class="collapse-block">
+                <input type="checkbox" name="slot_filter" id="slot_filter" class="styled-checkbox"/>
+                <label for="slot_filter" class="customcheck"></label>
+                <label for="slot_filter">Слот для карты памяти и чего то там ещё</label>
+              </div>
+              <input type="submit" value="Применить">
+            </form>
+          </div>
+        </div>
+        <div class="col-lg-9">
+          <div class="row sort"> 
+            <div class="col-lg-12">Сортировать :<a href="" class="active">по популярности</a><a href="">по цене</a><a href="">по новизне</a>
+              <div class="switcher"><a href="catalog-list.html" class="active"><!-- Generator: Avocode undefined - http://avocode.com -->
 <svg height="13" width="13" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 13 13">
     <path fill="#b0b3b7" fill-rule="evenodd" d="M 0 10 C 0 10 3 10 3 10 C 3 10 3 13 3 13 C 3 13 0 13 0 13 C 0 13 0 10 0 10 Z M 5 10 C 5 10 13 10 13 10 C 13 10 13 13 13 13 C 13 13 5 13 5 13 C 5 13 5 10 5 10 Z M 0 5 C 0 5 3 5 3 5 C 3 5 3 8 3 8 C 3 8 0 8 0 8 C 0 8 0 5 0 5 Z M 5 5 C 5 5 13 5 13 5 C 13 5 13 8 13 8 C 13 8 5 8 5 8 C 5 8 5 5 5 5 Z M 0 0 C 0 0 3 0 3 0 C 3 0 3 3 3 3 C 3 3 0 3 0 3 C 0 3 0 0 0 0 Z M 5 0 C 5 0 13 0 13 0 C 13 0 13 3 13 3 C 13 3 5 3 5 3 C 5 3 5 0 5 0 Z" />
 </svg></a><a href="catalog.html"><!-- Generator: Avocode undefined - http://avocode.com -->
 <svg height="13" width="13" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 13 13">
     <path fill="#b0b3b7" fill-rule="evenodd" d="M 0 0 C 0 0 6 0 6 0 C 6 0 6 6 6 6 C 6 6 0 6 0 6 C 0 6 0 0 0 0 Z M 7 0 C 7 0 13 0 13 0 C 13 0 13 6 13 6 C 13 6 7 6 7 6 C 7 6 7 0 7 0 Z M 7 7 C 7 7 13 7 13 7 C 13 7 13 13 13 13 C 13 13 7 13 7 13 C 7 13 7 7 7 7 Z M 0 7 C 0 7 6 7 6 7 C 6 7 6 13 6 13 C 6 13 0 13 0 13 C 0 13 0 7 0 7 Z" />
 </svg></a></div>
+            </div>
           </div>
-        </div>
-        <div class="row novinki list">
-          <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
-            <div class="one-product">
-              <div class="feature-label new">NEW</div>
-              <div data-ride="carousel" id="carousel-main-page-tovar-1" class="image carousel slide">
-                <div role="listbox" class="carousel-inner">
-                  <div class="item active"><img src="assets/images/catalog-list-image1.jpg"/></div>
-                  <div class="item"><img src="assets/images/catalog-list-image2.jpg"/></div>
-                  <div class="item"><img src="assets/images/catalog-list-image3.jpg"/></div>
-                  <div class="item"><img src="assets/images/catalog-list-image4.jpg"/></div>
-                </div><a href="#carousel-main-page-tovar-1" role="button" data-slide="prev" class="left carousel-control"><span class="sr-only">Previous</span></a><a href="#carousel-main-page-tovar-1" role="button" data-slide="next" class="right carousel-control"><span class="sr-only">Next</span></a>
-              </div>
-              <div class="description"> <a href="kartocha-tovara.html">Смартфон Sony Xperia V (LT25i Black)</a>
-                <div class="icons"><span class="num svg-grey svg-normal">4.5<svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
+          <div class="row novinki list">
+            <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
+              <div class="one-product">
+                <div class="feature-label new">NEW</div>
+                <div data-ride="carousel" id="carousel-main-page-tovar-1" class="image carousel slide">
+                  <div role="listbox" class="carousel-inner">
+                    <div class="item active"><img src="assets/images/catalog-list-image1.jpg"/></div>
+                    <div class="item"><img src="assets/images/catalog-list-image2.jpg"/></div>
+                    <div class="item"><img src="assets/images/catalog-list-image3.jpg"/></div>
+                    <div class="item"><img src="assets/images/catalog-list-image4.jpg"/></div>
+                  </div><a href="#carousel-main-page-tovar-1" role="button" data-slide="prev" class="left carousel-control"><span class="sr-only">Previous</span></a><a href="#carousel-main-page-tovar-1" role="button" data-slide="next" class="right carousel-control"><span class="sr-only">Next</span></a>
+                </div>
+                <div class="description"> <a href="kartocha-tovara.html">Смартфон Sony Xperia V (LT25i Black)</a>
+                  <div class="icons"><span class="num svg-grey svg-normal">4.5<svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
 	<polyline class='normal' points='2,2 31,2 38,11 31,22 2,22 2,2' fill='none' stroke-width='2px' stroke='red' />
 	<polyline class='skewed' points='2,2 31,2 38,11 31,22 2,22 9,11 2,2' fill='none' stroke-width='2px' stroke='red' />
 </svg></span><a href="#">7 отзывов</a><img src="./assets/images/icon-heart.svg"/><img src="assets/images/icon-compare.svg"/></div>
+                </div>
+                <div class="price"><span class="wasprice">15 990 руб</span><span class="price">12 990 руб.</span></div>
+                <div class="add-to-cart"><span class="tocart">В корзину</span><span class="est">Есть в наличии</span></div>
               </div>
-              <div class="price"><span class="wasprice">15 990 руб</span><span class="price">12 990 руб.</span></div>
-              <div class="add-to-cart"><span class="tocart">В корзину</span><span class="est">Есть в наличии</span></div>
             </div>
-          </div>
-          <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
-            <div class="one-product">
-              <div class="feature-label new">NEW</div>
-              <div data-ride="carousel" id="carousel-main-page-tovar-1" class="image carousel slide">
-                <div role="listbox" class="carousel-inner">
-                  <div class="item active"><img src="assets/images/catalog-list-image1.jpg"/></div>
-                  <div class="item"><img src="assets/images/catalog-list-image2.jpg"/></div>
-                  <div class="item"><img src="assets/images/catalog-list-image3.jpg"/></div>
-                  <div class="item"><img src="assets/images/catalog-list-image4.jpg"/></div>
-                </div><a href="#carousel-main-page-tovar-1" role="button" data-slide="prev" class="left carousel-control"><span class="sr-only">Previous</span></a><a href="#carousel-main-page-tovar-1" role="button" data-slide="next" class="right carousel-control"><span class="sr-only">Next</span></a>
-              </div>
-              <div class="description"> <a href="kartocha-tovara.html">Смартфон Samsung Galaxy Alpha (SM-G850F 32Gb)</a>
-                <div class="icons"><span class="num svg-grey svg-normal">4.5<svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
+            <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
+              <div class="one-product">
+                <div class="feature-label new">NEW</div>
+                <div data-ride="carousel" id="carousel-main-page-tovar-1" class="image carousel slide">
+                  <div role="listbox" class="carousel-inner">
+                    <div class="item active"><img src="assets/images/catalog-list-image1.jpg"/></div>
+                    <div class="item"><img src="assets/images/catalog-list-image2.jpg"/></div>
+                    <div class="item"><img src="assets/images/catalog-list-image3.jpg"/></div>
+                    <div class="item"><img src="assets/images/catalog-list-image4.jpg"/></div>
+                  </div><a href="#carousel-main-page-tovar-1" role="button" data-slide="prev" class="left carousel-control"><span class="sr-only">Previous</span></a><a href="#carousel-main-page-tovar-1" role="button" data-slide="next" class="right carousel-control"><span class="sr-only">Next</span></a>
+                </div>
+                <div class="description"> <a href="kartocha-tovara.html">Смартфон Samsung Galaxy Alpha (SM-G850F 32Gb)</a>
+                  <div class="icons"><span class="num svg-grey svg-normal">4.5<svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
 	<polyline class='normal' points='2,2 31,2 38,11 31,22 2,22 2,2' fill='none' stroke-width='2px' stroke='red' />
 	<polyline class='skewed' points='2,2 31,2 38,11 31,22 2,22 9,11 2,2' fill='none' stroke-width='2px' stroke='red' />
 </svg></span><a href="#">7 отзывов</a><img src="./assets/images/icon-heart.svg"/><img src="assets/images/icon-compare.svg"/></div>
+                </div>
+                <div class="price"><span class="wasprice">15 990 руб</span><span class="price">12 990 руб.</span></div>
+                <div class="add-to-cart"><span class="tocart">В корзину</span><span class="est">Есть в наличии</span></div>
               </div>
-              <div class="price"><span class="wasprice">15 990 руб</span><span class="price">12 990 руб.</span></div>
-              <div class="add-to-cart"><span class="tocart">В корзину</span><span class="est">Есть в наличии</span></div>
             </div>
-          </div>
-          <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
-            <div class="one-product">
-              <div class="feature-label new">NEW</div>
-              <div data-ride="carousel" id="carousel-main-page-tovar-1" class="image carousel slide">
-                <div role="listbox" class="carousel-inner">
-                  <div class="item active"><img src="assets/images/catalog-list-image1.jpg"/></div>
-                  <div class="item"><img src="assets/images/catalog-list-image2.jpg"/></div>
-                  <div class="item"><img src="assets/images/catalog-list-image3.jpg"/></div>
-                  <div class="item"><img src="assets/images/catalog-list-image4.jpg"/></div>
-                </div><a href="#carousel-main-page-tovar-1" role="button" data-slide="prev" class="left carousel-control"><span class="sr-only">Previous</span></a><a href="#carousel-main-page-tovar-1" role="button" data-slide="next" class="right carousel-control"><span class="sr-only">Next</span></a>
-              </div>
-              <div class="description"> <a href="kartocha-tovara.html">Карта памяти Transcend TS*USDHC10</a>
-                <div class="icons"><span class="num svg-grey svg-normal">4.5<svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
+            <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
+              <div class="one-product">
+                <div class="feature-label new">NEW</div>
+                <div data-ride="carousel" id="carousel-main-page-tovar-1" class="image carousel slide">
+                  <div role="listbox" class="carousel-inner">
+                    <div class="item active"><img src="assets/images/catalog-list-image1.jpg"/></div>
+                    <div class="item"><img src="assets/images/catalog-list-image2.jpg"/></div>
+                    <div class="item"><img src="assets/images/catalog-list-image3.jpg"/></div>
+                    <div class="item"><img src="assets/images/catalog-list-image4.jpg"/></div>
+                  </div><a href="#carousel-main-page-tovar-1" role="button" data-slide="prev" class="left carousel-control"><span class="sr-only">Previous</span></a><a href="#carousel-main-page-tovar-1" role="button" data-slide="next" class="right carousel-control"><span class="sr-only">Next</span></a>
+                </div>
+                <div class="description"> <a href="kartocha-tovara.html">Карта памяти Transcend TS*USDHC10</a>
+                  <div class="icons"><span class="num svg-grey svg-normal">4.5<svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
 	<polyline class='normal' points='2,2 31,2 38,11 31,22 2,22 2,2' fill='none' stroke-width='2px' stroke='red' />
 	<polyline class='skewed' points='2,2 31,2 38,11 31,22 2,22 9,11 2,2' fill='none' stroke-width='2px' stroke='red' />
 </svg></span><a href="#">7 отзывов</a><img src="./assets/images/icon-heart.svg"/><img src="assets/images/icon-compare.svg"/></div>
+                </div>
+                <div class="price"><span class="wasprice">15 990 руб</span><span class="price">206 руб.</span></div>
+                <div class="add-to-cart"><span class="tocart">В корзину</span><span class="est">Есть в наличии</span></div>
               </div>
-              <div class="price"><span class="wasprice">15 990 руб</span><span class="price">206 руб.</span></div>
-              <div class="add-to-cart"><span class="tocart">В корзину</span><span class="est">Есть в наличии</span></div>
             </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
-  <div class="container-fluid white-container">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-12">
-          <h3>Вы недавно смотрели</h3>
+    <div class="container-fluid white-container">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <h3>Вы недавно смотрели</h3>
+          </div>
         </div>
-      </div>
-      <div class="row you-seen">
-                <div class="col-lg-4 col-xs-12 col-sm-4"><img src="assets/images/youseen.jpg" align="left"><a href="#">Samsung Galaxy A3</a><br><span class="price">19 990 руб</span></div>
-                <div class="col-lg-4 col-xs-12 col-sm-4"><img src="assets/images/youseen.jpg" align="left"><a href="#">Samsung Galaxy A3</a><br><span class="price">19 990 руб</span></div>
-                <div class="col-lg-4 col-xs-12 col-sm-4"><img src="assets/images/youseen.jpg" align="left"><a href="#">Samsung Galaxy A3</a><br><span class="price">19 990 руб</span></div>
-      </div>
-    </div>
-  </div>
-  <div class="container-fluid brands">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-12 brand-list">
-          <h3> <span>Товары таких брендов</span></h3><img src="assets/images/apple-brand.png"><img src="assets/images/philips-brand.png"><img src="assets/images/braun-brand.png"><img src="assets/images/lg-brand.png"><img src="assets/images/samsung-brand.png"><img src="assets/images/sharp-brand.png"><img src="assets/images/panasonic-brand.png"><img src="assets/images/toshiba-brand.png">
+        <div class="row you-seen">
+                    <div class="col-lg-4 col-xs-12 col-sm-4"><img src="assets/images/youseen.jpg" align="left"><a href="#">Samsung Galaxy A3</a><br><span class="price">19 990 руб</span></div>
+                    <div class="col-lg-4 col-xs-12 col-sm-4"><img src="assets/images/youseen.jpg" align="left"><a href="#">Samsung Galaxy A3</a><br><span class="price">19 990 руб</span></div>
+                    <div class="col-lg-4 col-xs-12 col-sm-4"><img src="assets/images/youseen.jpg" align="left"><a href="#">Samsung Galaxy A3</a><br><span class="price">19 990 руб</span></div>
         </div>
       </div>
     </div>
-  </div>
-  <div class="container-fluid footer">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-2 col-sm-2">
-          <p>© YupeStore 2015</p><span class="light-grey">Все права защищены.</span>
-          <div class="resolution"></div>
-        </div>
-        <div class="col-md-2 col-sm-2">
-          <ul class="list-unstyled">
-            <li> <a href="">О компании</a></li>
-            <li> <a href="">Доставка</a></li>
-            <li> <a href="">Оплата</a></li>
-            <li> <a href="">Новости</a></li>
-            <li> <a href="">Бренды</a></li>
-            <li> <a href="">Контакты</a></li>
-          </ul>
-        </div>
-        <div class="col-md-2 col-sm-2">
-          <ul class="list-unstyled">
-            <li> <a href="">Телефония, МР3-плееры, GPS</a></li>
-            <li> <a href="">Домашнее видео</a></li>
-            <li> <a href="">Детские товары</a></li>
-            <li> <a href="">Активный отдых и туризм</a></li>
-            <li> <a href="">Музыкальные инструменты</a></li>
-          </ul>
-        </div>
-        <div class="col-md-3 col-sm-3 contacts"><span class="subtitle">Контакты</span>
-          <ul class="list-unstyled">
-            <li> <img src="./assets/images/footer-phone-icon.png"><span>(123) 456-78-90, 0 (123) 456-78-90</span></li>
-            <li><img src="./assets/images/footer-email-icon.png"><span>E-mail: partner@YupeStore.net</span></li>
-            <li><img src="./assets/images/footer-skype-icon.png"><span>Skype: YupeStore</span></li>
-          </ul>
-        </div>
-        <div class="col-md-2 col-sm-2"><span class="subtitle">Работаем</span>
-          <ul class="list-unstyled"> 
-            <li>Пн–Пт 09:00–20:00</li>
-            <li>Сб 09:00–17:00</li>
-            <li>Вс выходной  </li>
-          </ul>
+    <div class="container-fluid brands">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 brand-list">
+            <h3> <span>Товары таких брендов</span></h3><img src="assets/images/apple-brand.png"><img src="assets/images/philips-brand.png"><img src="assets/images/braun-brand.png"><img src="assets/images/lg-brand.png"><img src="assets/images/samsung-brand.png"><img src="assets/images/sharp-brand.png"><img src="assets/images/panasonic-brand.png"><img src="assets/images/toshiba-brand.png">
+          </div>
         </div>
       </div>
     </div>
-  </div>
-  <div id="callme" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" class="modal fade">
-    <div role="document" class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" data-dismiss="modal" aria-label="Close" class="close"><span aria-hidden="true">&times;</span></button>
-          <h4 id="myModalLabel" class="modal-title">Modal title</h4>
-        </div>
-        <div class="modal-body">...</div>
-        <div class="modal-footer">
-          <button type="button" data-dismiss="modal" class="btn btn-default">Close</button>
-          <button type="button" class="btn btn-primary">Save changes</button>
+    <div class="container-fluid footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-2 col-sm-2">
+            <p>© YupeStore 2015</p><span class="light-grey">Все права защищены.</span>
+            <div class="resolution"></div>
+          </div>
+          <div class="col-md-2 col-sm-2">
+            <ul class="list-unstyled">
+              <li> <a href="">О компании</a></li>
+              <li> <a href="">Доставка</a></li>
+              <li> <a href="">Оплата</a></li>
+              <li> <a href="">Новости</a></li>
+              <li> <a href="">Бренды</a></li>
+              <li> <a href="">Контакты</a></li>
+            </ul>
+          </div>
+          <div class="col-md-2 col-sm-2">
+            <ul class="list-unstyled">
+              <li> <a href="">Телефония, МР3-плееры, GPS</a></li>
+              <li> <a href="">Домашнее видео</a></li>
+              <li> <a href="">Детские товары</a></li>
+              <li> <a href="">Активный отдых и туризм</a></li>
+              <li> <a href="">Музыкальные инструменты</a></li>
+            </ul>
+          </div>
+          <div class="col-md-3 col-sm-3 contacts"><span class="subtitle">Контакты</span>
+            <ul class="list-unstyled">
+              <li> <img src="./assets/images/footer-phone-icon.png"><span>(123) 456-78-90, 0 (123) 456-78-90</span></li>
+              <li><img src="./assets/images/footer-email-icon.png"><span>E-mail: partner@YupeStore.net</span></li>
+              <li><img src="./assets/images/footer-skype-icon.png"><span>Skype: YupeStore</span></li>
+            </ul>
+          </div>
+          <div class="col-md-2 col-sm-2"><span class="subtitle">Работаем</span>
+            <ul class="list-unstyled"> 
+              <li>Пн–Пт 09:00–20:00</li>
+              <li>Сб 09:00–17:00</li>
+              <li>Вс выходной  </li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>
-  </div>
+    <div id="callme" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" class="modal fade">
+      <div role="document" class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" data-dismiss="modal" aria-label="Close" class="close"><span aria-hidden="true">&times;</span></button>
+            <h4 id="myModalLabel" class="modal-title">Modal title</h4>
+          </div>
+          <div class="modal-body">...</div>
+          <div class="modal-footer">
+            <button type="button" data-dismiss="modal" class="btn btn-default">Close</button>
+            <button type="button" class="btn btn-primary">Save changes</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>

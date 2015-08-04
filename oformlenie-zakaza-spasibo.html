@@ -20,244 +20,245 @@
     <script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="assets/js/app.js"></script>
   </head>
-  <body></body>
-  <nav class="navbar navbar-default">
-    <div class="container">
-      <div class="navbar-header">
-        <button type="button" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false" class="navbar-toggle collapsed"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+  <body>
+    <nav class="navbar navbar-default">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false" class="navbar-toggle collapsed"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+        </div>
+        <div id="navbar-collapse" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav left-menu">
+            <li><a href="#">О компании <span class="sr-only"></span></a></li>
+            <li class="active"><a href="#">Доставка<span class="sr-only"></span></a></li>
+            <li><a href="#">Оплата<span class="sr-only"></span></a></li>
+            <li><a href="#">Новости<span class="sr-only"></span></a></li>
+            <li><a href="#">Бренды<span class="sr-only"></span></a></li>
+            <li><a href="#">Контакты<span class="sr-only"></span></a></li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li class="favicon"><a href="#">
+                 
+                Избранное<span class="badge light-blue">42</span><span class="sr-only"></span></a></li>
+            <li class="compare"><a href="#">
+                 
+                Сравнение товаров<span class="sr-only"></span><span class="badge light-blue">2</span></a></li>
+            <button type="button" style="float: right" class="login btn btn-default navbar-btn">Войти</button>
+          </ul>
+        </div>
       </div>
-      <div id="navbar-collapse" class="collapse navbar-collapse">
-        <ul class="nav navbar-nav left-menu">
-          <li><a href="#">О компании <span class="sr-only"></span></a></li>
-          <li class="active"><a href="#">Доставка<span class="sr-only"></span></a></li>
-          <li><a href="#">Оплата<span class="sr-only"></span></a></li>
-          <li><a href="#">Новости<span class="sr-only"></span></a></li>
-          <li><a href="#">Бренды<span class="sr-only"></span></a></li>
-          <li><a href="#">Контакты<span class="sr-only"></span></a></li>
-        </ul>
-        <ul class="nav navbar-nav navbar-right">
-          <li class="favicon"><a href="#">
-               
-              Избранное<span class="badge light-blue">42</span><span class="sr-only"></span></a></li>
-          <li class="compare"><a href="#">
-               
-              Сравнение товаров<span class="sr-only"></span><span class="badge light-blue">2</span></a></li>
-          <button type="button" style="float: right" class="login btn btn-default navbar-btn">Войти</button>
-        </ul>
+    </nav>
+    <div class="container main">
+      <!-- логотип, корзина, номер телефона и пр.-->
+      <div class="row header">
+        <div class="col-lg-6 col-md-6 logo"><a href="index.html"><img src="assets/images/logo.png"></a><a href="index.html" class="slogan">Магазин бытовой техники</a></div>
+        <div class="col-lg-6 col-md-6 phone-and-cart">
+          <div class="phone">8 (800) 000-00-00<br><a href="#" data-toggle="modal" data-target="#callme">Заказать</a></div>
+          <div class="cart-header-block"><img src="assets/images/icon-cart.png" align="left"><span class="badge light-blue">42</span><span class="cart-header">Моя корзина</span><a data-toggle="collapse" href="#small-cart"><img src="./assets/images/icon-small-cart.png"></a><br><span class="summ">Сумма: <span class="cartsumm">27 710 руб.</span></span>
+            <div id="small-cart" class="cart-block collapse">
+              <div class="line clearfix"><img src="./assets/images/youseen.jpg" align="left"><a href="">Samsung Galaxy A3</a><br><span>23 200 руб.</span></div>
+              <div class="line clearfix"><img src="./assets/images/youseen.jpg" align="left"><a href="">Samsung Galaxy A31</a><br><span>23 200 руб.</span></div>
+              <button type="submit" class="btn btn-default">Оформить заказ</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Меню каталога, форма поиска-->
+      <div class="row menu-and-search">
+        <div class="col-lg-2 col-md-3 col-xs-12 menu-main"> <a data-toggle="collapse" href="#mainmenu">Каталог товаров</a></div>
+        <div class="col-lg-10 col-md-9 col-xs-12 search-field"> 
+          <input placeholder="Sony Xperia V (LT25i Black)" type="text">
+        </div>
+        <div id="mainmenu" style="" class="col-md-12 collapse">
+          <ul>
+            <li> <a href="catalog.html">Мелкая техника для кухни</a>
+              <div class="submenu">
+                <ul> 
+                  <li><a href="catalog.html">Вытяжки
+                      <ul> 
+                        <li><a href="catalog.html">Встраиваемые </a></li>
+                        <li><a href="catalog.html">Купольные</a></li>
+                      </ul></a></li>
+                  <li>Встраиваемые духовые шкафы</li>
+                </ul>
+                <ul> 
+                  <li>Вытяжки
+                    <ul> 
+                      <li>Встраиваемые </li>
+                      <li>Купольные</li>
+                    </ul>
+                  </li>
+                  <li>Встраиваемые духовые шкафы</li>
+                </ul>
+                <ul> 
+                  <li>Вытяжки
+                    <ul> 
+                      <li>Встраиваемые </li>
+                      <li>Купольные</li>
+                    </ul>
+                  </li>
+                  <li>Встраиваемые духовые шкафы</li>
+                </ul>
+                <ul> 
+                  <li>Вытяжки
+                    <ul> 
+                      <li>Встраиваемые </li>
+                      <li>Купольные</li>
+                    </ul>
+                  </li>
+                  <li>Встраиваемые духовые шкафы</li>
+                </ul>
+                <ul> 
+                  <li>Вытяжки
+                    <ul> 
+                      <li>Встраиваемые </li>
+                      <li>Купольные</li>
+                    </ul>
+                  </li>
+                  <li>Встраиваемые духовые шкафы</li>
+                </ul>
+              </div>
+            </li>
+            <li> <a href="">Встраиваемая бытовая техника</a></li>
+            <li> <a href="">Приготовление кофе</a></li>
+            <li> <a href="">Акксесуары для бытовой техники</a></li>
+            <li> <a href="">Кухонные принадлежности</a></li>
+            <li> <a href="">Техника для дома</a></li>
+            <li> <a href="">Климатическая техника</a></li>
+            <li> <a href="">Кулеры, диспенсеры и <br>фильтры для воды</a></li>
+            <li> <a href="">Бытовая химия</a></li>
+          </ul>
+        </div>
       </div>
     </div>
-  </nav>
-  <div class="container main">
-    <!-- логотип, корзина, номер телефона и пр.-->
-    <div class="row header">
-      <div class="col-lg-6 col-md-6 logo"><a href="index.html"><img src="assets/images/logo.png"></a><a href="index.html" class="slogan">Магазин бытовой техники</a></div>
-      <div class="col-lg-6 col-md-6 phone-and-cart">
-        <div class="phone">8 (800) 000-00-00<br><a href="#" data-toggle="modal" data-target="#callme">Заказать</a></div>
-        <div class="cart-header-block"><img src="assets/images/icon-cart.png" align="left"><span class="badge light-blue">42</span><span class="cart-header">Моя корзина</span><a data-toggle="collapse" href="#small-cart"><img src="./assets/images/icon-small-cart.png"></a><br><span class="summ">Сумма: <span class="cartsumm">27 710 руб.</span></span>
-          <div id="small-cart" class="cart-block collapse">
-            <div class="line clearfix"><img src="./assets/images/youseen.jpg" align="left"><a href="">Samsung Galaxy A3</a><br><span>23 200 руб.</span></div>
-            <div class="line clearfix"><img src="./assets/images/youseen.jpg" align="left"><a href="">Samsung Galaxy A31</a><br><span>23 200 руб.</span></div>
-            <button type="submit" class="btn btn-default">Оформить заказ</button>
+    <div class="container content order-confirmation">
+      <div class="row breadcrumbs">
+        <div class="col-lg-12"><a href="#">Главная</a><a href="#">Корзина</a></div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <h2 class="page-header">Спасибо за ваш заказ!</h2>
+          <h3 class="page-sub-header">Он будет обработан в ближайшее время.</h3>
+        </div>
+      </div>
+      <div class="row section vash-zakaz">
+        <div class="col-lg-12 order-count section-header-dark">Номер вашего заказа: <span>23546</span></div>
+        <div class="col-lg-12">
+          <ul class="list-unstyled">
+            <li>Ожидаемая дата доставки: <span>Завтра</span></li>
+            <li>Адрес доставки: <span>ул. Ленина, д.10, кв.67</span></li>
+            <li>Получатель: <span>Колыванова Ирина Сергеевна</span></li>
+          </ul>
+          <ul class="list-unstyled">
+            <li>E-mail: <span>mail@mail.ru</span></li>
+            <li>Телефон: <span>+7 (495) 123-45-67</span></li>
+          </ul>
+          <ul class="list-unstyled">
+            <li>Доставка: <span>Доставка по Москве</span></li>
+            <li>Способ оплаты: <span>Наличный расчет при получении</span></li>
+          </ul>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <h3 class="page-header">Данные вашего заказа</h3>
+        </div>
+      </div>
+      <div class="row section product-list">
+        <div class="col-lg-12 section-header-dark">
+          <div class="row">
+            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-12"></div>
+            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">Наименование</div>
+            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-12">Цена (руб)</div>
+            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-12">Количество</div>
+            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-12">Сумма, руб.</div>
+          </div>
+        </div>
+        <div class="col-lg-12">
+                    <div class="row product-line">
+                      <div class="col-lg-2 col-md-2 col-sm-2 col-xs-12"><img src="./assets/images/oformlenie-zakaza-spasibo.jpg"></div>
+                      <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                        <div>Мобильный телефон <a href="#">Sony Xperia V (LT25i Black)</a></div>
+                      </div>
+                      <div class="col-lg-2 col-md-2 col-sm-2 col-xs-12">12 990</div>
+                      <div class="col-lg-2 col-md-2 col-sm-2 col-xs-12">2</div>
+                      <div class="col-lg-2 col-md-2 col-sm-2 col-xs-12">25 980</div>
+                    </div>
+                    <div class="row product-line">
+                      <div class="col-lg-2 col-md-2 col-sm-2 col-xs-12"><img src="./assets/images/oformlenie-zakaza-spasibo.jpg"></div>
+                      <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                        <div>Мобильный телефон <a href="#">Sony Xperia V (LT25i Black)</a></div>
+                      </div>
+                      <div class="col-lg-2 col-md-2 col-sm-2 col-xs-12">12 990</div>
+                      <div class="col-lg-2 col-md-2 col-sm-2 col-xs-12">2</div>
+                      <div class="col-lg-2 col-md-2 col-sm-2 col-xs-12">25 980</div>
+                    </div>
+        </div>
+        <div class="col-lg-12 itogi">
+          <div class="row section">
+            <p>Товаров на сумму: 25 980 рублей</p>
+            <p>Доставка: 300 рублей</p>
+            <p class="all-itog">Итого: <span>26 280 </span>рублей </p>
           </div>
         </div>
       </div>
     </div>
-    <!-- Меню каталога, форма поиска-->
-    <div class="row menu-and-search">
-      <div class="col-lg-2 col-md-3 col-xs-12 menu-main"> <a data-toggle="collapse" href="#mainmenu">Каталог товаров</a></div>
-      <div class="col-lg-10 col-md-9 col-xs-12 search-field"> 
-        <input placeholder="Sony Xperia V (LT25i Black)" type="text">
-      </div>
-      <div id="mainmenu" style="" class="col-md-12 collapse">
-        <ul>
-          <li> <a href="catalog.html">Мелкая техника для кухни</a>
-            <div class="submenu">
-              <ul> 
-                <li><a href="catalog.html">Вытяжки
-                    <ul> 
-                      <li><a href="catalog.html">Встраиваемые </a></li>
-                      <li><a href="catalog.html">Купольные</a></li>
-                    </ul></a></li>
-                <li>Встраиваемые духовые шкафы</li>
-              </ul>
-              <ul> 
-                <li>Вытяжки
-                  <ul> 
-                    <li>Встраиваемые </li>
-                    <li>Купольные</li>
-                  </ul>
-                </li>
-                <li>Встраиваемые духовые шкафы</li>
-              </ul>
-              <ul> 
-                <li>Вытяжки
-                  <ul> 
-                    <li>Встраиваемые </li>
-                    <li>Купольные</li>
-                  </ul>
-                </li>
-                <li>Встраиваемые духовые шкафы</li>
-              </ul>
-              <ul> 
-                <li>Вытяжки
-                  <ul> 
-                    <li>Встраиваемые </li>
-                    <li>Купольные</li>
-                  </ul>
-                </li>
-                <li>Встраиваемые духовые шкафы</li>
-              </ul>
-              <ul> 
-                <li>Вытяжки
-                  <ul> 
-                    <li>Встраиваемые </li>
-                    <li>Купольные</li>
-                  </ul>
-                </li>
-                <li>Встраиваемые духовые шкафы</li>
-              </ul>
-            </div>
-          </li>
-          <li> <a href="">Встраиваемая бытовая техника</a></li>
-          <li> <a href="">Приготовление кофе</a></li>
-          <li> <a href="">Акксесуары для бытовой техники</a></li>
-          <li> <a href="">Кухонные принадлежности</a></li>
-          <li> <a href="">Техника для дома</a></li>
-          <li> <a href="">Климатическая техника</a></li>
-          <li> <a href="">Кулеры, диспенсеры и <br>фильтры для воды</a></li>
-          <li> <a href="">Бытовая химия</a></li>
-        </ul>
-      </div>
-    </div>
-  </div>
-  <div class="container content order-confirmation">
-    <div class="row breadcrumbs">
-      <div class="col-lg-12"><a href="#">Главная</a><a href="#">Корзина</a></div>
-    </div>
-    <div class="row">
-      <div class="col-lg-12">
-        <h2 class="page-header">Спасибо за ваш заказ!</h2>
-        <h3 class="page-sub-header">Он будет обработан в ближайшее время.</h3>
-      </div>
-    </div>
-    <div class="row section vash-zakaz">
-      <div class="col-lg-12 order-count section-header-dark">Номер вашего заказа: <span>23546</span></div>
-      <div class="col-lg-12">
-        <ul class="list-unstyled">
-          <li>Ожидаемая дата доставки: <span>Завтра</span></li>
-          <li>Адрес доставки: <span>ул. Ленина, д.10, кв.67</span></li>
-          <li>Получатель: <span>Колыванова Ирина Сергеевна</span></li>
-        </ul>
-        <ul class="list-unstyled">
-          <li>E-mail: <span>mail@mail.ru</span></li>
-          <li>Телефон: <span>+7 (495) 123-45-67</span></li>
-        </ul>
-        <ul class="list-unstyled">
-          <li>Доставка: <span>Доставка по Москве</span></li>
-          <li>Способ оплаты: <span>Наличный расчет при получении</span></li>
-        </ul>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-lg-12">
-        <h3 class="page-header">Данные вашего заказа</h3>
-      </div>
-    </div>
-    <div class="row section product-list">
-      <div class="col-lg-12 section-header-dark">
+    <div class="container-fluid footer">
+      <div class="container">
         <div class="row">
-          <div class="col-lg-2 col-md-2 col-sm-2 col-xs-12"></div>
-          <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">Наименование</div>
-          <div class="col-lg-2 col-md-2 col-sm-2 col-xs-12">Цена (руб)</div>
-          <div class="col-lg-2 col-md-2 col-sm-2 col-xs-12">Количество</div>
-          <div class="col-lg-2 col-md-2 col-sm-2 col-xs-12">Сумма, руб.</div>
-        </div>
-      </div>
-      <div class="col-lg-12">
-                <div class="row product-line">
-                  <div class="col-lg-2 col-md-2 col-sm-2 col-xs-12"><img src="./assets/images/oformlenie-zakaza-spasibo.jpg"></div>
-                  <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-                    <div>Мобильный телефон <a href="#">Sony Xperia V (LT25i Black)</a></div>
-                  </div>
-                  <div class="col-lg-2 col-md-2 col-sm-2 col-xs-12">12 990</div>
-                  <div class="col-lg-2 col-md-2 col-sm-2 col-xs-12">2</div>
-                  <div class="col-lg-2 col-md-2 col-sm-2 col-xs-12">25 980</div>
-                </div>
-                <div class="row product-line">
-                  <div class="col-lg-2 col-md-2 col-sm-2 col-xs-12"><img src="./assets/images/oformlenie-zakaza-spasibo.jpg"></div>
-                  <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-                    <div>Мобильный телефон <a href="#">Sony Xperia V (LT25i Black)</a></div>
-                  </div>
-                  <div class="col-lg-2 col-md-2 col-sm-2 col-xs-12">12 990</div>
-                  <div class="col-lg-2 col-md-2 col-sm-2 col-xs-12">2</div>
-                  <div class="col-lg-2 col-md-2 col-sm-2 col-xs-12">25 980</div>
-                </div>
-      </div>
-      <div class="col-lg-12 itogi">
-        <div class="row section">
-          <p>Товаров на сумму: 25 980 рублей</p>
-          <p>Доставка: 300 рублей</p>
-          <p class="all-itog">Итого: <span>26 280 </span>рублей </p>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="container-fluid footer">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-2 col-sm-2">
-          <p>© YupeStore 2015</p><span class="light-grey">Все права защищены.</span>
-          <div class="resolution"></div>
-        </div>
-        <div class="col-md-2 col-sm-2">
-          <ul class="list-unstyled">
-            <li> <a href="">О компании</a></li>
-            <li> <a href="">Доставка</a></li>
-            <li> <a href="">Оплата</a></li>
-            <li> <a href="">Новости</a></li>
-            <li> <a href="">Бренды</a></li>
-            <li> <a href="">Контакты</a></li>
-          </ul>
-        </div>
-        <div class="col-md-2 col-sm-2">
-          <ul class="list-unstyled">
-            <li> <a href="">Телефония, МР3-плееры, GPS</a></li>
-            <li> <a href="">Домашнее видео</a></li>
-            <li> <a href="">Детские товары</a></li>
-            <li> <a href="">Активный отдых и туризм</a></li>
-            <li> <a href="">Музыкальные инструменты</a></li>
-          </ul>
-        </div>
-        <div class="col-md-3 col-sm-3 contacts"><span class="subtitle">Контакты</span>
-          <ul class="list-unstyled">
-            <li> <img src="./assets/images/footer-phone-icon.png"><span>(123) 456-78-90, 0 (123) 456-78-90</span></li>
-            <li><img src="./assets/images/footer-email-icon.png"><span>E-mail: partner@YupeStore.net</span></li>
-            <li><img src="./assets/images/footer-skype-icon.png"><span>Skype: YupeStore</span></li>
-          </ul>
-        </div>
-        <div class="col-md-2 col-sm-2"><span class="subtitle">Работаем</span>
-          <ul class="list-unstyled"> 
-            <li>Пн–Пт 09:00–20:00</li>
-            <li>Сб 09:00–17:00</li>
-            <li>Вс выходной  </li>
-          </ul>
+          <div class="col-md-2 col-sm-2">
+            <p>© YupeStore 2015</p><span class="light-grey">Все права защищены.</span>
+            <div class="resolution"></div>
+          </div>
+          <div class="col-md-2 col-sm-2">
+            <ul class="list-unstyled">
+              <li> <a href="">О компании</a></li>
+              <li> <a href="">Доставка</a></li>
+              <li> <a href="">Оплата</a></li>
+              <li> <a href="">Новости</a></li>
+              <li> <a href="">Бренды</a></li>
+              <li> <a href="">Контакты</a></li>
+            </ul>
+          </div>
+          <div class="col-md-2 col-sm-2">
+            <ul class="list-unstyled">
+              <li> <a href="">Телефония, МР3-плееры, GPS</a></li>
+              <li> <a href="">Домашнее видео</a></li>
+              <li> <a href="">Детские товары</a></li>
+              <li> <a href="">Активный отдых и туризм</a></li>
+              <li> <a href="">Музыкальные инструменты</a></li>
+            </ul>
+          </div>
+          <div class="col-md-3 col-sm-3 contacts"><span class="subtitle">Контакты</span>
+            <ul class="list-unstyled">
+              <li> <img src="./assets/images/footer-phone-icon.png"><span>(123) 456-78-90, 0 (123) 456-78-90</span></li>
+              <li><img src="./assets/images/footer-email-icon.png"><span>E-mail: partner@YupeStore.net</span></li>
+              <li><img src="./assets/images/footer-skype-icon.png"><span>Skype: YupeStore</span></li>
+            </ul>
+          </div>
+          <div class="col-md-2 col-sm-2"><span class="subtitle">Работаем</span>
+            <ul class="list-unstyled"> 
+              <li>Пн–Пт 09:00–20:00</li>
+              <li>Сб 09:00–17:00</li>
+              <li>Вс выходной  </li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-  <div id="callme" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" class="modal fade">
-    <div role="document" class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" data-dismiss="modal" aria-label="Close" class="close"><span aria-hidden="true">&times;</span></button>
-          <h4 id="myModalLabel" class="modal-title">Modal title</h4>
-        </div>
-        <div class="modal-body">...</div>
-        <div class="modal-footer">
-          <button type="button" data-dismiss="modal" class="btn btn-default">Close</button>
-          <button type="button" class="btn btn-primary">Save changes</button>
+    <div id="callme" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" class="modal fade">
+      <div role="document" class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" data-dismiss="modal" aria-label="Close" class="close"><span aria-hidden="true">&times;</span></button>
+            <h4 id="myModalLabel" class="modal-title">Modal title</h4>
+          </div>
+          <div class="modal-body">...</div>
+          <div class="modal-footer">
+            <button type="button" data-dismiss="modal" class="btn btn-default">Close</button>
+            <button type="button" class="btn btn-primary">Save changes</button>
+          </div>
         </div>
       </div>
     </div>
-  </div>
+  </body>
 </html>

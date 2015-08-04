@@ -16,30 +16,30 @@ html
     script(type='text/javascript', src='assets/js/bootstrap.min.js')
     script(type='text/javascript', src='assets/js/app.js')
   body
-  include layouts/header-menu.jade
-  .container.main
-    include layouts/sub-header
-    block slider
-      include layouts/slider-banners
-  block content
-    .container.content
-      .row.novinki
-        .col-md-12: h3 Новинки
-        +one-product('12 990 руб.', 'Смартфон Sony Xperia V (LT25i Black)')
-        +one-product('12 990 руб.', 'Смартфон Samsung Galaxy Alpha (SM-G850F 32Gb)')
-        +one-product('206 руб.', 'Карта памяти Transcend TS*USDHC10')
-        +one-product('27 450 руб.', 'Робот-пылесос iClebo Arte')
-        +one-product('12 990 руб.', 'Смартфон Sony Xperia V (LT25i Black)')
-        +one-product('12 990 руб.', 'Смартфон Samsung Galaxy Alpha (SM-G850F 32Gb)')
-        +one-product('206 руб.', 'Карта памяти Transcend TS*USDHC10')
-        +one-product('27 450 руб.', 'Робот-пылесос iClebo Arte')
-      .row.novinki
-        .col-md-12 
-          h3 Хиты
-        +one-product('127 990', 'LED телевизор Samsung UE40H6200')
-        +one-product('127 990', 'Смартфон Sony Xperia V (LT25i Black)')
-        +one-product('127 990', 'Смартфон Sony Xperia V (LT25i Black)')
-        +one-product('127 990', 'Смартфон Sony Xperia V (LT25i Black)')
-    include layouts/you-seen
-    include layouts/brand-list
-    include layouts/footer
+    include layouts/header-menu.jade
+    .container.main
+      include layouts/sub-header
+      block slider
+        include layouts/slider-banners
+    block content
+      .container.content
+        .row.novinki
+          .col-md-12: h3 Новинки
+          +one-product('12 990 руб.', 'Смартфон Sony Xperia V (LT25i Black)')
+          +one-product('12 990 руб.', 'Смартфон Samsung Galaxy Alpha (SM-G850F 32Gb)')
+          +one-product('206 руб.', 'Карта памяти Transcend TS*USDHC10')
+          +one-product('27 450 руб.', 'Робот-пылесос iClebo Arte')
+          +one-product('12 990 руб.', 'Смартфон Sony Xperia V (LT25i Black)')
+          +one-product('12 990 руб.', 'Смартфон Samsung Galaxy Alpha (SM-G850F 32Gb)')
+          +one-product('206 руб.', 'Карта памяти Transcend TS*USDHC10')
+          +one-product('27 450 руб.', 'Робот-пылесос iClebo Arte')
+        .row.novinki
+          .col-md-12 
+            h3 Хиты
+          +one-product('127 990', 'LED телевизор Samsung UE40H6200')
+          +one-product('127 990', 'Смартфон Sony Xperia V (LT25i Black)')
+          +one-product('127 990', 'Смартфон Sony Xperia V (LT25i Black)')
+          +one-product('127 990', 'Смартфон Sony Xperia V (LT25i Black)')
+      include layouts/you-seen
+      include layouts/brand-list
+      include layouts/footer

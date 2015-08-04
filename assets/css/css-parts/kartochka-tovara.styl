@@ -55,6 +55,8 @@
 		.image-list
 			width 70px
 			display inline-block
+			@media screen and (max-width: 480px)
+				width auto
 			
 			
 			> div
@@ -62,6 +64,8 @@
 				height 70px
 				text-align center
 				line-height 70px
+				@media screen and (max-width: 480px)
+					display inline-block
 				
 			> div.active
 				border 2px solid light-blue-color				
@@ -195,6 +199,8 @@
 			vertical-align top
 			position relative
 			margin-left: 100px;
+			@media screen and (max-width: 480px)
+				margin-left 0px
 			
 			> input[type='checkbox']
 				position absolute

@@ -549,11 +549,21 @@ body {
   width: 70px;
   display: inline-block;
 }
+@media screen and (max-width: 480px) {
+  .one-tovar .row.section.kartochka-tovara .image-list {
+    width: auto;
+  }
+}
 .one-tovar .row.section.kartochka-tovara .image-list > div {
   width: 70px;
   height: 70px;
   text-align: center;
   line-height: 70px;
+}
+@media screen and (max-width: 480px) {
+  .one-tovar .row.section.kartochka-tovara .image-list > div {
+    display: inline-block;
+  }
 }
 .one-tovar .row.section.kartochka-tovara .image-list > div.active {
   border: 2px solid #22b5cd;
@@ -676,6 +686,11 @@ body {
   vertical-align: top;
   position: relative;
   margin-left: 100px;
+}
+@media screen and (max-width: 480px) {
+  .one-tovar .row.section.buy-with > .one-block {
+    margin-left: 0px;
+  }
 }
 .one-tovar .row.section.buy-with > .one-block > input[type='checkbox'] {
   position: absolute;
